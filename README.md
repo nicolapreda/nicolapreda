@@ -1,13 +1,12 @@
 <h1 align="center">Profile of Nicola Preda</h1>
-<h3 align="center">🚀 Novice Full Stack Developer & Designer</h3>
 
 **What I'm working on : ⌨️**
 
-- ⚡ Search Tool [TorchFlow](https://github.com/phoenixpixel-it/TorchFlow) With C# 
+- ⚡ Anime Streaming Extension [Yunime](https://github.com/Yunime) && Yumetion
 
 - 🚧 Open source project for no-profit society: [Vigevano 1 Website](https://github.com/Coding-Bunker/Gruppo-Scout-Vigevano-1)
 
-- 📠 Frontend of an Industry 4.0 software in C# WPF
+- 📠 Frontend of an Industry 4.0 software with ASP.NET Core
 
 - 🌐 Building my personal [website](https://github.com/diskxo/diskxo.github.io)
 
@@ -26,8 +25,9 @@
 
 [<img align="left" alt="gmail" width="36px" src="icons/gmail.png"/>](mailto:nicola.preda05@gmail.com)
 [<img align="left" alt="twitter" width="36px" src="icons/twitter.png" />](https://twitter.com/diskxo_)
-[<img align="left" alt="discord" width="36px" src="icons/discord.png" />](https://discord.gg/#7611)
 [<img align="left" alt="anilist" width="36px" src="icons/anilist.png" />](https://anilist.co/user/diskxo/)
+[<img align="left" alt="anilist" width="36px" src="icons/telegram.png" />](https://t.me/diskxo)
+
 <br /><br /><br />
 **Most used Languages, Frameworks & DataBases: 📟**
 
