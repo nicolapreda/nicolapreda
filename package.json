@@ -1,8 +1,0 @@
-{
-  "devDependencies": {
-    "typescript": "^4.2.4"
-  },
-  "dependencies": {
-    "live2dw": "^1.0.6"
-  }
-}

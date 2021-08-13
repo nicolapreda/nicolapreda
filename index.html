@@ -1,304 +1,235 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-    <!--Preview Message Link Informations-->
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://diskxo.github.io/">
-    <meta property="og:title" content="Nicola Preda | Portfolio">
-    <meta property="og:image" content="https://raw.githubusercontent.com/diskxo/diskxo.github.io/main/assets/icon.png">
-    <meta property="og:description" content="I'm a novice full stack developer. I write code mainly in HTML, CSS, Javascript (Typescript) and occasionally in PHP and NodeJS (back-end) for websites. I also use .NET Framework (WPF, C #) to create programs in Windows. I have recently created several bots and scripts in Python.">
-    <meta property="og:locale" content="it_IT">
-
-    <!--Site proprieties-->
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="./assets/icon.png">
-
-    <!--Bootstrap library-->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Home - Brand</title>
+    <!--Frameworks for styling-->
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300,400,700">
+    <link rel="stylesheet" href="assets/fonts/fontawesome-all.min.css">
+    <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/fonts/ionicons.min.css">
+    <link rel="stylesheet" href="assets/fonts/fontawesome5-overrides.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pikaday/1.6.1/css/pikaday.min.css">
 
     <!--Animations Library-->
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
-    <!--CSS Files-->
-    <link rel="stylesheet" href="main.css">
 
-    <title>Nicola Preda</title>
 </head>
 
-<body >
-    <!--NavBar-->
-    <nav class="navbar fixed-top  navbar-expand-lg navbar-light">
-        <a class="navbar-brand text-dark" href="#">
-            <img src="assets/icon.png" width="30" height="30" class="d-inline-block align-top" alt=""> Nicola Preda
-        </a>
-        <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarMenu">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse justify-content-end" id="navbarMenu">
-            <ul class="navbar-nav">
-                <li class="nav-item">
-                    <a href="#skills" class="nav-link">SKILLS</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#about-me" class="nav-link">ABOUT ME</a>
-                </li>
-
-                <li class="nav-item">
-                    <a href="#projects" class="nav-link">PROJECTS</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#contact-me" class="nav-link">CONTACT ME</a>
-                </li>
-            </ul>
-        </div>
-
-    </nav>
-
-
-    <!--Main Banner-->
-    <div class="banner" >
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-6" data-aos="fade-up">
-                    <h6 class="text">MY PORTFOLIO</h6>
-                    <br>
-                    <h1 class="text-white">Nicola Preda</h1>
-                    <p class="text">I'm a novice full-stack developer. I write code mainly in HTML, CSS, Javascript (Typescript) and occasionally in PHP and NodeJS (back-end) for websites. I also use .NET Framework (WPF, C #) to create programs in Windows. I have recently
-                        created several bots and scripts in Python.</p>
-
-                    <a href="#about-me" class="btn-banner">About Me</a>
-                </div>
+<body>
+    <nav class="navbar navbar-dark navbar-expand-lg fixed-top bg-white portfolio-navbar gradient">
+        <div class="container"><a class="navbar-brand logo" href="#">Nicola Preda</a><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navbarNav"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#working-on">Working On</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#hire-me">Hire me</a></li>
+                </ul>
             </div>
         </div>
-
-    </div>
-
-    <!--Skills-->
-    <a name="skills">
-        <section class="skills">
+    </nav>
+    <main class="page lanidng-page">
+        <section class="portfolio-block block-intro">
             <div class="container" data-aos="fade-up">
-                <h2 class="my-5 text-center"><b>SKILLS</b></h2>
-
-
-                <div class="row">
-
-                    <div class="col-md-6 col-lg-4">
-                        <a class="invisible-link" href="https://github.com/diskxo" target="_blank">
-                            <div class="project">
-                                <img src="assets/csharp-icon.png" alt="img">
-                                <h4><b>.NET Developer</b></h4>
-                                <p>I can create windows programs with .NET Framework. For the frontend I mainly use WPF and Windows Forms, instead for the backend I use C #. <br>With this framework I have created some programs for the management of industry
-                                    4.0.
-
-                                </p>
-                            </div>
-                        </a>
-                    </div>
-
-                    <div class="col-md-6 col-lg-4">
-                        <a class="invisible-link" href="" target="_blank">
-                            <div class="project">
-                                <img src="assets/figma-icon.png" alt="img">
-                                <h4><b>Designer</b></h4>
-                                <p>I have been using Figma for about a year to create mockups for websites, business cards, presentations and much more.
-                                </p>
-                            </div>
-                        </a>
-                    </div>
-
-                    <div class="col-md-6 col-lg-4">
-                        <a class="invisible-link" href="https://github.com/diskxo" target="_blank">
-                            <div class="project">
-                                <img src="assets/html-icon.png" alt="img">
-                                <h4><b>Web Developer</b></h4>
-                                <p>I create front-end and back-end websites with the help of HTML, CSS, Javascript, Bootstrap (Frontend) and Nodejs / Php (back-end) at the request of the client, for individuals and companies. I always show the initial mockup
-                                    of the site and the work in progress, to allow the customer to change what they prefer.
-                                </p>
-                            </div>
-                        </a>
-                    </div>
-
+                <div class="avatar" style="background-image:url(&quot;assets/img/avatars/avatar.jpg&quot;);"></div>
+                <div class="about-me">
+                    <p>Hi! I am <strong>Nicola Preda,</strong>&nbsp;&nbsp;a student who loves to make web applications and projects of all kinds in the IT field. I like to listen to 80s music and watch anime in my free time<br></p><a class="btn btn-outline-primary" role="button" href="#hire-me">Hire me</a>
                 </div>
-    
-        </div>
-        </a>
-    </section>
-
-    <!--About Me-->
-    <a name="about-me">
-        <section id="about" >
-
-            <div class="container" data-aos="fade-up">
-
-                <div class="row">
-                    <div class="col-md-5">
-                        <div class="about-img">
-                            <img class="shape" src="assets/icon.png" alt="">
-
+            </div>
+        </section>
+        <a id="working-on"></a>
+        <section class="portfolio-block photography">
+            <h1 class="heading">Actually i'm working on...</h1>
+            <section class="highlight-phone">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-8">
+                            <div class="intro">
+                                <h2>Yunime</h2>
+                                <p>This extension, present on both Firefox and Chrome, allows you to communicate between the "Anilist" site and the open source software "VLC Media Player", creating a small UI that allows you to select the desired episode and play it through the "stream" function network "on VLC.<br></p><a class="btn btn-primary" role="button" href="https://yunime.nicolapreda.me">project website</a>
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="d-none d-md-block phone-mockup"><img class="device" src="assets/img/phone.svg">
+                                <div class="screen"></div>
+                            </div>
                         </div>
                     </div>
-                    <br>
-                    <div class="col-md-7 about-right">
-                        <h2 class="my-5 text-left text-white"><b>ABOUT ME</b></h2>
-
-                        <p class="p-first text-white">
-                            I am an Italian student who loves the world of computer science and programming. I started learning web development constantly about a year ago, and still today I make projects of all kinds (you can find them on my Github profile!).
-
-                        </p>
-                        <p class="text-white">
-                            At the moment I'm trying to improve my backend programming with projects. </p>
-
-                    </div>
-
                 </div>
-            </div>
-
+            </section>
         </section>
-    </a>
-
-    <!--Projects-->
-    <a name="projects">
-        <section class="projects" data-aos="fade-up">
+        <a id="skills"></a>
+        <section class="portfolio-block skills">
             <div class="container">
-                <h2 class="my-5 text-center"><b>PROJECTS</b></h2>
-
-                <div class="row">
-
-                    <div class="col-md-6 col-lg-3">
-                        <a class="invisible-link" href="https://github.com/diskxo/MusicForker" target="_blank">
-                            <div class="project">
-                                <img src="assets/music-icon.svg" alt="img">
-                                <h4><b>MusicForker</b></h4>
-                                <p>This telegram bot allows you to download any existing (and even non-existing) song / video in .mp3 and .mp4 format (from YouTube / YouTube Music)
-
-                                </p>
+                <div class="heading"></div>
+                <section class="features-boxed">
+                    <div class="container">
+                        <div class="intro">
+                            <h2 class="text-center">My skills</h2>
+                        </div>
+                        <div class="row justify-content-center features">
+                            <div class="col-sm-6 col-md-5 col-lg-4 item">
+                                <div class="box"><i class="icon ion-social-html5 icon"></i>
+                                    <h3 class="name"><strong>Web Development</strong><br></h3>
+                                    <p class="description">I mainly use markup languages, programming and frameworks such as HTML, CSS, Bootstrap, Javascript and Nodejs (backend) to create websites and web applications. I have also had several experiences with frameworks such as Angular and ASP.NET Core<br><br></p>
+                                </div>
                             </div>
-                        </a>
-                    </div>
-
-                    <div class="col-md-6 col-lg-3">
-                        <a class="invisible-link" href="https://github.com/phoenixpixel-it/TorchFlow" target="_blank">
-                            <div class="project">
-                                <img src="assets/torchflow-icon.png" alt="img">
-                                <h4><b>TorchFlow</b></h4>
-                                <p>Search management software in the operating system and on any website in a simple, functional and fast way. Totally customizable</p>
+                            <div class="col-sm-6 col-md-5 col-lg-4 item">
+                                <div class="box"><i class="fab fa-figma icon"></i>
+                                    <h3 class="name"><strong>Design</strong><br></h3>
+                                    <p class="description">I use as main design software Figma. I find it essential for all kinds of frontend projects. It is very useful when you have to decide how the application will be done and gives an idea of ​​how the final result will be for the customer<br><br></p>
+                                </div>
                             </div>
-                        </a>
-                    </div>
-
-                    <div class="col-md-6 col-lg-3">
-                        <a class="invisible-link" href="https://github.com/diskxo/SurveyFlow" target="_blank">
-                            <div class="project">
-                                <img src="assets/surveyflow-icon.png" alt="img">
-                                <h4><b>SurveyFlow</b></h4>
-                                <p>software designed for simplified workflow visualization for FANUC industrial machines (Written in C #, compatible only for Windows). Not released yet
-                                </p>
+                            <div class="col-sm-6 col-md-5 col-lg-4 item">
+                                <div class="box"><i class="fab fa-js icon"></i>
+                                    <h3 class="name">Backend Scripts</h3>
+                                    <p class="description"><br>I like to create scripts or automations for the home or simply to improve the management of a process. I mainly use Javascript and Python.<br><br><br></p>
+                                </div>
                             </div>
-                        </a>
-                    </div>
-
-                    <div class="col-md-6 col-lg-3">
-                        <a class="invisible-link" href="https://github.com/diskxo/clip-upload_automation" target="_blank">
-                            <div class="project">
-                                <img src="assets/upload-icon.svg" alt="Automatic Clip Uploader">
-                                <h4><b>Automatic Clip Uploader</b></h4>
-                                <p>A simple Python script for upload any clips in a specific folder on your Youtube Channel in a totally automatic way. </p>
+                            <div class="col-sm-6 col-md-5 col-lg-4 item">
+                                <div class="box"><i class="fa fa-industry icon"></i>
+                                    <h3 class="name">4.0 Industry</h3>
+                                    <p class="description">I had experiences in creating software for industry 4.0 and management with WPF and Web Applications with C Sharp.<br></p><a class="learn-more" href="https://lucasoftware.com/horidesk">Learn more »</a>
+                                </div>
                             </div>
-                        </a>
+                            <div class="col-sm-6 col-md-5 col-lg-4 item">
+                                <div class="box"><i class="fas fa-robot icon"></i>
+                                    <h3 class="name">Bots</h3>
+                                    <p class="description">I have made several bots based on services such as Telegram and Discord, which perform different functions such as sending <a href="https://github.com/diskxo/110-Tidings">news</a> , <a href="https://github.com/diskxo/Kado-Chan">updates</a>, <a href="https://github.com/diskxo/MusicForker">music</a> ...<br><br></p>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-md-5 col-lg-4 item">
+                                <div class="box"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" fill="none" class="icon">
+                                        <path d="M16 4H18V6H20V8H18V10H16V8H14V6H16V4Z" fill="currentColor"></path>
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M12 12V6H4V20H18V12H12ZM6 8H10V12H6V8ZM10 14V18H6V14H10ZM16 14V18H12V14H16Z" fill="currentColor"></path>
+                                    </svg>
+                                    <h3 class="name">Extensions</h3>
+                                    <p class="description">I've made projects that act as browser extensions for browsers such as Chrome and Firefox.<br>The one I work on most often is Yunime<br></p><a class="learn-more" href="https://yunime.nicolapreda.me">Learn more »</a>
+                                </div>
+                            </div>
+                        </div>
                     </div>
+                </section>
+                <div class="heading"></div>
 
+                <a id="projects"></a>
+                <section class="features-boxed">
+                    <div class="container">
+                        <div class="intro">
+                            <h2 class="text-center">Main Projects</h2>
+                        </div>
+                        <div class="projects">
+                            <div class="row justify-content-center features">
+                                <div class="col-sm-6 col-md-5 col-lg-4 item">
+                                    <div class="box"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" fill="none" class="icon">
+                                        <path d="M16 4H18V6H20V8H18V10H16V8H14V6H16V4Z" fill="currentColor"></path>
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M12 12V6H4V20H18V12H12ZM6 8H10V12H6V8ZM10 14V18H6V14H10ZM16 14V18H12V14H16Z" fill="currentColor"></path>
+                                    </svg>
+                                        <h3 class="name"><strong>Yunime</strong><br></h3>
+                                        <p class="description">Chrome & Firefox extension for watching anime<br><br></p>
+                                        <a class="btn btn-primary" role="button" href="https://yunime.nicolapreda.me">Project Website</a>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 col-md-5 col-lg-4 item">
+                                    <div class="box"><i class="fa fa-industry icon"></i>
+                                        <h3 class="name"><strong>Horidesk</strong><br></h3>
+                                        <p class="description">4.0 Industry Software for FANUC Machines <b>(Not yet released)</b><br><br></p>
+                                        <a class="btn btn-primary" role="button" href="https://lucasoftware.com/horidesk">Project Website</a>
+                                    </div>
+                                </div>
 
-                </div>
+                            </div>
+                        </div>
 
-                <p class="mb-5 text-center">
-                </p>
-
+                    </div>
+                </section>
+                <section class="portfolio-block call-to-action border-bottom">
+                    <div class="container">
+                        <div class="d-flex justify-content-center align-items-center content">
+                            <h3>Are you interested in any of my projects?<br></h3><a href="#hire-me"> <button class="btn btn-outline-primary btn-lg" type="button">Hire me</button></a>
+                        </div>
+                    </div>
+                </section>
             </div>
         </section>
-    </a>
-
-    <!--Contact Me-->
-    <a name="contact-me">
-        <section class="contact-me">
-            <div class="container"data-aos="fade-up" >
-                <h2 class="my-5 text-center text-white"><b>CONTACT ME</b></h2>
-                <div class="row" >
-                    <div class="col-md-6 col-lg-4">
-                        <a class="invisible-link" href="https://twitter.com/diskxo_" target="_blank">
-                            <div class="social-card">
-                                <div class="twitter">
-                                    <img src="assets/twitter-icon.svg" alt="img">
-                                    <h4>Twitter</h4>
-
-                                </div>
 
 
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-md-6 col-lg-4">
-                        <a class="invisible-link" href="mailto:nicola.preda05@gmail.com" target="_blank">
-                            <div class="social-card">
-                                <div class="mail">
-                                    <img src="assets/mail-icon.svg" alt="img">
-                                    <h4>Mail</h4>
 
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-md-6 col-lg-4">
-                        <a class="invisible-link" href="https://github.com/diskxo" target="_blank">
-                            <div class="social-card">
-                                <div class="github">
-                                    <img src="assets/github-icon.png" alt="img">
-                                    <h4>GitHub</h4>
 
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    
+    </main>
+    <section class="portfolio-block website gradient">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-12 col-lg-5 offset-lg-1 text">
+                    <h3>I ❤ Open Source&nbsp;</h3>
+                    <p>For all my projects I always leave a repository with the source code of the MIT licensed program, so that everyone has the possibility to modify the software to their liking.</p>
                 </div>
-
+                <div class="col-md-12 col-lg-5">
+                    <div class="portfolio-laptop-mockup">
+                        <div class="screen">
+                            <div class="screen-content" style="background-image:url(&quot;assets/img/open-source/open-source.png&quot;);"></div>
+                        </div>
+                        <div class="keyboard"></div>
+                    </div>
+                </div>
             </div>
-        </section>
-    </a>
-
-    <!--Footer-->
-    <footer class="bg-dark text-center text-white">
-        <!-- Copyright -->
-        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
-            © 2021 Copyright:
-            <a class="text-white" href="https://diskxo.github.io/">diskxo.github.io</a>
         </div>
-        <!-- Copyright -->
+    </section>
+
+    <a id="hire-me"></a>
+    <div class="hire-me">
+        <section class="features-boxed hire-me">
+            <div class="container">
+                <div class="intro">
+                    <h2 class="text-center">Hire Me</h2>
+                    <p>Contact me if you are interested i</p>
+
+                </div>
+                <div class="row justify-content-center features">
+                    <div class="col-sm-6 col-md-5 col-lg-4 item">
+                        <a href="https://t.me/diskxo"> <div class="box"> <i class="fa fa-telegram icon"></i>
+                            <h3 class="name">Telegram</h3>
+                        </div></a>
+                    </div>
+                    <div class="col-sm-6 col-md-5 col-lg-4 item">
+                        <a href="mailto:nicola.preda05@gmail.com"> <div class="box"><i class="icon ion-email icon"></i>
+                            <h3 class="name">Mail</h3>
+                        </div></a>
+                    </div>
+                    <div class="col-sm-6 col-md-5 col-lg-4 item">
+                        <a href="https://twitter.com/diskxo_"> <div class="box"><i class="fa fa-twitter icon"></i>
+                            <h3 class="name">Twitter</h3>
+                        </div></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <footer class="page-footer">
+        <div class="container">
+            <div class="links"><a class="link-a text-white" href="#">About me</a><a class="link-a text-white" href="#hire-me">Hire me</a><a class="link-a text-white" href="#projects">Projects</a></div>
+            <div class="social-icons"><a class="social-div" href="https://twitter.com/diskxo_"><i class="icon ion-social-twitter"></i></a><a class="social-div" href="https://github.com/diskxo"><i class="icon ion-social-github"></i></a><a class="social-div" href="https://t.me/diskxo"><i class="fab fa-telegram"></i></a><a class="social-div" href="mailto:nicola.preda05@gmail.com"><i class="icon ion-email"></i></a></div>
+        </div>
     </footer>
-    <!--FontAwesome icons font kit-->
-    <script src="https://kit.fontawesome.com/ab36464be1.js" crossorigin="anonymous"></script>
-
-    <!--Bootstrap kit-->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-    
-
-    <!--Website Animations-->
-    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <!--Animation library-->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init({
             duration: 900,
         });
     </script>
 
-    
-</body>
-
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pikaday/1.6.1/pikaday.min.js"></script>
+    <script src="assets/js/theme.js"></script>
 </body>
 
 </html>
