@@ -13,6 +13,24 @@
   background-color: #1485ee;
 }
 
+/*General settings*/
+
+/*Open animation*/
+@keyframes openanimation {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+body{
+  overflow-x: hidden;
+  -webkit-animation: openanimation 1s ease forwards;
+  animation: openanimation 1s ease forwards;
+
+}
+
 .highlight-phone {
   color: #313437;
   background-color: #eef4f7;
@@ -67,6 +85,7 @@
   font-size: 13px;
   letter-spacing: 0.4px;
   line-height: 1;
+  transition: .2s ease-in-out;
 }
 
 .highlight-phone .intro .btn:hover {
@@ -216,7 +235,7 @@
   -webkit-transition: all .2s ease-in-out;
   transition: all .2s ease-in-out;
   border-radius: 10px;
-
+  margin: 2rem;
 
 }
 
@@ -238,6 +257,7 @@
   font-size: 13px;
   letter-spacing: 0.4px;
   line-height: 1;
+  transition: .2s ease-in-out;
 }
 
 .projects .btn:hover {
@@ -253,25 +273,16 @@
   color: #fff;
 }
 
-.page-footer {
-  background-color: #444444;
-}
-
-.link-a {
-  text-decoration: none;
-  /*color: white!important;*/
-}
-
-.social-div {
-  border: none!important;
-}
 
 /*Hire me cards*/
+
+.hire-me{
+  margin-top: 7rem;
+}
 
 .hire-me a{
   text-decoration: none;
   color: #313437;
-;
 }
 
 .hire-me .box {
@@ -283,13 +294,26 @@
   -webkit-transition: all .2s ease-in-out;
   transition: all .2s ease-in-out;
   border-radius: 10px;
-
-
 }
 
 .hire-me .box:hover {
   -webkit-transform: scale(1.02);
   transform: scale(1.02);
-
 }
 
+
+/*Footer*/
+
+.page-footer {
+  background-color: #444444;
+  margin-top: 5rem;
+}
+
+.link-a {
+  text-decoration: none;
+  /*color: white!important;*/
+}
+
+.social-div {
+  border: none!important;
+}
