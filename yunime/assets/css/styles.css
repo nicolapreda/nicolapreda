@@ -58,6 +58,25 @@ hr {
     font-size: 20px;
 }
 
+.a-button{
+    text-decoration: none;
+    color: white;
+}
+
+.a-button:hover{
+    color: white;
+}
+
+.a-button-dark{
+    text-decoration: none;
+    color: black;
+}
+
+.a-button-dark:hover{
+    color: black;
+}
+
+
 .header-img {
     background-image: url(../../assets/img/header-img.svg);
 }
