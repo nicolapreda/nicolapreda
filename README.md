@@ -2,9 +2,7 @@
 
 **What I'm working on : ⌨️**
 
-- ⚡ Anime Streaming Extension [Yunime](https://github.com/Yunime) && Yumetion
-
-- 🚧 Open source project for no-profit society: [Vigevano 1 Website](https://github.com/Coding-Bunker/Gruppo-Scout-Vigevano-1)
+- ⚡ Anime Streaming Extension [Yunime](https://github.com/Yunime)
 
 - 📠 Frontend of an Industry 4.0 software with ASP.NET Core
 
