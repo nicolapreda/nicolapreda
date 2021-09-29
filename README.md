@@ -88,6 +88,13 @@
 #### GitHub Stats :bar_chart:
   
 <!--START_SECTION:waka-->
+```text
+JavaScript   4 hrs 23 mins   ████████████████▓░░░░░░░░   66.26 % 
+HTML         1 hr 3 mins     ████░░░░░░░░░░░░░░░░░░░░░   16.03 % 
+C++          41 mins         ██▓░░░░░░░░░░░░░░░░░░░░░░   10.46 % 
+CSS          21 mins         █▒░░░░░░░░░░░░░░░░░░░░░░░   05.51 % 
+Markdown     3 mins          ▒░░░░░░░░░░░░░░░░░░░░░░░░   00.98 % 
+```
 <!--END_SECTION:waka-->
 
 ![diskxo's github stats](https://github-readme-stats.vercel.app/api?username=diskxo&count_private=true&theme=dark)
