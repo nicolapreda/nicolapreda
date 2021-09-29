@@ -86,6 +86,9 @@
 </summary>
 
 #### GitHub Stats :bar_chart:
+  
+<!--START_SECTION:waka-->
+<!--END_SECTION:waka-->
 
 ![diskxo's github stats](https://github-readme-stats.vercel.app/api?username=diskxo&count_private=true&theme=dark)
 
