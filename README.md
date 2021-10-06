@@ -10,7 +10,7 @@
 
 **What am I learning : 📚**
 
-- 📗 [Golang](https://golang.org/) programming language ([Test-Repository](https://github.com/diskxo/golang-learning))
+- 📗 [Golang](https://golang.org/) and [C++](https://en.wikipedia.org/wiki/C%2B%2B/) programming language ([Test-Repository](https://github.com/diskxo/school-learning))
 
 - 🐍[Python](https://www.python.org/) & [Javascript](https://www.javascript.com/) programming languages
 
