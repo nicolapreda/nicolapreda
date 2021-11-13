@@ -23,7 +23,6 @@
 
 [<img align="left" alt="gmail" width="36px" src="icons/gmail.png"/>](mailto:nicola.preda05@gmail.com)
 [<img align="left" alt="twitter" width="36px" src="icons/twitter.png" />](https://twitter.com/diskxo_)
-[<img align="left" alt="anilist" width="36px" src="icons/anilist.png" />](https://anilist.co/user/diskxo/)
 
 <br /><br /><br />
 **Most used Languages, Frameworks & DataBases: 📟**
