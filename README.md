@@ -4,8 +4,6 @@
 
 - ⚡ Anime Streaming Extension [Yunime](https://github.com/Yunime)
 
-- 📠 Frontend of an Industry 4.0 software with ASP.NET Core
-
 - 🌐 Building my personal [website](https://nicolapreda.me)
 
 **What am I learning : 📚**
