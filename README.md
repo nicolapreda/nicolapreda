@@ -6,6 +6,8 @@
 
 - 🌐 Building my personal [website](https://nicolapreda.me)
 
+- 🤖 Creating a [Telegram Bot](https://github.com/LucaSoftware/Singx-Telegram-Bot) to meet buyer and seller
+
 **What am I learning : 📚**
 
 - 📗 [Golang](https://golang.org/) and [C++](https://en.wikipedia.org/wiki/C%2B%2B/) programming language ([Test-Repository](https://github.com/diskxo/school-learning))
