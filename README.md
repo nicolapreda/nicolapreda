@@ -79,13 +79,7 @@
 [<img align="left" alt="linux" width="36px" src="icons/linux.png" />](https://www.linux.it/)
 
 <br /><br />
-<details>
-<summary>
-  Stats :octocat:
-</summary>
 
-#### GitHub Stats :bar_chart:
-  
 <!--START_SECTION:waka-->
 ```text
 Vue.js       2 hrs 23 mins   ████████████▒░░░░░░░░░░░░   49.02 % 
@@ -96,9 +90,6 @@ Git Config   4 mins          ▒░░░░░░░░░░░░░░░░
 ```
 <!--END_SECTION:waka-->
 
-![diskxo's github stats](https://github-readme-stats.vercel.app/api?username=diskxo&count_private=true&theme=dark)
 
-[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=diskxo&langs_count=8&theme=dark)](https://github.com/anuraghazra/github-readme-stats)
 
-</details>
 
