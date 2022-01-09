@@ -82,11 +82,11 @@
 
 <!--START_SECTION:waka-->
 ```text
-JavaScript   7 hrs 30 mins   ███████████▒░░░░░░░░░░░░░   45.40 % 
-HTML         4 hrs 46 mins   ███████▒░░░░░░░░░░░░░░░░░   28.91 % 
-Vue.js       2 hrs 29 mins   ███▓░░░░░░░░░░░░░░░░░░░░░   15.11 % 
-JSON         37 mins         █░░░░░░░░░░░░░░░░░░░░░░░░   03.81 % 
-SCSS         29 mins         ▓░░░░░░░░░░░░░░░░░░░░░░░░   02.99 % 
+JavaScript   8 hrs 22 mins   █████████████▒░░░░░░░░░░░   53.88 % 
+HTML         4 hrs 56 mins   ████████░░░░░░░░░░░░░░░░░   31.77 % 
+C++          57 mins         █▓░░░░░░░░░░░░░░░░░░░░░░░   06.22 % 
+SCSS         38 mins         █░░░░░░░░░░░░░░░░░░░░░░░░   04.11 % 
+Text         21 mins         ▓░░░░░░░░░░░░░░░░░░░░░░░░   02.31 % 
 ```
 <!--END_SECTION:waka-->
 <a href="https://wakatime.com"><img src="https://wakatime.com/share/@nicolapreda/4cd22a40-d500-4f34-8b0f-cb6f59561e52.png" /></a>
