@@ -89,7 +89,6 @@ SCSS         38 mins         █░░░░░░░░░░░░░░░░
 Text         21 mins         ▓░░░░░░░░░░░░░░░░░░░░░░░░   02.31 % 
 ```
 <!--END_SECTION:waka-->
-<a href="https://wakatime.com"><img src="https://wakatime.com/share/@nicolapreda/4cd22a40-d500-4f34-8b0f-cb6f59561e52.png" /></a>
 
 
 
