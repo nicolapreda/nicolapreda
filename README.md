@@ -23,8 +23,6 @@
 ```
 <!--START_SECTION:waka-->
 ```text
-Total: 10 hrs 29 mins
-
 C++          8 hrs 31 mins   ████████████████████▒░░░░   81.15 % 
 Markdown     30 mins         █▒░░░░░░░░░░░░░░░░░░░░░░░   04.84 % 
 HTML         29 mins         █▒░░░░░░░░░░░░░░░░░░░░░░░   04.68 % 
