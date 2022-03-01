@@ -1,10 +1,11 @@
-```yml
+```bash
 {
-  name: "Nicola Preda"
-  projects: [
+  name: "Nicola Preda",
+  website: "https://nicolapreda.me",
+  current_projects: [
     yunime: "https://github.com/Yunime",
-    singbot: "https://github.com/LucaSoftware/Singx-Telegram-Bot",
-    website: "https://nicolapreda.me/"
+    bantumi_remake: "https://github.com/diskxo/bantumi",
+    website: "https://github.com/diskxo/diskxo/"
   ],
   learning: [
     c++: "https://github.com/diskxo/school-learning",
@@ -13,8 +14,8 @@
   ],
   reach_me[
     gmail: "mailto:nicola.preda05@gmail.com",
-    twitter: "twitter.com/diskxo_",
-    telegram: "t.me/diskxo"
+    twitter: "https://twitter.com/diskxo_",
+    telegram: "https://t.me/diskxo"
   ],
   
 }
@@ -24,6 +25,8 @@
 <!--START_SECTION:waka-->
 
 ```text
+Last week languages usage:
+
 C++           16 hrs 58 mins  ███████████████████████░░   91.40 %
 Bash          46 mins         █░░░░░░░░░░░░░░░░░░░░░░░░   04.21 %
 C             42 mins         █░░░░░░░░░░░░░░░░░░░░░░░░   03.79 %
