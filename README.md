@@ -4,7 +4,7 @@
   website: "https://nicolapreda.me",
   current_projects: [
     yunime: "https://github.com/Yunime",
-    bantumi_remake: "https://github.com/diskxo/bantumi",
+    bomberman_remake: "https://github.com/diskxo/bomberman",
     website: "https://github.com/diskxo/diskxo/"
   ],
   learning: [
