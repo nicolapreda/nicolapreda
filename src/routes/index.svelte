@@ -1,61 +1,101 @@
-    <!-- Header -->
-    <header>
-        <nav class="container flex items-center py-4 mt-4 sm:mt-12">
-          <div class="py-1"><img src="./imgs/logo-bookmark.svg" alt="" /></div>
-          <ul class="hidden sm:flex flex-1 justify-end items-center gap-12 text-bookmark-blue uppercase text-xs">
-            <li class="cursor-pointer">Features</li>
-            <li class="cursor-pointer">Pricing</li>
-            <li class="cursor-pointer">Contact</li>
-            <button type="button" class="bg-bookmark-red text-white rounded-md px-7 py-3 uppercase">Login</button>
-          </ul>
-          <div class="flex sm:hidden flex-1 justify-end">
-            <i class="text-2xl fas fa-bars"></i>
-          </div>
-        </nav>
-    </header>
+<header class="bg-header-light h-screen">
+	<nav class="container mx-auto">
+		<div class="hidden sm:block sm:ml-6 float-right mb-10">
+			<div class="flex space-x-4">
+				<a
+					href="#about"
+					class="font-poppins text-light-text hover:text-light-heading px-3 py-2 rounded-md text-sm font-medium mt-2 "
+					aria-current="page">About</a
+				>
+				<a
+					href="#resume"
+					class="font-poppins text-light-text hover:text-light-heading px-3 py-2 rounded-md text-sm font-medium mt-2"
+					>Resume</a
+				>
+				<a
+					href="#portfolio"
+					class="font-poppins text-light-text hover:text-light-heading px-3 py-2 rounded-md text-sm font-medium mt-2"
+					>Portfolio</a
+				>
+				<a
+					href="#contact"
+					class="font-poppins text-light-text hover:text-light-heading px-3 py-2 rounded-md text-sm font-medium mt-2"
+					>Contact</a
+				>
+			</div>
+		</div>
+	</nav>
+
+	<section class="relative h-full">
+		<div
+			class="container mx-auto flex flex-col-reverse lg:flex-row items-center gap-12 mt-14 lg:mt-28"
+		>
+			<!-- Content -->
+			<div class="align-middle flex flex-1 flex-col lg:items-start">
+				<h2
+					class=" text-3xl md:text-4 lg:text-5xl lg:text-left mb-6 font-bold font-poppins text-light-heading"
+				>
+        I'm A Motion<br>
+        Developer and <br>Designer 
+				</h2>
+				<p class="font-poppins font-normal text-lg lg:text-left mb-6 text-light-text">
+					A clean and simple interface to organize your favourite websites. <br>Open a new browser tab
+					and see your sites load instantly. Try it for free.
+				</p>
+				<div class="flex flex-wrap gap-6">
+					<button type="button" class="text-white bg-light-button p-3 rounded-lg">
+						About Me
+					</button>
+					
+				</div>
+			</div>
+			<!-- Image -->
+			<div class="flex justify-center flex-1 mb-10 md:mb-16 lg:mb-0 z-10">
+				<img
+					class="w-3/6 h-3/6 sm:w-3/4 sm:h-3/4 md:w-full md:h-full"
+					src="../static/header.svg"
+					alt=""
+				/>
+			</div>
+		</div>
+	</section>
+</header>
+
+<!--About Me-->
+<section>
+  <div class="container mx-auto mt-24">
+    <div class="flex justify-center pl-1 pr-1 p-1 bg-light-button rounded-lg mb-5 ml-"></div>
+      <h2
+      class=" flex justify-center text-3xl md:text-4 lg:text-5xl lg:text-left mb-6 font-semibold font-poppins text-light-heading"
+    >
+    About Me
+    </h2>
+    <p class="flex justify-center text-center font-poppins font-normal text-lg  mb-6 text-light-text">
+      A clean and simple interface to organize your favourite websites. <br>Open a new browser tab
+      and see your sites load instantly. Try it for free.
+    </p>
+
+</div>
   
-      <!-- Hero -->
-      <section class="relative">
-        <div class="container flex flex-col-reverse lg:flex-row items-center gap-12 mt-14 lg:mt-28">
-          <!-- Content -->
-          <div class="flex flex-1 flex-col items-center lg:items-start">
-            <h2 class="text-bookmark-blue text-3xl md:text-4 lg:text-5xl text-center lg:text-left mb-6">
-              A Simple Bookmark Manager
-            </h2>
-            <p class="text-bookmark-grey text-lg text-center lg:text-left mb-6">
-              A clean and simple interface to organize your favourite websites. Open a new browser tab and see your sites
-              load instantly. Try it for free.
-            </p>
-            <div class="flex justify-center flex-wrap gap-6">
-              <button type="button" class="btn btn-purple hover:bg-bookmark-white hover:text-black">
-                Get it on Chrome
-              </button>
-              <button type="button" class="btn btn-white hover:bg-bookmark-purple hover:text-white">
-                Get it on Firefox
-              </button>
-            </div>
-          </div>
-          <!-- Image -->
-          <div class="flex justify-center flex-1 mb-10 md:mb-16 lg:mb-0 z-10">
-            <img class="w-5/6 h-5/6 sm:w-3/4 sm:h-3/4 md:w-full md:h-full" src="./imgs/hero-bg.png" alt="" />
-          </div>
-        </div>
-        <!-- Rounded Rectangle -->
-        <div
-          class="
-            hidden
-            md:block
-            overflow-hidden
-            bg-bookmark-purple
-            rounded-l-full
-            absolute
-            h-80
-            w-2/4
-            top-32
-            right-0
-            lg:
-            -bottom-28
-            lg:-right-36
-          "
-        ></div>
-      </section>
+</section>
+
+<header class="bg-header-light">
+	
+
+	<section class="relative">
+		<div
+			class="container mx-auto flex flex-col-reverse lg:flex-row items-center gap-12 mt-14 lg:mt-28"
+		>
+			<!-- Content -->
+			<div class="align-middle flex flex-1 flex-col lg:items-start">
+				<h2
+					class=" text-3xl md:text-4 lg:text-5xl lg:text-left mb-6 font-bold font-poppins text-light-heading mt-16"
+				>
+				Main Projects
+				</h2>
+				<p class="font-poppins font-normal text-lg lg:text-left mb-6 text-light-text">
+					The main projects that I have developed alone or together with a team
+				</p>
+		</div>
+	</section>
+</header>

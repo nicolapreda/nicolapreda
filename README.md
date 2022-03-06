@@ -1,4 +1,5 @@
 ```bash
+<<<<<<< Updated upstream
 {
   name: "Nicola Preda",
   website: "https://nicolapreda.me",
@@ -19,6 +20,29 @@
   ],
   
 }
+=======
+# create a new project in the current directory
+npm init svelte@next
+
+# create a new project in my-app
+npm init svelte@next my-app
+```
+<<<<<<< HEAD
+=======
+<!--START_SECTION:waka-->
+
+```text
+C++           20 hrs 8 mins   ██████████████████████▒░░   88.91 %
+C             1 hr 6 mins     █▒░░░░░░░░░░░░░░░░░░░░░░░   04.92 %
+Svelte        22 mins         ▒░░░░░░░░░░░░░░░░░░░░░░░░   01.64 %
+HTML          19 mins         ▒░░░░░░░░░░░░░░░░░░░░░░░░   01.42 %
+Objective-C   14 mins         ▒░░░░░░░░░░░░░░░░░░░░░░░░   01.07 %
+Text          14 mins         ▒░░░░░░░░░░░░░░░░░░░░░░░░   01.06 %
+```
+>>>>>>> main
+
+> Note: the `@next` is temporary
+>>>>>>> Stashed changes
 
 
 ```
