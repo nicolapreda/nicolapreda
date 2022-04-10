@@ -15,7 +15,7 @@
   ],
   reach_me[
     gmail: "mailto:nicola.preda05@gmail.com",
-    twitter: "https://twitter.com/diskxo_",
+    twitter: "https://twitter.com/nicolapreda_",
     telegram: "https://t.me/diskxo"
   ],
   
