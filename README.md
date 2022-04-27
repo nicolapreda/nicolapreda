@@ -5,18 +5,14 @@
   occupation: "Student at ITIS Paleocapa, Bergamo (IT)",
   current_projects: [
     yunime: "https://github.com/Yunime",
-    bomberman_remake: "https://github.com/nicolapreda/bomberman",
     website: "https://github.com/nicolapreda/nicolapreda/"
   ],
-  learning: [
-    c++: "https://github.com/nicolapreda/school-learning",
-    typescript: "https://www.typescriptlang.org/",
-    design: "https://figma.com/"
-  ],
-  reach_me[
+  contact_me[
     gmail: "mailto:nicola.preda05@gmail.com",
     twitter: "https://twitter.com/nicolapreda_",
-    telegram: "https://t.me/nicolapreda"
+    telegram: "https://t.me/nicolapreda",
+    linkedin: "https://www.linkedin.com/in/nicola-preda-5b0722233/"
+
   ],
   
 }
