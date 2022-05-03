@@ -1,130 +1,102 @@
 <script>
-	import logo from "./pp.svg";
-	import arrow from "./arrow.svg";
+  import logo from "./pp.svg";
+  import heading from "./heading.svg";
 </script>
 
-<main class="bg-blue-50">
-	<script>
-		var gradient = new Gradient();
-		gradient.initGradient("#gradient-canvas");
-	</script>
+<section class="h-300">
+  <div class="z-0 section_background-wrap absolute">
+    <canvas
+      style="--gradient-color-1:#CFD3FF;--gradient-color-2:#FAD755;--gradient-color-3:#7038ff;--gradient-color-4:#e2e2e2;"
+      id="gradient-canvas"
+      data-transition-in=""
+      class="isLoaded w-full h-240"
+    />
+  </div>
+  <div class="navbar py-5 mx-auto w-full absolute z-20">
+    <div class="grid grid-cols-2 gap-4">
+      <div class="navbar-brand ">
+        <a href="index.html" class="flex items-center justify-start">
+          <img src={logo} alt="logo" class="logo h-10 w-10 mr-5" />
+          Nicola Preda
+        </a>
+      </div>
+      <div class="flex items-center justify-end">
+        <a
+          href="about.html"
+          class="ml-10 hover:border-b-4 hover:border-indigo-500">About</a
+        >
+        <a
+          href="projects.html"
+          class="ml-10 hover:border-b-4 hover:border-indigo-500">Contact Me</a
+        >
+        <a
+          href="projects.html"
+          class="ml-10 hover:border-b-4 hover:border-indigo-500">Blog</a
+        >
+        <a
+          href="projects.html"
+          class="ml-10 hover:border-b-4 hover:border-indigo-500">Projects</a
+        >
+      </div>
+    </div>
+  </div>
 
-	<section class="section_top">
-		<div class="section-container">
-			<div class="section-layout-container container-medium with-padding">
-				<div class="section-layout">
-					<div class="gradient-area">
-						<div class="gradient-title-area">
-							<h1 class="text text-above section-title-1">
-								Developer & Designer
-							</h1>
-							<div class="section_background-wrap">
-								<canvas
-									id="gradient-canvas"
-									data-js-darken-top
-									data-transition-in
-								/>
-							</div>
-							<div
-								class="text text-under text-under-blended section-title-1"
-							>
-								sussy baka
-							</div>
-							<div
-								class="text text-under text-under-overlay section-title-1"
-							>
-								uwu
-							</div>
-						</div>
-					</div>
-					<h2 class="section-title-2 subtitle">provaprovas</h2>
-				</div>
-			</div>
-		</div>
-	</section>
-</main>
-<!--
-	<div class="header h-screen">
-		<canvas id="gradient-canvas" class="absolute w-max h-20"></canvas>
+  <div class="grid md:grid-cols-2 w-full gap-16 absolute z-10 mx-auto ">
+    <div class="mt-64">
+      <p class=" text-2xl">Hello, I’m Nicola Preda</p>
+      <h1
+        class="text-gray-900 my-5 lg:text-8xl md:text-6xl sm:text-6xl font-extrabold"
+      >
+        Developer <br />& Designer
+      </h1>
+      <p class="text-lg sm:text-xl mb-5">
+        Student, about to build a SaaS <br />for smart food storage
+      </p>
+      <a class="px-5 py-3 bg-blue-400 rounded-full shadow" href="helo"
+        >About Me</a
+      >
+    </div>
+    <div class="md:mt-32">
+      <img src={heading} class="w-140" alt="pic" />
+    </div>
+  </div>
+  <script>
+    var gradient = new Gradient();
+    gradient.initGradient("#gradient-canvas");
+  </script>
+</section>
 
-		<div class="navbar py-5 px-16">
-			<div class="grid grid-cols-2 gap-4">
-				<div class="navbar-brand ">
-					<a
-						href="index.html"
-						class="flex items-center justify-start"
-					>
-						<img
-							src={logo}
-							alt="logo"
-							class="logo h-10 w-10 mr-5"
-						/>
-						Nicola Preda
-					</a>
-				</div>
-				<div class="navbar-nav flex items-center justify-end">
-					<a href="index.html" class="navbar-item">Home</a>
-					<a href="about.html" class="navbar-item ml-10">About</a>
-					<a href="projects.html" class="navbar-item ml-10"
-						>Projects</a
-					>
-				</div>
-			</div>
-		</div>
+<!--hero section-->
+<section>
+  <div class="container mx-auto px-4">
+    <div class="grid grid-cols-2 gap-16">
+      <div>
+        <!--about img-->
+        <img
+          src="https://images.unsplash.com/photo-1518791841217-8f162f1e1131?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60"
+          alt="about"
+          class="w-full h-auto"
+        />
+      </div>
 
-		<div class="px-16 flex items-center justify-center md:mt-44">
-			<div class="grid md:grid-cols-2 gap-64">
-				<div class="intro">
-					<h3 class="font-light md:text-4xl text-xl text-black">
-						Hello, I'm Nicola Preda
-					</h3>
-					<h1
-						class="font-bold xl:text-9xl text-6xl md:my-10 my-5 text-primary-blue "
-					>
-						Developer<br /> & Designer
-					</h1>
-					<p
-						class="font-normal md:text-2xl md:mt-5 mb-10 text-secondary-blue"
-					>
-						I'm a web developer and designer based in Milan, Italy.
-					</p>
-					<a
-						href="sus"
-						class="px-7 py-3 bg-yellow-400 rounded-full"
-						>Blog</a
-					>
-				</div>
+      <div>
+        <h2 class="text-3xl font-bold text-gray-900">about</h2>
 
-				<div class="relative w-full max-w-lg">
-					<div
-						class="absolute top-0 -left-4 w-72 h-72 bg-purple-300 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob"
-					/>
-					<div
-						class="absolute top-0 -right-4 w-72 h-72 bg-yellow-300 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob animation-delay-2000"
-					/>
-					<div
-						class="absolute -bottom-8 left-20 w-72 h-72 bg-pink-300 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob animation-delay-4000"
-					/>
-					<div class="m-8 relative space-y-4">
-						<img src={logo} alt="profile" class="md:w-96 md:h-96" />
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="flex justify-center mt-24">
-			<a href="#about" class="down-arrow">
-				<img src={arrow} alt="down arrow" class="h-10 w-10" />
-			</a>
-		</div>
-	</div>
-</main>
--->
+        <p class=" text-gray-600">
+          I’m a full-stack developer and designer with a passion for creating
+          beautiful and intuitive user experiences.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
 
 <style>
-	#gradient-canvas {
-		--gradient-color-1: #6ec3f4;
-		--gradient-color-2: #3a3aff;
-		--gradient-color-3: #ff61ab;
-		--gradient-color-4: #e63946;
-	}
+  .section_background-wrap {
+    width: 100%;
+    height: 760px;
+    transform: skewY(-12deg);
+    transform-origin: 0;
+    top: 0;
+  }
 </style>

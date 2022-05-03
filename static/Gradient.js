@@ -1,115 +1,116 @@
-
 /*
-*   Stripe WebGl Gradient Animation by Stripe.com
-*   ScrollObserver functionality to disable animation when not scrolled into view has been disabled and 
-*   commented out for now.
-*/
+ *   Stripe WebGl Gradient Animation
+ *   ScrollObserver functionality to disable animation when not scrolled into view has been disabled and 
+ *   commented out for now.
+ */
 
 
 //Converting colors to proper format
 function normalizeColor(hexCode) {
     return [(hexCode >> 16 & 255) / 255, (hexCode >> 8 & 255) / 255, (255 & hexCode) / 255]
-  } ["SCREEN", "LINEAR_LIGHT"].reduce((hexCode, t, n) => Object.assign(hexCode, {
+}["SCREEN", "LINEAR_LIGHT"].reduce((hexCode, t, n) => Object.assign(hexCode, {
     [t]: n
-  }), {});
-  
-  //Essential functionality of WebGl
-  //t = width
-  //n = height
-  class MiniGl {
+}), {});
+
+//Essential functionality of WebGl
+//t = width
+//n = height
+class MiniGl {
     constructor(canvas, width, height, debug = false) {
-        const _miniGl = this,
-            debug_output = -1 !== document.location.search.toLowerCase().indexOf("debug=webgl");
-        _miniGl.canvas = canvas, _miniGl.gl = _miniGl.canvas.getContext("webgl", {
-            antialias: true
-        }), _miniGl.meshes = [];
-        const context = _miniGl.gl;
-        width && height && this.setSize(width, height), _miniGl.lastDebugMsg, _miniGl.debug = debug && debug_output ? function(e) {
-            const t = new Date;
-            t - _miniGl.lastDebugMsg > 1e3 && console.log("---"), console.log(t.toLocaleTimeString() + Array(Math.max(0, 32 - e.length)).join(" ") + e + ": ", ...Array.from(arguments).slice(1)), _miniGl.lastDebugMsg = t
-        } : () => {}, Object.defineProperties(_miniGl, {
-            Material: {
-                enumerable: false,
-                value: class {
-                    constructor(vertexShaders, fragments, uniforms = {}) {
-                        const material = this;
-                        function getShaderByType(type, source) {
-                            const shader = context.createShader(type);
-                            return context.shaderSource(shader, source), context.compileShader(shader), context.getShaderParameter(shader, context.COMPILE_STATUS) || console.error(context.getShaderInfoLog(shader)), _miniGl.debug("Material.compileShaderSource", {
-                                source: source
-                            }), shader
-                        }
-                        function getUniformVariableDeclarations(uniforms, type) {
-                            return Object.entries(uniforms).map(([uniform, value]) => value.getDeclaration(uniform, type)).join("\n")
-                        }
-                        material.uniforms = uniforms, material.uniformInstances = [];
-  
-                        const prefix = "\n              precision highp float;\n            ";
-                        material.vertexSource = `\n              ${prefix}\n              attribute vec4 position;\n              attribute vec2 uv;\n              attribute vec2 uvNorm;\n              ${getUniformVariableDeclarations(_miniGl.commonUniforms,"vertex")}\n              ${getUniformVariableDeclarations(uniforms,"vertex")}\n              ${vertexShaders}\n            `,
-                        material.Source = `\n              ${prefix}\n              ${getUniformVariableDeclarations(_miniGl.commonUniforms,"fragment")}\n              ${getUniformVariableDeclarations(uniforms,"fragment")}\n              ${fragments}\n            `,
-                        material.vertexShader = getShaderByType(context.VERTEX_SHADER, material.vertexSource),
-                        material.fragmentShader = getShaderByType(context.FRAGMENT_SHADER, material.Source),
-                        material.program = context.createProgram(),
-                        context.attachShader(material.program, material.vertexShader),
-                        context.attachShader(material.program, material.fragmentShader),
-                        context.linkProgram(material.program),
-                        context.getProgramParameter(material.program, context.LINK_STATUS) || console.error(context.getProgramInfoLog(material.program)),
-                        context.useProgram(material.program),
-                        material.attachUniforms(void 0, _miniGl.commonUniforms),
-                        material.attachUniforms(void 0, material.uniforms)
-                    }
-                    //t = uniform
-                    attachUniforms(name, uniforms) {
-                        //n  = material
-                        const material = this;
-                        void 0 === name ? Object.entries(uniforms).forEach(([name, uniform]) => {
-                            material.attachUniforms(name, uniform)
-                        }) : "array" == uniforms.type ? uniforms.value.forEach((uniform, i) => material.attachUniforms(`${name}[${i}]`, uniform)) : "struct" == uniforms.type ? Object.entries(uniforms.value).forEach(([uniform, i]) => material.attachUniforms(`${name}.${uniform}`, i)) : (_miniGl.debug("Material.attachUniforms", {
-                            name: name,
-                            uniform: uniforms
-                        }), material.uniformInstances.push({
-                            uniform: uniforms,
-                            location: context.getUniformLocation(material.program, name)
-                        }))
-                    }
-                }
-            },
-            Uniform: {
-                enumerable: !1,
-                value: class {
-                    constructor(e) {
-                        this.type = "float", Object.assign(this, e);
-                        this.typeFn = {
-                            float: "1f",
-                            int: "1i",
-                            vec2: "2fv",
-                            vec3: "3fv",
-                            vec4: "4fv",
-                            mat4: "Matrix4fv"
-                        } [this.type] || "1f", this.update()
-                    }
-                    update(value) {
-                        void 0 !== this.value && context[`uniform${this.typeFn}`](value, 0 === this.typeFn.indexOf("Matrix") ? this.transpose : this.value, 0 === this.typeFn.indexOf("Matrix") ? this.value : null)
-                    }
-                    //e - name
-                    //t - type
-                    //n - length
-                    getDeclaration(name, type, length) {
-                        const uniform = this;
-                        if (uniform.excludeFrom !== type) {
-                            if ("array" === uniform.type) return uniform.value[0].getDeclaration(name, type, uniform.value.length) + `\nconst int ${name}_length = ${uniform.value.length};`;
-                            if ("struct" === uniform.type) {
-                                let name_no_prefix = name.replace("u_", "");
-                                return name_no_prefix = 
-                                  name_no_prefix.charAt(0).toUpperCase() + 
-                                  name_no_prefix.slice(1), 
-                                  `uniform struct ${name_no_prefix} 
-                                  {\n` + 
-                                  Object.entries(uniform.value).map(([name, uniform]) => 
-                                  uniform.getDeclaration(name, type)
-                                  .replace(/^uniform/, ""))
-                                  .join("") 
-                                  + `\n} ${name}${length>0?`[${length}]`:""};`
+            const _miniGl = this,
+                debug_output = -1 !== document.location.search.toLowerCase().indexOf("debug=webgl");
+            _miniGl.canvas = canvas, _miniGl.gl = _miniGl.canvas.getContext("webgl", {
+                antialias: true
+            }), _miniGl.meshes = [];
+            const context = _miniGl.gl;
+            width && height && this.setSize(width, height), _miniGl.lastDebugMsg, _miniGl.debug = debug && debug_output ? function(e) {
+                    const t = new Date;
+                    t - _miniGl.lastDebugMsg > 1e3 && console.log("---"), console.log(t.toLocaleTimeString() + Array(Math.max(0, 32 - e.length)).join(" ") + e + ": ", ...Array.from(arguments).slice(1)), _miniGl.lastDebugMsg = t
+                } : () => {}, Object.defineProperties(_miniGl, {
+                        Material: {
+                            enumerable: false,
+                            value: class {
+                                constructor(vertexShaders, fragments, uniforms = {}) {
+                                        const material = this;
+
+                                        function getShaderByType(type, source) {
+                                            const shader = context.createShader(type);
+                                            return context.shaderSource(shader, source), context.compileShader(shader), context.getShaderParameter(shader, context.COMPILE_STATUS) || console.error(context.getShaderInfoLog(shader)), _miniGl.debug("Material.compileShaderSource", {
+                                                source: source
+                                            }), shader
+                                        }
+
+                                        function getUniformVariableDeclarations(uniforms, type) {
+                                            return Object.entries(uniforms).map(([uniform, value]) => value.getDeclaration(uniform, type)).join("\n")
+                                        }
+                                        material.uniforms = uniforms, material.uniformInstances = [];
+
+                                        const prefix = "\n              precision highp float;\n            ";
+                                        material.vertexSource = `\n              ${prefix}\n              attribute vec4 position;\n              attribute vec2 uv;\n              attribute vec2 uvNorm;\n              ${getUniformVariableDeclarations(_miniGl.commonUniforms,"vertex")}\n              ${getUniformVariableDeclarations(uniforms,"vertex")}\n              ${vertexShaders}\n            `,
+                                            material.Source = `\n              ${prefix}\n              ${getUniformVariableDeclarations(_miniGl.commonUniforms,"fragment")}\n              ${getUniformVariableDeclarations(uniforms,"fragment")}\n              ${fragments}\n            `,
+                                            material.vertexShader = getShaderByType(context.VERTEX_SHADER, material.vertexSource),
+                                            material.fragmentShader = getShaderByType(context.FRAGMENT_SHADER, material.Source),
+                                            material.program = context.createProgram(),
+                                            context.attachShader(material.program, material.vertexShader),
+                                            context.attachShader(material.program, material.fragmentShader),
+                                            context.linkProgram(material.program),
+                                            context.getProgramParameter(material.program, context.LINK_STATUS) || console.error(context.getProgramInfoLog(material.program)),
+                                            context.useProgram(material.program),
+                                            material.attachUniforms(void 0, _miniGl.commonUniforms),
+                                            material.attachUniforms(void 0, material.uniforms)
+                                    }
+                                    //t = uniform
+                                attachUniforms(name, uniforms) {
+                                    //n  = material
+                                    const material = this;
+                                    void 0 === name ? Object.entries(uniforms).forEach(([name, uniform]) => {
+                                        material.attachUniforms(name, uniform)
+                                    }) : "array" == uniforms.type ? uniforms.value.forEach((uniform, i) => material.attachUniforms(`${name}[${i}]`, uniform)) : "struct" == uniforms.type ? Object.entries(uniforms.value).forEach(([uniform, i]) => material.attachUniforms(`${name}.${uniform}`, i)) : (_miniGl.debug("Material.attachUniforms", {
+                                        name: name,
+                                        uniform: uniforms
+                                    }), material.uniformInstances.push({
+                                        uniform: uniforms,
+                                        location: context.getUniformLocation(material.program, name)
+                                    }))
+                                }
+                            }
+                        },
+                        Uniform: {
+                            enumerable: !1,
+                            value: class {
+                                    constructor(e) {
+                                        this.type = "float", Object.assign(this, e);
+                                        this.typeFn = {
+                                            float: "1f",
+                                            int: "1i",
+                                            vec2: "2fv",
+                                            vec3: "3fv",
+                                            vec4: "4fv",
+                                            mat4: "Matrix4fv"
+                                        }[this.type] || "1f", this.update()
+                                    }
+                                    update(value) {
+                                            void 0 !== this.value && context[`uniform${this.typeFn}`](value, 0 === this.typeFn.indexOf("Matrix") ? this.transpose : this.value, 0 === this.typeFn.indexOf("Matrix") ? this.value : null)
+                                        }
+                                        //e - name
+                                        //t - type
+                                        //n - length
+                                    getDeclaration(name, type, length) {
+                                            const uniform = this;
+                                            if (uniform.excludeFrom !== type) {
+                                                if ("array" === uniform.type) return uniform.value[0].getDeclaration(name, type, uniform.value.length) + `\nconst int ${name}_length = ${uniform.value.length};`;
+                                                if ("struct" === uniform.type) {
+                                                    let name_no_prefix = name.replace("u_", "");
+                                                    return name_no_prefix =
+                                                        name_no_prefix.charAt(0).toUpperCase() +
+                                                        name_no_prefix.slice(1),
+                                                        `uniform struct ${name_no_prefix} 
+                                  {\n` +
+                                                        Object.entries(uniform.value).map(([name, uniform]) =>
+                                                            uniform.getDeclaration(name, type)
+                                                            .replace(/^uniform/, ""))
+                                                        .join("") +
+                                                        `\n} ${name}${length>0?`[${length}]`:""};`
                             }
                             return `uniform ${uniform.type} ${name}${length>0?`[${length}]`:""};`
                         }
@@ -357,7 +358,7 @@ function normalizeColor(hexCode) {
                 value: 0
             }),
             u_shadow_power: new this.minigl.Uniform({
-                value: 10
+                value: 5
             }),
             u_darken_top: new this.minigl.Uniform({
                 value: "" === this.el.dataset.jsDarkenTop ? 1 : 0
@@ -516,10 +517,5 @@ function normalizeColor(hexCode) {
   * Gradient.toggleColor(index)
   * Gradient.updateFrequency(freq)
   */
-  
-  
-  
-  
-  
-  
-  
+  var gradient = new Gradient();
+      gradient.initGradient("#gradient-canvas");
