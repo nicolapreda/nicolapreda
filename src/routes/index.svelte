@@ -5,15 +5,7 @@
 </script>
 
 <section class="h-300">
-  <div class="z-0 section_background-wrap absolute">
-    <canvas
-      style="--gradient-color-1:#CFD3FF;--gradient-color-2:#FAD755;--gradient-color-3:#7038ff;--gradient-color-4:#e2e2e2;"
-      id="gradient-canvas"
-      data-transition-in=""
-      class="isLoaded w-full h-240"
-    />
-  </div>
-  <div class="navbar py-5 w-full absolute z-20 mx-32">
+  <div class="navbar py-5 w-full z-20 mx-32">
     <div class="grid grid-cols-2 gap-4">
       <div class="navbar-brand ">
         <a href="index.html" class="flex items-center justify-start">
@@ -42,7 +34,7 @@
     </div>
   </div>
 
-  <div class="grid md:grid-cols-2 w-full gap-16 absolute z-10 mx-auto px-32">
+  <div class="grid md:grid-cols-2 w-full gap-16 z-10 mx-auto px-32">
     <div class="mt-64">
       <p class=" text-2xl">Hello, I’m Nicola Preda</p>
       <h1
@@ -61,10 +53,6 @@
       <img src={heading} class="w-140" alt="pic" />
     </div>
   </div>
-  <script>
-    var gradient = new Gradient();
-    gradient.initGradient("#gradient-canvas");
-  </script>
 </section>
 
 <!--hero section-->
@@ -100,7 +88,7 @@
     <h1 class="text-indigo-600 font-semibold text-4xl">Education</h1>
     <div class="border-l-4 border-indigo-500">
       <div
-        class="h-4 w-4 absolute mt-10 bg-indigo-500 rounded-full"
+        class="h-4 w-4 mt-10 bg-indigo-500 rounded-full"
         style="margin-left: -10px;"
       />
       <div class="pl-16 my-10">
@@ -122,7 +110,7 @@
     <h1 class="text-indigo-600 font-semibold text-4xl">Experience</h1>
     <div class="border-l-4 border-indigo-500">
       <div
-        class="h-4 w-4 absolute mt-10 bg-indigo-500 rounded-full"
+        class="h-4 w-4 mt-10 bg-indigo-500 rounded-full"
         style="margin-left: -10px;"
       />
       <div class="pl-16 my-10">
