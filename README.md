@@ -4,7 +4,7 @@
   website: "https://nicolapreda.me",
   occupation: "Student at ITIS Paleocapa, Bergamo (IT)",
   current_projects: [
-    yunime: "https://github.com/Yunime",
+    dispensa: "https://github.com/Dispensa-App",
     website: "https://github.com/nicolapreda/nicolapreda/"
   ],
   contact_me[
