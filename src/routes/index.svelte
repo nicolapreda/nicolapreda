@@ -43,7 +43,7 @@
     </div>
   </div>
 
-  <div class="grid md:grid-cols-2 w-full gap-16 absolute z-10 mx-auto px-32">
+  <div class="grid md:grid-cols-2 w-full gap-16 z-10 mx-auto px-32">
     <div class="mt-64">
       <p class=" text-2xl">Hello, I’m Nicola Preda</p>
       <h1
@@ -62,10 +62,6 @@
       <img src={heading} class="w-140" alt="pic" />
     </div>
   </div>
-  <script>
-    var gradient = new Gradient();
-    gradient.initGradient("#gradient-canvas");
-  </script>
 </section>
 
 <!--hero section-->
@@ -101,7 +97,7 @@
     <h1 class="text-indigo-600 font-semibold text-4xl">Education</h1>
     <div class="border-l-4 border-indigo-500">
       <div
-        class="h-4 w-4 absolute mt-10 bg-indigo-500 rounded-full"
+        class="h-4 w-4 mt-10 bg-indigo-500 rounded-full"
         style="margin-left: -10px;"
       />
       <div class="pl-16 my-10">
@@ -123,7 +119,7 @@
     <h1 class="text-indigo-600 font-semibold text-4xl">Experience</h1>
     <div class="border-l-4 border-indigo-500">
       <div
-        class="h-4 w-4 absolute mt-10 bg-indigo-500 rounded-full"
+        class="h-4 w-4 mt-10 bg-indigo-500 rounded-full"
         style="margin-left: -10px;"
       />
       <div class="pl-16 my-10">
