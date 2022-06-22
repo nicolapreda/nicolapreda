@@ -1,7 +1,8 @@
 <script>
-  import logo from "./pp.svg";
-  import heading from "./heading.svg";
-  import about from "./about-me2.jpg";
+  import logo from "./assets/img/pp.svg";
+  import heading from "./assets/img/heading.svg";
+  import about from "./assets/img/about-me2.jpg";
+  import project1 from "./assets/img/Yunime.svg";
 </script>
 
 <section class="h-300">
@@ -13,7 +14,7 @@
       class="isLoaded w-full h-240"
     />
   </div>
-  <div class="navbar py-5 w-full absolute z-20 mx-32">
+  <div class="navbar py-5 w-full absolute z-20 px-32">
     <div class="grid grid-cols-2 gap-4">
       <div class="navbar-brand ">
         <a href="index.html" class="flex items-center justify-start">
@@ -142,9 +143,82 @@
 
   <div class="mx-32 mt-32">
     <h1 class="text-indigo-600 font-semibold text-4xl">Awards</h1>
+  <div class="p-5 bg-gray-50 my-5 shadow-lg rounded-lg">
+    <p>Eu Lorem ullamco duis ex ea in incididunt nisi ut enim adipisicing aliqua. Labore irure ex veniam dolore eiusmod occaecat labore labore reprehenderit consequat sunt id laboris aute. Deserunt minim exercitation enim nulla pariatur commodo occaecat sint mollit mollit consectetur magna velit ullamco.</p>
+  </div>
+    <div class="p-5 bg-gray-50 my-5 shadow rounded-lg">
+    <p>Eu Lorem ullamco duis ex ea in incididunt nisi ut enim adipisicing aliqua. Labore irure ex veniam dolore eiusmod occaecat labore labore reprehenderit consequat sunt id laboris aute. Deserunt minim exercitation enim nulla pariatur commodo occaecat sint mollit mollit consectetur magna velit ullamco.</p>
+  </div>
+
+  <div class="p-5 bg-gray-50 my-5 shadow rounded-lg">
+    <p>Eu Lorem ullamco duis ex ea in incididunt nisi ut enim adipisicing aliqua. Labore irure ex veniam dolore eiusmod occaecat labore labore reprehenderit consequat sunt id laboris aute. Deserunt minim exercitation enim nulla pariatur commodo occaecat sint mollit mollit consectetur magna velit ullamco.</p>
+  </div>
+
+  <div class="p-5 bg-gray-50 my-5 shadow rounded-lg">
+    <p>Eu Lorem ullamco duis ex ea in incididunt nisi ut enim adipisicing aliqua. Labore irure ex veniam dolore eiusmod occaecat labore labore reprehenderit consequat sunt id laboris aute. Deserunt minim exercitation enim nulla pariatur commodo occaecat sint mollit mollit consectetur magna velit ullamco.</p>
+  </div>
+
 
   </div>
 </section>
+
+<!--current projects-->
+<section>
+<div class="container mt-32 mx-32 flex justify-center">
+  <div class="grid md:grid-cols-3 gap-32 place-content-center">
+    <div class="max-w-sm rounded overflow-hidden shadow-lg">
+      <img class="w-full" src="{project1}" alt="Yunime">
+      <div class="px-6 py-4">
+        <div class="font-bold text-xl mb-2">The Coldest Sunset</div>
+        <p class="text-gray-700 text-base">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil.
+        </p>
+      </div>
+      <div class="px-6 pt-4 pb-2">
+        <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#photography</span>
+        <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#travel</span>
+        <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#winter</span>
+      </div>
+    </div>
+    <div class="max-w-sm rounded overflow-hidden shadow-lg">
+      <img class="w-full" src="{project1}" alt="Yunime">
+      <div class="px-6 py-4">
+        <div class="font-bold text-xl mb-2">The Coldest Sunset</div>
+        <p class="text-gray-700 text-base">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil.
+        </p>
+      </div>
+      <div class="px-6 pt-4 pb-2">
+        <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#photography</span>
+        <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#travel</span>
+        <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#winter</span>
+      </div>
+    </div>
+    <div class="max-w-sm rounded overflow-hidden shadow-lg">
+      <img class="w-full" src="{project1}" alt="Yunime">
+      <div class="px-6 py-4">
+        <div class="font-bold text-xl mb-2">The Coldest Sunset</div>
+        <p class="text-gray-700 text-base">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil.
+        </p>
+      </div>
+      <div class="px-6 pt-4 pb-2">
+        <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#photography</span>
+        <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#travel</span>
+        <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#winter</span>
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+
+<!--social section-->
+<section>
+<div class="container mt-32">
+            
+</div>
+</section>
+
 
 <style>
   .section_background-wrap {
