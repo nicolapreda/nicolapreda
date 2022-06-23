@@ -25,10 +25,7 @@
 <!--START_SECTION:waka-->
 
 ```text
-Svelte       6 hrs 23 mins   ████████████████▓░░░░░░░░   66.29 %
-C++          1 hr 28 mins    ███▓░░░░░░░░░░░░░░░░░░░░░   15.26 %
-Bash         55 mins         ██▒░░░░░░░░░░░░░░░░░░░░░░   09.58 %
-Other        24 mins         █░░░░░░░░░░░░░░░░░░░░░░░░   04.30 %
+No activity tracked
 ```
 
 <!--END_SECTION:waka-->
