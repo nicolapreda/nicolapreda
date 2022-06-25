@@ -5,7 +5,7 @@
   import project1 from "./assets/img/Yunime.svg";
 </script>
 
-<section class="h-300">
+<navbar>
   <div class="z-0 section_background-wrap absolute">
     <canvas
       style="--gradient-color-1:#CFD3FF;--gradient-color-2:#FAD755;--gradient-color-3:#7038ff;--gradient-color-4:#e2e2e2;"
@@ -14,15 +14,15 @@
       class="isLoaded w-full h-240"
     />
   </div>
-  <div class="navbar py-5 w-full absolute z-20 px-32">
-    <div class="grid grid-cols-2 gap-4">
+  <div class="navbar py-5 w-full px-64">
+    <div class="grid grid-cols-3 gap-4">
       <div class="navbar-brand ">
         <a href="index.html" class="flex items-center justify-start">
           <img src={logo} alt="logo" class="logo h-10 w-10 mr-5" />
           Nicola Preda
         </a>
       </div>
-      <div class="flex items-center justify-end">
+      <div class="flex items-center justify-center">
         <a
           href="about.html"
           class="ml-10 hover:border-b-4 hover:border-indigo-500">About</a
@@ -40,34 +40,21 @@
           class="ml-10 hover:border-b-4 hover:border-indigo-500">Projects</a
         >
       </div>
+      <div class="justify-end">
+        <a href="/blog">Blog</a>
+      </div>
     </div>
   </div>
+</navbar>
 
-  <div class="grid md:grid-cols-2 w-full gap-16 z-10 mx-auto px-32">
-    <div class="mt-64">
+  <div class="flex items-center">
       <p class=" text-2xl">Hello, I’m Nicola Preda</p>
-      <h1
-        class="text-gray-900 my-5 lg:text-8xl md:text-6xl sm:text-6xl font-extrabold"
-      >
-        Developer <br />& Designer
-      </h1>
-      <p class="text-lg sm:text-xl mb-5">
-        Student, about to build a SaaS <br />for smart food storage
-      </p>
-      <a class="px-5 py-3 bg-blue-400 rounded-full shadow" href="helo"
-        >About Me</a
-      >
-    </div>
-    <div class="md:mt-32">
-      <img src={heading} class="w-140" alt="pic" />
-    </div>
   </div>
-</section>
 
 <!--hero section-->
 <section>
-  <div class="container mx-32">
-    <div class="grid grid-cols-2 gap-16">
+  <div class="  bg-indigo-50">
+    <div class="grid grid-cols-2 gap-16 mx-32">
       <div>
         <!--about img-->
         <img src={about} alt="about" class="w-full h-auto" />
@@ -160,7 +147,7 @@
 
 <!--current projects-->
 <section>
-<div class="container mt-32 mx-32 flex justify-center">
+<div class="mt-32 mx-32 flex justify-center">
   <div class="grid md:grid-cols-3 gap-32 place-content-center">
     <div class="max-w-sm rounded overflow-hidden shadow-lg">
       <img class="w-full" src="{project1}" alt="Yunime">
@@ -216,12 +203,4 @@
 </section>
 
 
-<style>
-  .section_background-wrap {
-    width: 100%;
-    height: 760px;
-    transform: skewY(-12deg);
-    transform-origin: 0;
-    top: 0;
-  }
-</style>
+
