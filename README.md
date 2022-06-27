@@ -25,7 +25,8 @@
 <!--START_SECTION:waka-->
 
 ```text
-No activity tracked
+Svelte   19 mins         █████████████████████▓░░░   86.36 %
+Other    3 mins          ███▒░░░░░░░░░░░░░░░░░░░░░   13.64 %
 ```
 
 <!--END_SECTION:waka-->
