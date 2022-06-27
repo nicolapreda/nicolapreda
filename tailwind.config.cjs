@@ -20,7 +20,12 @@ module.exports = {
             width: {
                 '140': '50rem',
                 '280': '100rem',
+            },
+            lineHeight: {
+                'extra-loose': '2.5',
+                '12': '3rem',
             }
+
 
         }
     },
