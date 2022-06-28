@@ -24,6 +24,9 @@ module.exports = {
             lineHeight: {
                 'extra-loose': '2.5',
                 '12': '3rem',
+            },
+            margin: {
+                'm2': '-1.3rem',
             }
 
 
