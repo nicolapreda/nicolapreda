@@ -7,6 +7,7 @@
   import webtrotter2021 from "./assets/img/webtrotter_2021.jpg";
   import webtrotter2020 from "./assets/img/webtrotter_2020.jpg";
   import dispensa from "./assets/img/dispensa_hero.jpg";
+  import curriculum from "./assets/Curriculum_NP.pdf";
 
 
   //icons
@@ -36,14 +37,15 @@
             >About</a
           >
           <a
+          href="#resume"
+          class="ml-10 hover:border-b-4 hover:border-indigo-500 transition"
+          >Resume</a
+        >
+
+          <a
             href="#contactme"
             class="ml-10 hover:border-b-4 hover:border-indigo-500 transition"
             >Contact Me</a
-          >
-          <a
-            href="#dispensa"
-            class="ml-10 hover:border-b-4 hover:border-indigo-500 transition"
-            >Projects</a
           >
         </div>
         <div>
@@ -64,7 +66,7 @@
     Nicola Preda.
   </h1>
   <h1 class=" text-3xl font-light">
-    I'm a novice programmer and designer, and I love creating projects. I'm currently building my first SaaS application: <a href="https://dispensapp.com" class="underline-offset-2 hover:underline font-bold">dispensapp.com</a>
+    I'm a novice programmer and designer, and I love creating projects. <br> I'm currently building my first SaaS application: <a href="https://dispensapp.com" target=”_blank”  class="underline-offset-2 hover:underline font-bold">dispensapp.com</a>
   </h1>
 </div>
 
@@ -93,8 +95,8 @@
         </p>
         <div class="mt-10">
           <a
-            class="bg-indigo-200 px-7 py-5 rounded-2xl drop-shadow-md text-xl"
-            href="#">Download CV</a
+            class="bg-indigo-200 px-7 py-5 rounded-2xl drop-shadow-md text-xl" target=”_blank” 
+            href={curriculum}>Download CV</a
           >
         </div>
       </div>
@@ -103,12 +105,12 @@
 </section>
 
 <!--roadmap education, experience and awards-->
-
+<a name="resume"></a>
 <section class="px-64 grid grid-cols-3 mt-32 gap-16">
   <div>
     <div class="grid grid-rows-3">
       <a
-        href="#education"
+        href="#education" 
         class="hover:border-b-4 hover:border-indigo-500 transition">Education</a
       >
       <a
@@ -155,7 +157,7 @@
         <p>
           🎖️ Winner of the <b>"Webtrotter 2021"</b> award.
           <a
-            href={webtrotter2021}
+            href={webtrotter2021} target=”_blank” 
             class="underline-offset-2 hover:underline  transition text-indigo-500">Here</a
           > you can find the link to the award
         </p>
@@ -164,7 +166,7 @@
         <p>
           🎖️ 4th place at the <b>"Webtrotter 2020"</b> award.
           <a
-            href={webtrotter2020}
+            href={webtrotter2020} target=”_blank” 
             class="underline-offset-2 hover:underline transition text-indigo-500">Here</a
           > you can find the link to the award
         </p>
@@ -174,7 +176,7 @@
         <p>
           💪🏼 70th place at the <b>"Webtrotter 2022"</b> award.
             <a
-              href="https://domino.aicanet.it/aica/ecdlcompetition.nsf/Webtrotter2022-Classifica-Finale-3-4.pdf"
+              href="https://domino.aicanet.it/aica/ecdlcompetition.nsf/Webtrotter2022-Classifica-Finale-3-4.pdf" target=”_blank” 
               class="underline-offset-2 hover:underline transition text-indigo-500">Here</a
             > you can find the link to the classification
           </p>
@@ -188,7 +190,7 @@
         <p>
           🖥️ Attended the AR / VR course provided by the school. 
           <a
-            href={certificateAR}
+            href={certificateAR} target=”_blank” 
             class="underline-offset-2 hover:underline transition text-indigo-500">Here</a
           > you can find the certificate.
         </p>
@@ -199,7 +201,7 @@
         <p>
           🧑‍💻 Attended the Javascript course provided by Udemy. 
           <a
-            href="https://udemy-certificate.s3.amazonaws.com/image/UC-119308c9-a0a1-4d3a-80af-140be4228f51.jpg?v=1591534697000"
+            href="https://udemy-certificate.s3.amazonaws.com/image/UC-119308c9-a0a1-4d3a-80af-140be4228f51.jpg?v=1591534697000" target=”_blank” 
             class="underline-offset-2 hover:underline transition text-indigo-500">Here</a
           > you can find the certificate.
         </p>
@@ -209,7 +211,7 @@
         <p>
           🐧 Attended the Linux course provided by Sorint. 
           <a
-            href={certificateLinux}
+            href={certificateLinux} target=”_blank” 
             class="underline-offset-2 hover:underline transition text-indigo-500">Here</a
           > you can find the certificate.
         </p>
@@ -237,12 +239,11 @@
       <div>
         <h2 class="text-4xl font-bold text-gray-900">Dispensa</h2>
         <p class=" text-gray-600 mt-5 text-xl font-normal leading-relaxed">
-          Dispensa is a web application that allows you to manage your
-          food storage.
+          Organize and control your food storage in a smart, fast and intelligent way. Save time searching for supermarket deals💰 
         </p>
         <div class="mt-10">
           <a
-              class="bg-indigo-200 px-7 py-5 rounded-2xl drop-shadow-md text-xl"
+              class="bg-indigo-200 px-7 py-5 rounded-2xl drop-shadow-md text-xl" target=”_blank” 
               href="https://dispensapp.com/">Project Page</a
           >
         </div>
@@ -262,7 +263,7 @@
       <!--contact card-->
       <div class="bg-indigo-200 flex items-center  rounded-lg drop-shadow-lg">
         <!--twitter img from web-->
-        <a href="https://twitter.com/nicolapreda_"><img
+        <a href="https://twitter.com/nicolapreda_" target=”_blank” ><img
           src={twitter}
           alt="Twitter"
           class="w-64 h-auto p-16"
@@ -271,7 +272,7 @@
   
       <div class="bg-indigo-200 flex items-center  rounded-lg drop-shadow-lg">
         <!--twitter img from web-->
-        <a href="mailto:nicola.preda05@gmail.com"><img
+        <a href="mailto:nicola.preda05@gmail.com" target=”_blank” ><img
           src={gmail}
           alt="Mail"
           class="w-64 h-auto p-16"
@@ -289,7 +290,7 @@
   
       <div class="bg-indigo-200 flex items-center  rounded-lg drop-shadow-lg">
         <!--twitter img from web-->
-        <a href="https://www.linkedin.com/in/nicola-preda-5b0722233"><img
+        <a href="https://www.linkedin.com/in/nicola-preda-5b0722233" target=”_blank” ><img
           src={linkedin}
           alt="Linkedin"
           class="w-64 h-auto p-16"
@@ -298,7 +299,7 @@
   
       <div class="bg-indigo-200 flex items-center  rounded-lg drop-shadow-lg">
         <!--twitter img from web-->
-        <a href="https://t.me/niocolapreda"><img
+        <a href="https://t.me/nicolapreda" target=”_blank” ><img
           src={telegram}
           alt="Telegram"
           class="w-64 h-auto p-16"
@@ -310,13 +311,47 @@
 </section>
 
 <footer>
-  <div class="w-full py-24 bg-yellow-300">
-    <div class="text-center">
-          <a href="mailto:nicola.preda05@gmail.com">nicola.preda05@gmail.com</a>
-        <h3>This website is cookie free🍪</h3>
-        <p class="text-center text-gray-500 text-xs">
-          &copy; 2022 Nicola Preda. All rights reserved.
-        </p>
+  <div class="w-full bg-yellow-50">
+    <div class="text-center py-12">
+        <h3>This site is cookie free🍪</h3>
+
+        <div class="flex justify-center mt-5">
+          <a href="https://twitter.com/nicolapreda_" target=”_blank” ><img
+            src={twitter}
+            alt="Twitter"
+            class="w-5 h-5 mx-1"
+          /></a>
+          <a href="https://t.me/nicolapreda" target=”_blank” ><img
+            src={telegram}
+            alt="Telegram"
+            class="w-5 h-5 mx-1"
+          /></a>
+          <a href="https://www.linkedin.com/in/nicola-preda-5b0722233" target=”_blank” ><img
+            src={linkedin}
+            alt="Linkedin"
+            class="w-5 h-5 mx-1"
+          /></a>
+          <a href="https://github.com/nicolapreda"><img
+            src={github}
+            alt="Github"
+            class="w-5 h-5 mx-1"
+          /></a>
+          <a href="mailto:nicola.preda05@gmail.com" target=”_blank” ><img
+            src={gmail}
+            alt="Mail"
+            class="w-5 h-5 mx-1"
+          /></a>
+  
+  
+  
+        </div>
+    </div>
+    <div class="bg-yellow-200 py-5">
+      <p class="text-center text-gray-500 text-xs">
+        &copy; 2022 Nicola Preda. All rights reserved.
+      </p>
     </div>
   </div>
+
+  
 </footer>
