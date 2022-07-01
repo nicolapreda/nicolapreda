@@ -1,4 +1,5 @@
 <script context="module"> 
+    export const prerender = true;
     const allPosts = import.meta.glob("./*{md,svx}")
     console.log(allPosts)
 

@@ -1,3 +1,7 @@
+<script context="module">
+  export const prerender = true;
+</script>
+
 <script>
   import logo from "./assets/img/pp.svg";
   import about from "./assets/img/about-me2.jpg";
