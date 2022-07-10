@@ -7,26 +7,34 @@ import mdsvexConfig from './mdsvex.config.js';
 
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
-        extensions: [".svelte", ...mdsvexConfig.extensions],
+    extensions: ['.svelte', ...mdsvexConfig.extensions],
 
-        // Consult https://github.com/sveltejs/svelte-preprocess
-        // for more information about preprocessors
-        preprocess: [preprocess(), mdsvex(mdsvexConfig)],
-
-        kit: {
-            prerender: {
-                onError: ({ status, path, referrer, referenceType }) => {
-                        console.warn(
-                                `${status} ${path}${referrer ? ` (${referenceType} from ${referrer})` : ''}`
-              );
-            },
-        },
-        adapter: adapter({
-            pages: "build",
-            assets: "build",
-            fallback: null,
+    // Consult https://github.com/sveltejs/svelte-preprocess
+    // for more information about preprocessors
+    preprocess: [
+        preprocess({
+            postcss: true
         }),
-    },
+        mdsvex(mdsvexConfig)
+    ],
+
+    kit: {
+        paths: {
+            base: '/nicolapreda'
+        },
+        // target: '#svelte',
+        adapter: adapter({
+            pages: 'build',
+            assets: 'build',
+            fallback: null
+        }),
+        prerender: {
+            crawl: true,
+            enabled: true,
+            onError: 'continue',
+            default: true
+        },
+    }
 };
 
 export default config;
