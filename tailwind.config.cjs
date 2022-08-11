@@ -2,6 +2,12 @@ module.exports = {
     content: ['./src/**/*.{html,js,svelte,ts}'],
     theme: {
         extend: {
+            
+      fontFamily: {
+        'poppins': ['Poppins', 'sans-serif'] ,
+        'figtree': ['Figtree', 'sans-serif'] 
+
+      },
             colors: {
                 'primary-blue': '#03045E',
                 'secondary-blue': '#F5F9FF',

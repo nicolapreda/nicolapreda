@@ -1,0 +1,31 @@
+
+
+---
+title: 2. Inferno
+---
+
+
+<div class="mx-32">
+    <h1 class="text-6xl font-semibold mt-8">{title}</h1>
+
+    <div class="content text-xl mt-8">
+        Inferno è il termine con il quale si è soliti indicare il luogo di punizione e di disperazione che, secondo molte religioni (in special modo quelle abramitiche come Cristianesimo, Ebraismo ed Islam) attende,
+        dopo la morte, le anime degli uomini che hanno scelto in vita di compiere il male.
+        <br>
+        <br>
+        Esso viene utilizzato in molteplici casi anche per indicare una condizione mentale o fisica spiacevole, fastidiosa o angosciosa che si presenta durante la vita terrena.    
+        <br>
+        <br>
+        Io penso che la concezione di inferno possa raffigurare al meglio un momento particolare che ognuno di noi, inevitabilmente, si trova ad attraversare nel corso della propria vita: uno stato psicologico malinconico e particolarmente pesante, in cui la riflessione ricade sul senso ed il significato del proprio essere per come realmente è e si presenta, escludendo tutte quelle che potrebbero essere definite come “coperture” e giustificazioni quotidiane (impegni, delusioni o successi, affetti familiari e amicizie) dei propri errori e debolezze.    
+        <br>
+        <br>
+        Il termine "Inferno"  porta, inoltre, a pensare che le uniche certezze effettive che la vita offre riguardino il presente (fatto di concretezza, di "qui" e di "adesso"), il passato (indipendente dal suo essere bello o brutto) e il fatto che un giorno si dovrà abbandonare questa vita terrena.    <br>
+        <br>
+        Oltre a queste constatazioni, nulla è più sicuro: nessuno può sapere nulla del proprio futuro oppure rispondere a domande esistenziali (a cui l’uomo ha cercato più volte nel corso dei millenni di trovare una conclusione e soluzione universale e plausibile, utilizzando, per esempio, le religioni).    <br>
+        <br>
+        In conclusione sono del parere che, senza prendere una ferma posizione a riguardo, la vita non possa avere un reale e degno significato.
+        È proprio a questo punto che il termine “inferno” entra in gioco nella sue molteplici sfumature di significato: perché vivere se un giorno si smetterà di essere parte integrante di questo mondo terreno? Perché impegnarsi e spendersi per sogni e speranze che si dissolveranno assieme al corpo di ciascuno di noi? Perché impegnarsi tanto per creare un futuro quando un giorno dovremo morire?    
+        <br>
+        
+  </div>
+</div>

@@ -19,9 +19,7 @@ const config = {
     ],
 
     kit: {
-        paths: {
-            base: '/nicolapreda'
-        },
+        
         // target: '#svelte',
         adapter: adapter({
             pages: 'build',
