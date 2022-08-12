@@ -11,7 +11,8 @@
   import webtrotter2020 from "./assets/img/webtrotter_2020.jpg";
   import dispensa from "./assets/img/hero-dispensa.webp";
   import dispensaLogo from "./assets/img/logo_text.svg";
-
+  import damimmo_logo from "./assets/img/damimmo-logo.png";
+  import esperia_logo from "./assets/img/esperia-logo.jpg";
   import curriculum from "./assets/Curriculum_NP.pdf";
 
   //icons
@@ -42,18 +43,18 @@
         <div>
           <a
             href="#about"
-            class="ml-10 hover:border-b-4 hover:border-indigo-500 transition"
+            class=" hover:border-b-4 hover:border-indigo-500 transition"
             >About</a
           >
           <a
             href="#resume"
-            class="ml-10 hover:border-b-4 hover:border-indigo-500 transition"
+            class="md:mx-10 mx-5 hover:border-b-4 hover:border-indigo-500 transition"
             >Resume</a
           >
 
           <a
             href="#contactme"
-            class="ml-10 hover:border-b-4 hover:border-indigo-500 transition"
+            class=" hover:border-b-4 hover:border-indigo-500 transition"
             >Contact Me</a
           >
         </div>
@@ -70,7 +71,7 @@
 </navbar>
 
 <div class="text-center lg:mx-64 md:mx-32 mx-5 py-32">
-  <h1 class=" leading-normal text-4xl font-normal">Hello, I'm</h1>
+  <h1 class=" leading-normal font-figtree text-4xl font-normal">Hello, I'm</h1>
   <h1 class="leading-normal font-figtree text-6xl font-bold text-indigo-800">
     Nicola Preda.
   </h1>
@@ -88,18 +89,18 @@
 <a name="about" />
 <section>
   <div class="bg-indigo-50 py-32">
-    <div class="grid xl:grid-cols-2 gap-16 lg:mx-64 md:mx-32 mx-5">
+    <div class="grid xl:grid-cols-2 gap-16 lg:mx-64 md:mx-32 mx-5 justify-items-center ">
       <div>
         <!--about img-->
         <img
           src={about}
           alt="about"
-          class="w-128 h-full drop-shadow-md rounded-md"
+          class="w-128 drop-shadow-md rounded-md"
         />
       </div>
 
-      <div>
-        <h2 class="text-4xl font-bold text-gray-900">About Me</h2>
+      <div class="text-center xl:text-start">
+        <h2 class="text-4xl font-bold text-indigo-900 font-figtree">About Me</h2>
         <p class=" text-gray-600 mt-5 text-xl font-normal leading-relaxed">
           I'm a student that loves to create and build projects. I'm currently studying Computer Science at ITIS Paleocapa of Bergamo.
           I'm also the institute representative of my school, and I love organizing events and managing all the initiatives that are proposed within it.
@@ -152,22 +153,32 @@ I read weekly, with great interest, the column of Alessandro D'Avenia <a href="h
     <div>
       <a name="education"></a>
 
-      <h1 class="text-indigo-600 font-semibold text-4xl">Education</h1>
-      <div class="border-l-2 border-indigo-500">
+      <h1 class="text-indigo-900 font-semibold text-4xl font-figtree">Education</h1>
+      <div class="border-l-2 border-indigo-900">
         <div class="mt-10 h-4 w-4" />
         <div
-          class="h-3 w-3 mt-10 relative bg-indigo-500 rounded-full"
+          class="h-3 w-3 mt-10 relative bg-indigo-900 rounded-full"
           style="margin-left: -7px;"
         />
         <div class="pl-16 mt-m2">
-          <p class="text-xl font-light">2019 - present</p>
-          <h1 class="text-3xl font-semibold">ITIS P. Paleocapa - Bergamo</h1>
-          <h2 class="text-2xl font-normal">👨‍💻Computer expert</h2>
-          <p class="text font-normal">
-            During my 5 years of studies I grew a lot from the computer science
-            point of view, learning the basics of programming and from a human
-            and organizational point of view, thanks to my two years as student
-            representative.
+          
+          <div class="flex items-center">
+            <div>
+              <img src={esperia_logo} alt="Esperia Logo" class="w-12 rounded-full drop-shadow-md">
+
+            </div>
+            <div class="ml-5">
+              <h1 class="text-3xl font-semibold">ITIS P. Paleocapa - Bergamo</h1>
+              <p class="text-xl font-light">2019 - present</p>
+  
+            </div>
+  
+          </div>
+          <h2 class="text-2xl font-normal mt-2 text-gray-900">Computer expert</h2>
+          <p class="text font-normal text-gray-800">
+            I'm currently growing a lot from the computer science point of view, learning the basics of programming
+            and from a human and organizational point of view, thanks to my 2 years as a member of student council and school representative .
+            
           </p>
         </div>
       </div>
@@ -178,18 +189,28 @@ I read weekly, with great interest, the column of Alessandro D'Avenia <a href="h
     <div class="mt-32">
       <a name="experience"></a>
 
-      <h1 class="text-indigo-600 font-semibold text-4xl">Experience</h1>
-      <div class="border-l-2 border-indigo-500">
+      <h1 class="text-indigo-900 font-semibold text-4xl font-figtree">Experience</h1>
+      <div class="border-l-2 border-indigo-900">
         <div class="mt-10 h-4 w-4" />
         <div
-          class="h-3 w-3 mt-10 relative bg-indigo-500 rounded-full"
+          class="h-3 w-3 mt-10 relative bg-indigo-900 rounded-full"
           style="margin-left: -7px;"
         />
         <div class="pl-16 mt-m2">
-          <p class="text-xl font-light">July 2022 - August 2022</p>
-          <h1 class="text-3xl font-semibold">Da Mimmo Ai colli - Longuelo(BG)</h1>
-          <h2 class="text-2xl font-normal">Waiter</h2>
-          <p class="text font-normal">
+          <div class="flex items-center">
+            <div>
+              <img src={damimmo_logo} alt="Da Mimmo Ai Colli" class="w-10 drop-shadow-md">
+
+            </div>
+            <div class="ml-5">
+              <h1 class="text-3xl font-semibold ">Da Mimmo Ai colli - Longuelo(BG)</h1>
+              <p class="text-xl font-light ">July 2022 - August 2022</p>
+
+            </div>
+
+          </div>
+          <h2 class="text-2xl font-normal mt-2 text-gray-900">Waiter</h2>
+          <p class="text font-normal text-gray-800">
             During these 2 months, I worked as a waiter at "Da Mimmo - Ai Colli" restaurant. I was responsible for the service of the guests, and for the management of the tables.
           </p>
         </div>
@@ -201,8 +222,8 @@ I read weekly, with great interest, the column of Alessandro D'Avenia <a href="h
     <div class=" mt-32">
       <a name="awards"></a>
 
-      <h1 class="text-indigo-600 font-semibold text-4xl">Awards</h1>
-      <div class="p-5 bg-gray-50 my-7 shadow-lg rounded-lg ">
+      <h1 class="text-indigo-900 font-semibold text-4xl font-figtree">Awards</h1>
+      <div class="p-5 bg-indigo-50 hover:bg-indigo-100 transition my-7 shadow-lg rounded-lg ">
         <p>
           🎖️ Winner of the <b>
           <a
@@ -213,7 +234,7 @@ I read weekly, with great interest, the column of Alessandro D'Avenia <a href="h
           > </b> award.
         </p>
       </div>
-      <div class="p-5 bg-gray-50 my-7 shadow rounded-lg">
+      <div class="p-5 bg-indigo-50 hover:bg-indigo-100 transition my-7 shadow rounded-lg">
         <p>
           🎖️ 4th place at the <b>
           <a
@@ -225,7 +246,7 @@ I read weekly, with great interest, the column of Alessandro D'Avenia <a href="h
         </p>
       </div>
 
-      <div class="p-5 bg-gray-50 my-7 shadow rounded-lg">
+      <div class="p-5 bg-indigo-50 hover:bg-indigo-100 transition my-7 shadow rounded-lg">
         <p>
           💪🏼 70th place at the <b>
           <a
@@ -241,8 +262,8 @@ I read weekly, with great interest, the column of Alessandro D'Avenia <a href="h
     <div class=" my-32">
       <a name="certificates"></a>
 
-      <h1 class="text-indigo-600 font-semibold text-4xl">Certificates</h1>
-      <div class="p-5 bg-gray-50 my-7 shadow-lg rounded-lg">
+      <h1 class="text-indigo-900 font-semibold text-4xl font-figtree">Certificates</h1>
+      <div class="p-5 bg-indigo-50 hover:bg-indigo-100 transition my-7 shadow-lg rounded-lg">
         <p>
           🖥️ Attended the
           <a
@@ -253,7 +274,7 @@ I read weekly, with great interest, the column of Alessandro D'Avenia <a href="h
           > provided by the school.
         </p>
       </div>
-      <div class="p-5 bg-gray-50 my-7 shadow-lg rounded-lg">
+      <div class="p-5 bg-indigo-50 hover:bg-indigo-100 transition my-7 shadow-lg rounded-lg">
         <p>
           🧑‍💻 Attended the
           <a
@@ -265,7 +286,7 @@ I read weekly, with great interest, the column of Alessandro D'Avenia <a href="h
         </p>
       </div>
 
-      <div class="p-5 bg-gray-50 my-7 shadow-lg rounded-lg">
+      <div class="p-5 bg-indigo-50 hover:bg-indigo-100 transition my-7 shadow-lg rounded-lg">
         <p>
           🐧 Attended the
           <a

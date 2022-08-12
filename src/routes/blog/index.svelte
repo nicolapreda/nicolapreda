@@ -1,5 +1,5 @@
 <script context="module">
- const allPosts = import.meta.glob("./*.svx");
+ const allPosts = import.meta.glob("./*.md");
  let body = [];
  for (let path in allPosts) {
   body.push(
@@ -48,15 +48,13 @@
     </nav>
 </navbar>
 
-<section class="mx-64 my-16">
+<section class="mx-5 md:mx-32 lg:mx-64 my-16">
     <h1 class="text-6xl font-semibold">Blog</h1>
 
-    <ul class="mt-8">
+    <div class="mt-8 grid grid-cols-2 lg:gap-16 gap-4">
       {#each  posts as {path, metadata: {title}} }
-          <li class="p-5 my-10 rounded-lg bg-indigo-50 hover:bg-indigo-100 transition">
-              <a class="text-2xl" href={`/blog/${path.replace(".md","")}`}>{title}</a>
-          </li>
+              <a class="text-2xl p-5 my-10 rounded-lg bg-indigo-50 hover:bg-indigo-100 transition drop-shadow-md" href={`/blog/${path.replace(".md","")}`}>{title}</a>
       {/each}
-  </ul>
+        </div>
   
 </section>
