@@ -25,49 +25,51 @@
 
   import mailBlack from "./assets/img/mail-ico-black.svg";
   import twitterBlack from "./assets/img/twitter-ico-black.svg";
+
+  
 </script>
 
 
 <navbar>
-  <nav
-    class="sticky top-0 z-10 bg-white backdrop-filter backdrop-blur-lg bg-opacity-30 border-b  drop-shadow-md firefox:bg-opacity-30"
-  >
-    <div class="mx-5 md:mx-32 lg:mx-64">
-      <div class="flex items-center justify-between h-16">
-        <div class="navbar-brand">
-          <a href="https://nicolapreda.me">
-            <img src={logo} alt="logo" class="logo h-10 w-10 mr-5" />
-          </a>
-          
-        </div>
-        <div>
-          <a
-            href="#about"
-            class=" hover:border-b-4 hover:border-indigo-500 transition"
-            >About</a
-          >
-          <a
-            href="#resume"
-            class="md:mx-10 mx-5 hover:border-b-4 hover:border-indigo-500 transition"
-            >Resume</a
-          >
+  
+<nav class="bg-white border-gray-200 px-2 sm:px-4 py-2.5 rounded dark:bg-gray-900">
+  
 
-          <a
-            href="#contactme"
-            class=" hover:border-b-4 hover:border-indigo-500 transition"
-            >Contact Me</a
-          >
-        </div>
-        <div>
-          <a
-            href="/blog/"
-            class="px-4 py-2 bg-indigo-200 hover:bg-indigo-400 transition rounded-lg"
-            >Blog</a
-          >
-        </div>
-      </div>
-    </div>
-  </nav>
+  <div class="container flex flex-wrap justify-between items-center mx-auto">
+  <a href="https://flowbite.com/" class="flex items-center">
+      <img src="https://flowbite.com/docs/images/logo.svg" class="mr-3 h-6 sm:h-9" alt="Flowbite Logo">
+      <span class="self-center text-xl font-semibold whitespace-nowrap dark:text-white">Flowbite</span>
+      <button id="theme-toggle" type="button" class="text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg text-sm p-2.5">
+        <svg id="theme-toggle-dark-icon" class="hidden w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path></svg>
+        <svg id="theme-toggle-light-icon" class="hidden w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z" fill-rule="evenodd" clip-rule="evenodd"></path></svg>
+    </button>
+  </a>
+  <div class="flex md:order-2">
+      <button type="button" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-3 md:mr-0 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Blog</button>
+      <button data-collapse-toggle="navbar-cta" type="button" class="inline-flex items-center p-2 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-cta" aria-expanded="false">
+        <span class="sr-only">Open main menu</span>
+        <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path></svg>
+    </button>
+  </div>
+  <div class="hidden justify-between items-center w-full md:flex md:w-auto md:order-1" id="navbar-cta">
+    <ul class="flex flex-col p-4 mt-4 bg-gray-50 rounded-lg border border-gray-100 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+      <li>
+        <a href="#" class="block py-2 pr-4 pl-3 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white" aria-current="page">Home</a>
+      </li>
+      <li>
+        <a href="#" class="block py-2 pr-4 pl-3 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-white dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">About</a>
+      </li>
+      <li>
+        <a href="#" class="block py-2 pr-4 pl-3 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-white dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Services</a>
+      </li>
+      <li>
+        <a href="#" class="block py-2 pr-4 pl-3 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-white dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Contact</a>
+      </li>
+    </ul>
+  </div>
+  </div>
+</nav>
+
 </navbar>
 
 <div class="text-center lg:mx-64 md:mx-32 mx-5 py-32">
@@ -89,6 +91,7 @@
 <a name="about" />
 <section>
   <div class="bg-indigo-50 py-32">
+    
     <div class="grid xl:grid-cols-2 gap-16 lg:mx-64 md:mx-32 mx-5 justify-items-center ">
       <div>
         <!--about img-->
@@ -168,14 +171,14 @@ I read weekly, with great interest, the column of Alessandro D'Avenia <a href="h
 
             </div>
             <div class="ml-5">
-              <h1 class="text-3xl font-semibold">ITIS P. Paleocapa - Bergamo</h1>
-              <p class="text-xl font-light">2019 - present</p>
+              <h1 class="md:text-3xl text-xl font-semibold">ITIS P. Paleocapa - Bergamo</h1>
+              <p class="md:text-lg text-normal font-light">2019 - present</p>
   
             </div>
   
           </div>
-          <h2 class="text-2xl font-normal mt-2 text-gray-900">Computer expert</h2>
-          <p class="text font-normal text-gray-800">
+          <h2 class="md:text-2xl text-md font-semibold mt-2 text-gray-900">Computer expert</h2>
+          <p class="text-sm md:text-normal font-normal text-gray-800">
             I'm currently growing a lot from the computer science point of view, learning the basics of programming
             and from a human and organizational point of view, thanks to my 2 years as a member of student council and school representative .
             
@@ -199,18 +202,18 @@ I read weekly, with great interest, the column of Alessandro D'Avenia <a href="h
         <div class="pl-16 mt-m2">
           <div class="flex items-center">
             <div>
-              <img src={damimmo_logo} alt="Da Mimmo Ai Colli" class="w-10 drop-shadow-md">
+              <img src={damimmo_logo} alt="Da Mimmo Ai Colli" class="w-12 drop-shadow-md">
 
             </div>
             <div class="ml-5">
-              <h1 class="text-3xl font-semibold ">Da Mimmo Ai colli - Longuelo(BG)</h1>
-              <p class="text-xl font-light ">July 2022 - August 2022</p>
+              <h1 class="md:text-3xl text-xl font-semibold ">Da Mimmo Ai colli - Longuelo(BG)</h1>
+              <p class="md:text-lg text-normal font-light ">July 2022 - August 2022</p>
 
             </div>
 
           </div>
-          <h2 class="text-2xl font-normal mt-2 text-gray-900">Waiter</h2>
-          <p class="text font-normal text-gray-800">
+          <h2 class="md:text-2xl text-md font-semibold mt-2 text-gray-900">Waiter</h2>
+          <p class="text-sm md:text-normal font-normal text-gray-800">
             During these 2 months, I worked as a waiter at "Da Mimmo - Ai Colli" restaurant. I was responsible for the service of the guests, and for the management of the tables.
           </p>
         </div>
@@ -304,8 +307,8 @@ I read weekly, with great interest, the column of Alessandro D'Avenia <a href="h
 <!--Dispensa project-->
 
 <section>
-  <div class="flex bg-indigo-50 pb-32 lg:pb-0">
-    <div class="grid lg:grid-cols-2 gap-16 lg:mx-64 md:mx-32 mx-5 items-center">
+  <div class="flex bg-indigo-50 pb-32 xl:pb-0">
+    <div class="grid xl:grid-cols-2 gap-16 lg:mx-64 md:mx-32 mx-5 items-center">
       <div >
         <!--about img-->
         <img
@@ -318,7 +321,7 @@ I read weekly, with great interest, the column of Alessandro D'Avenia <a href="h
       <div>
         <a href="https://dispensapp.com" target="”_blank”" alt="Dispensa website"><img src={dispensaLogo} alt="Dispensa logo" class="w-1/3"></a>
         <h2 class="text-4xl font-bold text-gray-900">Smart manage
-          of food storage 🥗</h2>
+          of <br> food storage 🥗</h2>
         <p class=" text-gray-600 mt-5 text-xl font-normal leading-relaxed">
           Organize and control your food storage in a smart, fast and
           intelligent way. Save time searching for supermarket deals💰
@@ -490,3 +493,4 @@ I read weekly, with great interest, the column of Alessandro D'Avenia <a href="h
     </div>
   </div>
 </footer>
+
