@@ -21,6 +21,8 @@
 }
 
 
+
+
 ```
 <!--START_SECTION:waka-->
 
@@ -36,6 +38,7 @@ Text         3 mins          ░░░░░░░░░░░░░░░░░
 <!--END_SECTION:waka-->
 
 
+[![Discord Presence](https://lanyard.cnrad.dev/api/299940314137886730)](https://discord.com/users/299940314137886730)
 
 
 
