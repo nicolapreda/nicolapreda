@@ -6,7 +6,7 @@
   current_projects: [
     dispensa: [
       website: "https://dispensapp.com",
-      repo: "https://github.com/Dispensa-app"
+      repo: "https://github.com/dispensapp"
     ]
     website: "https://github.com/nicolapreda/nicolapreda/"
   ],
