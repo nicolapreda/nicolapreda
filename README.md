@@ -36,8 +36,3 @@ Other        0 secs          ░░░░░░░░░░░░░░░░░
 
 <!--END_SECTION:waka-->
 
-
-<div dir="auto">
-<p data-sourcepos="42:1-42:117" dir="auto"><a href="https://discord.com/users/299940314137886730" rel="nofollow"><img src="https://camo.githubusercontent.com/b2ffa4aff71ec4eac25965c15004545073b8e642b5ddf8f3587553218f58690a/68747470733a2f2f6c616e796172642e636e7261642e6465762f6170692f323939393430333134313337383836373330" alt="Discord Presence" data-canonical-src="https://lanyard.cnrad.dev/api/299940314137886730" style="width: 100%;"></a></p>
-</div>
-
