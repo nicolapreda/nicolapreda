@@ -22,41 +22,21 @@
 
 <script>
     export let posts;
-    import logo from "../assets/img/pp.svg";
+    import logo from "../assets/img/logo.svg";
 
 </script>
 
-<navbar>
-    <nav
-      class="sticky top-0 z-10 bg-white backdrop-filter backdrop-blur-lg bg-opacity-30 border-b  drop-shadow-md firefox:bg-opacity-30"
-    >
-      <div class="mx-5 md:mx-32 lg:mx-64">
-        <div class="flex items-center justify-between h-16">
-          <div class="navbar-brand flex">
-            <a href="https://nicolapreda.me">
-              <img src={logo} alt="logo" class="logo h-10 w-10 mr-5" />
-            </a>
-            <h1 class="m-auto text-xl">Blog</h1>
-          </div>
-          <div>
-            
-          </div>
-          
-          
-        </div>
-      </div>
-    </nav>
-</navbar>
 
 <section class="mx-5 md:mx-32 lg:mx-64 my-16">
     <h1 class="text-6xl font-semibold">Blog</h1>
 
     <div class="mt-8 grid grid-cols-2 lg:gap-16 gap-4">
-      {#each  posts as {path, metadata: {title, ora, excerpt}} }
+      {#each  posts as {path} }
               <a class="text-2xl font-semibold p-5 my-10 rounded-lg bg-indigo-50 hover:bg-indigo-100 transition drop-shadow-md" href={`/blog/${path.replace(".md","")}`}>
-                {title}
+                <!--{title}
                 <div class="px-3 py-2 bg-indigo-200 text-md font-light">{ora}</div>
-                <p class="text-lg font-normal">{excerpt}</p>
+                <p class="text-lg font-normal">{excerpt}</p>-->
+                sos
               </a>
       {/each}
         </div>

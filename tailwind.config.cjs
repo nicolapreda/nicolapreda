@@ -1,43 +1,30 @@
 module.exports = {
     content: ['./src/**/*.{html,js,svelte,ts}', "./node_modules/flowbite-svelte/**/*.{html,js,svelte,ts}"],
     theme: {
-        extend: {
-            
-      fontFamily: {
-        'poppins': ['Poppins', 'sans-serif'] ,
-        'figtree': ['Figtree', 'sans-serif'] 
-
+      extend: {
+        colors: {
+          "pink": '#FFE9EC',
+          "secondarypink": '#FED8DD',
+          "primary": '#0000FF',
+          "primary-footer": "#0000D0",
+          "primary-hover": '#00008C',
+          "secondary": '#FFAE4C',
+          "white": '#FFFFFF',
+          "gray-footer": '#D4D4D4',
+        },
+        fontFamily: {
+          "bricebold": "BriceBold",
+          "briceregular": "BriceRegular",
+          "bricelight": "BriceLight",
+          "briceextralight": "BriceExtraLight",
+          "briceextrabold": "BriceExtraBold",
+          "briceblack": "BriceBlack",
+          'poppins': ['Poppins', 'sans-serif'],
+          'figtree': ['Figtree', 'sans-serif']
+  
+  
+        },
       },
-            colors: {
-                'primary-blue': '#03045E',
-                'secondary-blue': '#F5F9FF',
-                'light-blue': '#707CFF',
-            },
-            spacing: {
-                '80': '17rem',
-                '128': '32rem',
-            },
-            height: {
-                '128': '32rem',
-                '140': '38rem',
-                '300': '60rem',
-
-            },
-            width: {
-                '140': '50rem',
-                '280': '100rem',
-            },
-            lineHeight: {
-                'extra-loose': '2.5',
-                '12': '3rem',
-            },
-            margin: {
-                'm2': '-1.3rem',
-            }
-
-
-        }
     },
     plugins: [require('@tailwindcss/typography', require('flowbite/plugin'))]
-
-};
+  }

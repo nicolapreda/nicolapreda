@@ -1,6 +1,7 @@
 {
     "name": "nicolapreda",
-    "version": "0.0.1",
+    "version": "2.0.0",
+    "description": "sito web portfolio Nicola Preda",
     "scripts": {
         "dev": "svelte-kit dev",
         "build": "svelte-kit build",
@@ -28,8 +29,6 @@
         "eslint": "^8.19.0",
         "eslint-config-prettier": "^8.5.0",
         "eslint-plugin-svelte3": "^4.0.0",
-        "flowbite": "^1.5.4",
-        "flowbite-svelte": "^0.28.0",
         "gh-pages": "^4.0.0",
         "mdsvex": "^0.10.6",
         "postcss": "^8.4.14",
