@@ -18,32 +18,15 @@
 
     <meta property="og:locale" content="en_EN">
 
-    <!--Fonts-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <!--Figtree-->
-        <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@600;700;900&display=swap" rel="stylesheet"> 
-        <!--Poppins-->
-        <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@600;700;900&family=Poppins:wght@600&display=swap" rel="stylesheet"> 
-
-    <!--Analytics-->
-    <script async src="https://cdn.splitbee.io/sb.js"></script>
-    <script>
-        // On page load or when changing themes, best to add inline in `head` to avoid FOUC
-        if (localStorage.getItem('color-theme') === 'dark' || (!('color-theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
-            document.documentElement.classList.add('dark');
-        } else {
-            document.documentElement.classList.remove('dark')
-        }
-    </script>
     <title>Nicola Preda</title>
     %svelte.head%
 </head>
 
-<body>
-
-    <div>%svelte.body%</div>
+<body class="bg-pink">
+    
+    %svelte.body%
 
 </body>
+
 
 </html>
