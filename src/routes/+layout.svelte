@@ -22,6 +22,5 @@
 				<slot />
 			</PageTransition>
 		</main>
-
 	{/if}
 </div>

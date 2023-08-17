@@ -4,10 +4,10 @@
 	import Footer from './footer.svelte';
 
 	import logo from '$lib/assets/img/logo.svg';
-	import design from '$lib/assets/img/design.png';
-	import dispensa from '$lib/assets/img/dispensa.png';
-	import rappresentante from '$lib/assets/img/rappresentante.png';
-	import horidesk from '$lib/assets/img/horidesk.png';
+	import design from '$lib/assets/img/design.webp';
+	import dispensa from '$lib/assets/img/dispensa.webp';
+	import rappresentante from '$lib/assets/img/rappresentante.webp';
+	import horidesk from '$lib/assets/img/horidesk.webp';
 
 	import carousel1 from '$lib/assets/img/fotografia/carousel1.webp';
 	import carousel2 from '$lib/assets/img/fotografia/carousel2.webp';
@@ -22,50 +22,48 @@
 </script>
 
 <div class="break-words">
-	<section class="content lg:mx-32 mx-5">
-		<a name="header">
-			<div
-				class="mt-10 text-justify lg:text-6xl md:text-4xl sm:text-3xl text-2xl uppercase leading-snug tracking-tight font-briceextralight"
-			>
-				<span class="break-all"
-					>MI CHIAMO <span class="font-bricelight">NICOLA PREDA </span>(PER GLI AMICI NIK) E STUDIO
-					INFORMATICA, SONO RAPPRESENTANTE DELLA MIA SCUOLA.MI PIACE IL DESIGN, LA PASTA AL PESTO,
-					SCRIVERE, LEGGERE, LA FOTOGRAFIA, LE DUNK, RACCONTARE STORIE SU
-					<a
-						class="font-briceregular hover:underline hover:underline-offset-1 transition"
-						target="”_blank”"
-						href="https://www.youtube.com/channel/UC1VPT4qglYpXyj1nt_sL2sA">YOUTUBE</a
-					>. OGNI TANTO CARICO FOTO SU
-					<a
-						class="font-briceregular hover:underline hover:underline-offset-1 transition"
-						href="https://instagram.com/nicolapreda_"
-						target="”_blank”">INSTAGRAM</a
-					>.LE MIE ESPERIENZE FORMATIVE E PROFESSIONALI LE TROVI SU
-					<a
-						class="font-briceregular hover:underline hover:underline-offset-1 transition"
-						href="https://www.linkedin.com/in/nicola-preda-5b0722233/"
-						target="”_blank”">LINKEDIN</a
-					>. HO ANCHE UN <span>BLOG</span>. PUOI CONTATTARMI SU QUESTA
+	<section class="lg:mx-32 mx-5">
+		<div
+			class="mt-10 text-justify lg:text-6xl md:text-4xl sm:text-3xl text-2xl uppercase leading-snug tracking-tight font-briceextralight"
+		>
+			<span class="break-all"
+				>MI CHIAMO <span class="font-bricelight">NICOLA PREDA </span>(PER GLI AMICI NIK) E STUDIO
+				INFORMATICA, SONO RAPPRESENTANTE DELLA MIA SCUOLA.MI PIACE IL DESIGN, LA PASTA AL PESTO,
+				SCRIVERE, LEGGERE, LA FOTOGRAFIA, LE DUNK, RACCONTARE STORIE SU
+				<a
+					class="font-briceregular hover:underline hover:underline-offset-1 transition"
+					target="”_blank”"
+					href="https://www.youtube.com/channel/UC1VPT4qglYpXyj1nt_sL2sA">YOUTUBE</a
+				>. OGNI TANTO CARICO FOTO SU
+				<a
+					class="font-briceregular hover:underline hover:underline-offset-1 transition"
+					href="https://instagram.com/nicolapreda_"
+					target="”_blank”">INSTAGRAM</a
+				>.LE MIE ESPERIENZE FORMATIVE E PROFESSIONALI LE TROVI SU
+				<a
+					class="font-briceregular hover:underline hover:underline-offset-1 transition"
+					href="https://www.linkedin.com/in/nicola-preda-5b0722233/"
+					target="”_blank”">LINKEDIN</a
+				>. HO ANCHE UN <span>BLOG</span>. PUOI CONTATTARMI SU QUESTA
 
-					<a
-						class="font-briceregular cursor-pointer hover:underline hover:underline-offset-1 transition"
-						href="mailto:nicola.preda05@gmail.com"
-						target="”_blank”">E-MAIL</a
-					>, MA ANCHE SU
-					<a
-						class="font-briceregular hover:underline hover:underline-offset-1 transition"
-						href="https://t.me/nicolapreda"
-						target="”_blank”">TELEGRAM</a
-					>
-					O
-					<a
-						class="font-briceregular hover:underline hover:underline-offset-1 transition"
-						href="https://wa.me/message/NCECJOBKRIRDO1"
-						target="”_blank”">WHATSAPP</a
-					>.
-				</span>
-			</div>
-		</a>
+				<a
+					class="font-briceregular cursor-pointer hover:underline hover:underline-offset-1 transition"
+					href="mailto:nicola.preda05@gmail.com"
+					target="”_blank”">E-MAIL</a
+				>, MA ANCHE SU
+				<a
+					class="font-briceregular hover:underline hover:underline-offset-1 transition"
+					href="https://t.me/nicolapreda"
+					target="”_blank”">TELEGRAM</a
+				>
+				O
+				<a
+					class="font-briceregular hover:underline hover:underline-offset-1 transition"
+					href="https://wa.me/message/NCECJOBKRIRDO1"
+					target="”_blank”">WHATSAPP</a
+				>.
+			</span>
+		</div>
 		<a name="dipiu">
 			<div class="mt-24">
 				<h1 class="text-justify text-primary md:text-8xl text-6xl font-briceblack uppercase">
