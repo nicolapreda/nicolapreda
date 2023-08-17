@@ -22,10 +22,6 @@
     src: url("$lib/assets/fonts/Brice-Light.otf") format("opentype");
 }
 
-@font-face {
-    font-family: BriceExtraBold;
-    src: url("$lib/assets/fonts/Brice-ExtraBold.otf") format("opentype");
-}
 
 @font-face {
     font-family: BriceExtraLight;
