@@ -1,9 +1,7 @@
 <script>
 	// @ts-nocheck
 
-	// @ts-nocheckhttp://localhost:5173/favicon.png
 	import Footer from './footer.svelte';
-
 
 	import logo from '$lib/assets/img/logo.svg';
 	import design from '$lib/assets/img/design.png';
@@ -289,7 +287,7 @@
 								</div>
 								<div class="mt-5">
 									<a
-										href="./404"
+										href="#"
 										class="px-4 py-2 bg-secondary hover:bg-secondary-hover transition uppercase rounded-3xl font-bricelight"
 										>scopri di piu'</a
 									>
@@ -316,7 +314,8 @@
 								</div>
 								<div class="mt-5">
 									<a
-										href="https://github.com/softwarehorizons" target="”_blank”"
+										href="https://github.com/softwarehorizons"
+										target="”_blank”"
 										class="px-4 py-2 bg-secondary hover:bg-secondary-hover transition uppercase rounded-3xl font-bricelight"
 										>scopri di piu'</a
 									>
@@ -346,7 +345,7 @@
 								</div>
 								<div class="mt-5">
 									<a
-										href="./404"
+										href="#"
 										class="px-4 py-2 bg-secondary hover:bg-secondary-hover transition uppercase rounded-3xl font-bricelight"
 										>scopri di piu'</a
 									>
@@ -359,7 +358,7 @@
 				<div class="mt-24">
 					<a
 						class="flex my-auto font-bricelight fill-primary text-primary hover:text-primary-hover hover:fill-primary-hover transition"
-						href="./rappresentante"
+						href="#"
 					>
 						dipiu'
 						<svg
@@ -390,7 +389,7 @@
 								MA CHE MI HA LASCIATO OTTIME SKILL DI GESTIONE DI UN TEAM, LOGISTICA, ORGANIZZAZIONE
 								DI EVENTI E TANTE SODDISFAZIONI. <a
 									class="font-briceregular underline-offset-1 underline"
-									href="./rappresentante">QUA</a
+									href="#">QUA</a
 								> TUTTO IL MIO PERCORSO IN QUESTO AMBITO RACCONTATO PER FILO E PER SEGNO.
 							</span>
 						</div>
@@ -425,9 +424,10 @@
 					<ul class="posts mt-10">
 						{#each data.posts.slice(0, 3) as post}
 							<li class="post mt-6">
-								<a href={post.slug} class="text-4xl font-briceregular mb-5 text-primary">{post.title}</a>
+								<a href={post.slug} class="text-4xl font-briceregular mb-5 text-primary"
+									>{post.title}</a
+								>
 								<p class="date">{formatDate(post.date)}</p>
-
 							</li>
 						{/each}
 					</ul>
@@ -436,6 +436,5 @@
 		</a>
 	</section>
 </div>
-
 
 <Footer />

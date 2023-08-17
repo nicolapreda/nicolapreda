@@ -13,7 +13,7 @@
           <li class="my-auto uppercase text-2xl font-briceregular">
             <a
               class="text-primary hover:text-primary-hover transition mr-12 cursor-pointer hover:underline hover:underline-offset-1"
-              href="#dipiu">dipiu'</a
+              href="/#dipiu">dipiu'</a
             >
             <a
               class="text-primary hover:text-primary-hover transition cursor-pointer hover:underline hover:underline-offset-1"
