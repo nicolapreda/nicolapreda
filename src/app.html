@@ -1,32 +1,25 @@
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth">
+<html lang="it" class="scroll-smooth">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" href="%sveltekit.assets%/favicon.png" />
+		<meta name="viewport" content="width=device-width" />
+		<meta property="og:type" content="website">
+		<meta property="og:url" content="https://predanicola.it/">
+		<meta property="og:title" content="Nicola Preda">
+		<meta property="og:image" content="%svelte.assets%/favicon.png">
+		<meta property="og:description" content="Nicola Preda portfolio website">
+		<meta name=description content="Nicola Preda portfolio website">
+		<link rel="alternate" type="application/atom+xml" href="/rss.xml" />
+		
+		<link href="%svelte.assets%/output.css" rel="stylesheet">
+		<meta property="og:locale" content="it_IT">
 
-<head>
-    <meta charset="utf-8" />
-    <meta name="description" content="Nicola Preda Portfolio" />
-    <link rel="icon" href="%svelte.assets%/favicon.png" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <!--Meta Settings-->
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://nicolapreda.me/">
-    <meta property="og:title" content="Nicola Preda">
-    <meta property="og:image" content="%svelte.assets%/favicon.png">
-    <meta property="og:description" content="Nicola Preda portfolio website">
-    <meta name=description content="Nicola Preda portfolio website">
+	    <title>Nicola Preda</title>
 
-    <link href="%svelte.assets%/output.css" rel="stylesheet">
-
-    <meta property="og:locale" content="en_EN">
-
-    <title>Nicola Preda</title>
-    %svelte.head%
-</head>
-
-<body class="bg-pink">
-    
-    %svelte.body%
-
-</body>
-
-
+		%sveltekit.head%
+	</head>
+	<body data-sveltekit-preload-data="hover" class="bg-pink">
+		<div style="display: contents">%sveltekit.body%</div>
+	</body>
 </html>

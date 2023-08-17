@@ -1,38 +1,19 @@
 import { mdsvex } from 'mdsvex';
-import preprocess from 'svelte-preprocess';
 
-import adapter from '@sveltejs/adapter-static';
+import adapter from '@sveltejs/adapter-vercel';
+import { vitePreprocess } from '@sveltejs/kit/vite';
 
-import mdsvexConfig from './mdsvex.config.js';
+/** @type {import('mdsvex').MdsvexOptions} */
+const mdsvexOptions = {
+	extensions: ['.md'],
+}
 
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
-    extensions: ['.svelte', ...mdsvexConfig.extensions],
-
-    // Consult https://github.com/sveltejs/svelte-preprocess
-    // for more information about preprocessors
-    preprocess: [
-        preprocess({
-            postcss: true
-        }),
-        mdsvex(mdsvexConfig)
-    ],
-
-    kit: {
-        
-        // target: '#svelte',
-        adapter: adapter({
-            pages: 'build',
-            assets: 'build',
-            fallback: null
-        }),
-        prerender: {
-            crawl: true,
-            enabled: true,
-            onError: 'continue',
-            default: true
-        },
-    }
+	extensions: ['.svelte', '.md'],
+	preprocess: [vitePreprocess(), mdsvex(mdsvexOptions)],
+	kit: {
+		adapter: adapter()
+	},
 };
-
 export default config;

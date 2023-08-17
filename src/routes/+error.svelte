@@ -1,3 +1,7 @@
+<script>
+	import { page } from '$app/stores'
+</script>
+
 
 <div class="bg-primary h-screen flex items-center justify-center">
 
@@ -8,7 +12,7 @@
           <span class="font-briceextralight text-white md:text-2xl text-xl "
           >torna qua piu' tardi. intanto se vuoi puoi tornare alla <a
             class="underline underline-offset-1 font-bricelight cursor-pointer"
-            href="https://predanicola.it"> home page</a
+            href="/"> home page</a
           >. :)</span
         >
     

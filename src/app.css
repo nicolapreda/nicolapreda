@@ -2,38 +2,37 @@
 @tailwind components;
 @tailwind utilities;
 
-
 @font-face {
     font-family: BriceBold;
-    src: url("/src/routes/assets/fonts/Brice-Bold.otf") format("opentype");
+    src: url("$lib/assets/fonts/Brice-Bold.otf") format("opentype");
 }
 
 @font-face {
     font-family: BriceBlack;
-    src: url("/src/routes/assets/fonts/Brice-Black.otf") format("opentype");
+    src: url("$lib/assets/fonts/Brice-Black.otf") format("opentype");
 }
 
 @font-face {
     font-family: BriceRegular;
-    src: url("/src/routes/assets/fonts/Brice-Regular.otf") format("opentype");
+    src: url("$lib/assets/fonts/Brice-Regular.otf") format("opentype");
 }
 
 @font-face {
     font-family: BriceLight;
-    src: url("/src/routes/assets/fonts/Brice-Light.otf") format("opentype");
+    src: url("$lib/assets/fonts/Brice-Light.otf") format("opentype");
 }
 
 @font-face {
     font-family: BriceExtraBold;
-    src: url("/src/routes/assets/fonts/Brice-ExtraBold.otf") format("opentype");
+    src: url("$lib/assets/fonts/Brice-ExtraBold.otf") format("opentype");
 }
 
 @font-face {
     font-family: BriceExtraLight;
-    src: url("/src/routes/assets/fonts/Brice-ExtraLight.otf") format("opentype");
+    src: url("$lib/assets/fonts/Brice-ExtraLight.otf") format("opentype");
 }
 
 @font-face {
     font-family: BriceSemiBold;
-    src: url("/src/routes/assets/fonts/Brice-SemiBold.otf") format("opentype");
+    src: url("$lib/assets/fonts/Brice-SemiBold.otf") format("opentype");
 }
