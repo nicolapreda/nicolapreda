@@ -3,9 +3,8 @@ title: Primo
 description: First post.
 date: '2023-8-17'
 categories:
-  - sveltekit
-published: false
+  - rubrica
+published: true
+readingTime: '10' 
 ---
 
-
-> Primo articolo.

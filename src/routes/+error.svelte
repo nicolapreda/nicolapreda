@@ -7,7 +7,7 @@
 
     <div class="text-center">
         <h1 class="font-bricebold uppercase text-white md:text-5xl text-3xl">
-            QUESTA PAGINA NON ESISTE ANCORA.
+            CI STIAMO ANCORA LAVORANDO.
           </h1>
           <span class="font-briceextralight text-white md:text-2xl text-xl "
           >torna qua piu' tardi. intanto se vuoi puoi tornare alla <a
