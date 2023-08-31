@@ -77,7 +77,7 @@
 
 					<div class="grid lg:grid-cols-2 lg:gap-16 gap-4 mt-5">
 						<div>
-							<img src={design} alt="design" class="h-64 object-cover lg:m-0 m-auto" />
+							<img src={design} alt="design" class="object-cover lg:m-0 m-auto" />
 						</div>
 						<div class="text-justify m-auto">
 							<span class="font-briceextralight md:text-2xl text-xl uppercase tracking-tight"
@@ -133,7 +133,7 @@
 								target="”_blank”"
 								class="font-bricelight hover:underline hover:underline-offset-1 transition"
 								>instagram</a
-							> trovi i miei scatti migliori (anche quelli peggiori)
+							> ogni tanto metto qualche scatto riuscito bene. qua sotto trovi qualche esempio:
 						</span>
 					</div>
 
@@ -208,14 +208,7 @@
 
 					<div class="grid lg:grid-cols-2 lg:gap-16 gap-4 mt-5">
 						<div>
-							<iframe
-								class="object-cover w-full h-64"
-								src="https://www.youtube.com/embed/rfRxSmwjILs"
-								title="nik"
-								frameborder="0"
-								allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-								allowfullscreen
-							/>
+							<img src="https://i.ytimg.com/vi/rfRxSmwjILs/hqdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDVDL9AFoBKsMb0J1ENynIXjGqHOw" alt="youtube" class="object-cover lg:m-0 m-auto h-64">
 						</div>
 
 						<div class="text-justify m-auto">
@@ -422,10 +415,23 @@
 					<ul class="posts mt-10">
 						{#each data.posts.slice(0, 3) as post}
 							<li class="post mt-6">
-								<a href={post.slug} class="text-4xl font-briceregular mb-5 text-primary"
-									>{post.title}</a
+								<h1  class="text-4xl font-briceregular mb-2 text-primary"
+									>{post.title}</h1
 								>
-								<p class="date">{formatDate(post.date)}</p>
+								<div class="flex">
+									<p class="text-xl font-briceregular">{formatDate(post.date)}</p>
+									<p class="text-xl font-briceregular ml-5">{post.readingTime} min</p>
+									<!--categories-->
+								</div>
+								<span class="">{post.description} <a class="text-primary hover:text-primary-hover" href="{post.slug}">...Leggi tutto</a></span>
+								<div class="mt-5">
+									{#each post.categories as category}
+										<span
+											class="surface-4 px-4 py-2 border-2 border-secondary rounded-lg mr-2 text-secondary-hover"
+											>&num;{category}</span
+										>
+									{/each}
+								</div>
 							</li>
 						{/each}
 					</ul>

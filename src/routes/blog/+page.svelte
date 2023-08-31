@@ -8,7 +8,7 @@
 
 <section class="lg:mx-32 mx-5 mt-12 h-screen">
 	<h1 class="text-8xl font-bricebold text-primary">Blog</h1>
-
+	
 	<ul class="posts">
 		{#each data.posts as post}
 			<li class="post mt-6">
