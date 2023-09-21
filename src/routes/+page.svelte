@@ -22,81 +22,104 @@
 </script>
 
 <div class="break-words">
-	<section class="lg:mx-32 mx-5">
-		<div
-			class="mt-10 text-justify lg:text-6xl md:text-4xl sm:text-3xl text-2xl uppercase leading-snug tracking-tight font-briceextralight"
+	<section class="mx-[5%] md:mx-[20%]">
+		<h1
+			class="mt-10 text-center break-words text-primary xl:text-7xl text-5xl m-auto font-semibold font-poppins"
 		>
-			<span class="break-all"
-				>MI CHIAMO <span class="font-bricelight">NICOLA PREDA </span>(PER GLI AMICI NIK) E STUDIO
-				INFORMATICA, SONO RAPPRESENTANTE DELLA MIA SCUOLA.MI PIACE IL DESIGN, LA PASTA AL PESTO,
-				SCRIVERE, LEGGERE, LA FOTOGRAFIA, LE DUNK, RACCONTARE STORIE SU
-				<a
-					class="font-briceregular hover:underline hover:underline-offset-1 transition"
-					target="”_blank”"
-					href="https://www.youtube.com/channel/UC1VPT4qglYpXyj1nt_sL2sA">YOUTUBE</a
-				>. OGNI TANTO CARICO FOTO SU
-				<a
-					class="font-briceregular hover:underline hover:underline-offset-1 transition"
-					href="https://instagram.com/nicolapreda_"
-					target="”_blank”">INSTAGRAM</a
-				>.LE MIE ESPERIENZE FORMATIVE E PROFESSIONALI LE TROVI SU
-				<a
-					class="font-briceregular hover:underline hover:underline-offset-1 transition"
-					href="https://www.linkedin.com/in/nicola-preda-5b0722233/"
-					target="”_blank”">LINKEDIN</a
-				>. HO ANCHE UN <span>BLOG</span>. PUOI CONTATTARMI SU QUESTA
+			Aspirante fotografo e graphic designer.
+		</h1>
 
-				<a
-					class="font-briceregular cursor-pointer hover:underline hover:underline-offset-1 transition"
-					href="mailto:nicola.preda05@gmail.com"
-					target="”_blank”">E-MAIL</a
-				>, MA ANCHE SU
-				<a
-					class="font-briceregular hover:underline hover:underline-offset-1 transition"
-					href="https://t.me/nicolapreda"
-					target="”_blank”">TELEGRAM</a
-				>
-				O
-				<a
-					class="font-briceregular hover:underline hover:underline-offset-1 transition"
-					href="https://wa.me/message/NCECJOBKRIRDO1"
-					target="”_blank”">WHATSAPP</a
-				>.
-			</span>
-		</div>
 		<a name="dipiu">
 			<div class="mt-24">
-				<h1 class="text-justify text-primary md:text-8xl text-6xl font-briceblack uppercase">
-					dipiu'
-				</h1>
+				<h1 class="text-justify text-primary md:text-5xl text-4xl">io in breve</h1>
+				<div class="mt-5 text-justify tracking-wide text-xl uppercase font-light">
+					<span class="break-words"
+						>Mi chiamo <span class="">Nicola Preda </span>(per gli amici nik) e studio informatica,
+						sono rappresentante della mia scuola.mi piace il design, la pasta al pesto, scrivere,
+						leggere, la fotografia, le dunk, raccontare storie su
+						<a
+							class=" hover:text-primary underline underline-offset-1 transition"
+							target="”_blank”"
+							href="https://www.youtube.com/channel/UC1VPT4qglYpXyj1nt_sL2sA">youtube</a
+						>. ogni tanto carico foto su
+						<a
+							class=" hover:text-primary underline underline-offset-1 transition"
+							href="https://instagram.com/nicolapreda_"
+							target="”_blank”">instagram</a
+						>.Le mie esperienze formative e professionali le trovi su
+						<a
+							class=" hover:text-primary underline underline-offset-1 transition"
+							href="https://www.linkedin.com/in/nicola-preda-5b0722233/"
+							target="”_blank”">linkedin</a
+						>. ho anche un <span>blog</span>. puoi contattarmi a questa
 
+						<a
+							class=" hover:text-primary underline underline-offset-1 transition"
+							href="mailto:nicola.preda05@gmail.com"
+							target="”_blank”">email</a
+						>, ma anche su
+						<a
+							class=" hover:text-primary underline underline-offset-1 transition"
+							href="https://t.me/nicolapreda"
+							target="”_blank”">telegram</a
+						>
+						o
+						<a
+							class=" hover:text-primary underline underline-offset-1 transition"
+							href="https://wa.me/message/NCECJOBKRIRDO1"
+							target="”_blank”">whatsapp</a
+						>.
+					</span>
+				</div>
+			</div>
+
+			<div class="mt-10 md:grid md:grid-cols-2 md:gap-16">
+				<div class="text-center">
+					<h1 class="text-primary text-2xl">ultimo video</h1>
+					<iframe
+						class="rounded-xl mt-10 w-full h-64"
+						src="https://www.youtube.com/embed/1ruJUAvUVao"
+						title="Ascolta il tuo dolore"
+						frameborder="0"
+						allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+						allowfullscreen
+					/>
+				</div>
+
+				<div class="text-center">
+					<h1 class="text-primary text-2xl">ultimo articolo</h1>
+
+					<div class="p-5 mt-10 rounded-xl h-64 bg-secondarypink">
+						<a href={data.posts[0].slug} class="text-4xl mb-5 text-primary font-bold">{data.posts[0].title}</a
+						>
+
+						<div class="post mt-2">
+							<p class="text-primary text-lg">{formatDate(data.posts[0].date)}</p>
+							<p>{data.posts[0].description}</p>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="mt-24">
 				<div class="mt-10">
-					<h1 class="text-justify text-primary md:text-5xl text-4xl font-briceregular uppercase">
-						design
-					</h1>
+					<h1 class="text-justify text-primary md:text-5xl text-4xl">design</h1>
 
 					<div class="grid lg:grid-cols-2 lg:gap-16 gap-4 mt-5">
 						<div>
 							<img src={design} alt="design" class="h-64 object-cover lg:m-0 m-auto" />
 						</div>
-						<div class="text-justify m-auto">
-							<span class="font-briceextralight md:text-2xl text-xl uppercase tracking-tight"
-								>DOPO 4 ANNI DI INFORMATICA E PROGRAMMAZIONE, HO CAMBIATO COMPLETAMENTE INTERESSI,
-								ENTRANDO NEL MONDO DEL DESIGN: IN PARTICOLARE GRAPHIC DESIGN E UX/UI. ATTUALMENTE
-								STO IMPARANDO LE NOZIONI DI BASE COME AUTODIDATTA. PER IL FUTURO VORREI ISCRIVERMI A <a
-									class="font-bricelight hover:underline hover:underline-offset-1 transition"
+						<div class="m-auto">
+							<span class="mt-5 text-justify tracking-wide text-xl font-light"
+								>dopo 4 anni di informatica e programmazione, ho cambiato completamente interessi,
+								entrando nel mondo del design: in particolare graphic design e ux/ui. attualmente
+								sto imparando le nozioni di base come autodidatta. per il futuro vorrei iscrivermi a <a
+									class="hover:text-primary underline underline-offset-1 transition"
 									target="”_blank”"
 									href="https://www.polimi.it/futuri-studenti/corsi-di-laurea/design-della-comunicazione"
-									>COMMUNICATION DESIGN</a
+									>design della comunicazione</a
 								>
-								AL POLITECNICO DI MILANO.
-								<!--
-								TROVI QUALCHE MIO LAVORO SU
-								<a
-									class="font-bricelight hover:underline hover:underline-offset-1 transition"
-									href="https://behance.com"
-									target="”_blank”">BEHANCE</a
-								>.-->
+								al politecnico di Milano.
 							</span>
 						</div>
 					</div>
@@ -104,7 +127,7 @@
 
 				<div class="mt-24">
 					<a
-						class="flex my-auto font-bricelight fill-primary text-primary hover:text-primary-hover hover:fill-primary-hover transition"
+						class="flex my-auto fill-primary text-primary hover:text-primary-hover hover:fill-primary-hover transition"
 						href="https://instagram.com/nicolapreda_/"
 						target="”_blank”"
 					>
@@ -121,71 +144,40 @@
 							/></svg
 						>
 					</a>
-					<h1 class="text-justify text-primary md:text-5xl text-4xl font-briceregular uppercase">
-						fotografia
-					</h1>
+					<h1 class="text-justify text-primary md:text-5xl text-4xl">fotografia</h1>
 
-					<div class="text-justify m-auto">
-						<span class="font-briceextralight md:text-2xl text-xl uppercase tracking-tight"
+					<div class="mt-5">
+						<span class="text-justify tracking-wide text-xl font-light"
 							>Sono da poco entrato nel mondo della fotografia analogica e digitale, ho acquistato
 							una sony a6100 con cui registro e fotografo le mie avventure :) su <a
 								href="https://instagram.com/nicolapreda_"
 								target="”_blank”"
-								class="font-bricelight hover:underline hover:underline-offset-1 transition"
-								>instagram</a
+								class="hover:text-primary underline underline-offset-1 transition">instagram</a
 							> trovi i miei scatti migliori (anche quelli peggiori)
 						</span>
 					</div>
-
-					<div class="mt-12">
-						<div class="-m-1 flex flex-wrap md:-m-2">
-							<div class="flex w-1/2 flex-wrap">
-								<div class="w-1/2 p-1 md:p-2">
-									<img
-										alt="gallery"
-										class="block h-full w-full rounded-lg object-cover object-center"
-										src={carousel1}
-									/>
-								</div>
-								<div class="w-1/2 p-1 md:p-2">
-									<img
-										alt="gallery"
-										class="block h-full w-full rounded-lg object-cover object-center"
-										src={carousel2}
-									/>
-								</div>
-								<div class="w-full p-1 md:p-2">
-									<img
-										alt="gallery"
-										class="block h-full w-full rounded-lg object-cover object-center"
-										src={carousel3}
-									/>
-								</div>
-							</div>
-							<div class="flex w-1/2 flex-wrap">
-								<div class="w-full p-1 md:p-2">
-									<img
-										alt="gallery"
-										class="block h-full w-full rounded-lg object-cover object-center"
-										src={carousel4}
-									/>
-								</div>
-
-								<div class="p-1 md:p-2">
-									<img
-										alt="gallery"
-										class="block h-full w-full rounded-lg object-cover object-center"
-										src={carousel5}
-									/>
-								</div>
-							</div>
+					<div class="mt-12 h-64 carousel carousel-center rounded-box">
+						<div class="carousel-item">
+							<img src={carousel1} alt="fotografia" />
+						</div>
+						<div class="carousel-item">
+							<img src={carousel2} alt="fotografia" />
+						</div>
+						<div class="carousel-item">
+							<img src={carousel3} alt="fotografia" />
+						</div>
+						<div class="carousel-item">
+							<img src={carousel4} alt="fotografia" />
+						</div>
+						<div class="carousel-item">
+							<img src={carousel5} alt="fotografia" />
 						</div>
 					</div>
 				</div>
 
 				<div class="mt-24">
 					<a
-						class="flex my-auto font-bricelight fill-primary text-primary hover:text-primary-hover hover:fill-primary-hover transition"
+						class="flex my-auto fill-primary text-primary hover:text-primary-hover hover:fill-primary-hover transition"
 						href="https://www.youtube.com/channel/UC1VPT4qglYpXyj1nt_sL2sA"
 						target="”_blank”"
 					>
@@ -202,9 +194,7 @@
 							/></svg
 						>
 					</a>
-					<h1 class="text-justify text-primary md:text-5xl text-4xl font-briceregular uppercase">
-						youtube
-					</h1>
+					<h1 class="text-justify text-primary md:text-5xl text-4xl">youtube</h1>
 
 					<div class="grid lg:grid-cols-2 lg:gap-16 gap-4 mt-5">
 						<div>
@@ -219,13 +209,12 @@
 						</div>
 
 						<div class="text-justify m-auto">
-							<span class="font-briceextralight md:text-2xl text-xl uppercase tracking-tight">
-								MI PIACE REALIZZARE VIDEO E STORIE SU YOUTUBE NEL TEMPO LIBERO. QUA A LATO PUOI
-								TROVARE IL MIO ULTIMO VIDEO, SE INVECE VUOI DARE UN’OCCHIATA AL CANALE CLICCA <a
+							<span class="text-justify tracking-wide text-xl font-light">
+								mi piace realizzare video e storie su youtube nel tempo libero. qua a lato puoi
+								trovare il mio ultimo video, se invece vuoi dare un’occhiata al canale clicca <a
 									href="https://www.youtube.com/channel/UC1VPT4qglYpXyj1nt_sL2sA"
 									target="”_blank”"
-									class="font-bricelight hover:underline hover:underline-offset-1 transition"
-									>QUI.</a
+									class="hover:text-primary underline underline-offset-1 transition">qui.</a
 								>
 							</span>
 						</div>
@@ -234,7 +223,7 @@
 
 				<div class="mt-24">
 					<a
-						class="flex my-auto font-bricelight fill-primary text-primary hover:text-primary-hover hover:fill-primary-hover transition"
+						class="flex my-auto fill-primary text-primary hover:text-primary-hover hover:fill-primary-hover transition"
 						href="https://github.com/nicolapreda/"
 						target="”_blank”"
 					>
@@ -252,17 +241,14 @@
 						>
 					</a>
 
-					<h1 class="text-justify text-primary md:text-5xl text-4xl font-briceregular uppercase">
-						programmazione
-					</h1>
-					<span
-						class="text-justify font-briceextralight md:text-2xl text-xl uppercase tracking-tight"
-						>OGNI TANTO ADEMPIO ANCORA AL MIO COMPITO DA PROGRAMMATORE (PRINCIPALMENTE FRONTEND). I
-						MIEI PROGETTI LI TROVI SU <a
+					<h1 class="text-justify text-primary md:text-5xl text-4xl">programmazione</h1>
+					<span class="mt-10 text-justify tracking-wide text-xl font-light"
+						>ogni tanto adempio ancora al mio compito da programmatore (principalmente frontend). i
+						miei progetti li trovi su <a
 							href="https://github.com/nicolapreda/"
 							target="”_blank”"
-							class="font-bricelight hover:underline hover:underline-offset-1 transition">GITHUB</a
-						> . QUI SOTTO QUALCHE PROGETTO RECENTE:
+							class="hover:text-primary underline underline-offset-1 transition">github</a
+						> . qui sotto qualche progetto recente:
 					</span>
 
 					<div class="grid md:grid-cols-3 gap-4 mt-12">
@@ -270,14 +256,12 @@
 							<div class="bg-primary h-64 rounded-t-3xl flex items-center justify-center">
 								<img src={dispensa} alt="dispensa" class="h-32" />
 							</div>
-							<div class="lg:p-10 p-5">
+							<div class="p-5 content-center text-center">
 								<div>
-									<h1
-										class="text-justify text-primary lg:text-4xl md:text-3xl text-2xl font-briceregular uppercase"
-									>
+									<h1 class="text-primary lg:text-4xl md:text-3xl text-2xl">
 										dispensa
 									</h1>
-									<span class="font-briceextralight"
+									<span class="mt-5 text-justify tracking-wide text-md font-light"
 										>Applicazione per la gestione della dispensa di casa, realizzato con Flutter e
 										Firebase per IOS e Android. Ho avuto l'onore di partecipare e arrivare secondo
 										tramite questo progetto al contest GF Marilli organizzato dall'azienda Sorint</span
@@ -285,8 +269,8 @@
 								</div>
 								<div class="mt-5">
 									<a
-										href="#"
-										class="px-4 py-2 bg-secondary hover:bg-secondary-hover transition uppercase rounded-3xl font-bricelight"
+										href="/dispensa"
+										class="px-4 py-2 bg-secondary hover:bg-secondary-hover transition rounded-3xl"
 										>scopri di piu'</a
 									>
 								</div>
@@ -299,13 +283,11 @@
 							</div>
 							<div class="lg:p-10 p-5">
 								<div>
-									<h1
-										class="text-justify text-primary lg:text-4xl md:text-3xl text-2xl font-briceregular uppercase"
-									>
+									<h1 class="text-justify text-primary lg:text-4xl md:text-3xl text-2xl">
 										horidesk
 									</h1>
-									<span class="font-briceextralight"
-										>Ho collaborato per la realizzazione di un software per l’industria 4.0
+									<span class="mt-5 text-justify tracking-wide text-md font-light">
+										Ho collaborato per la realizzazione di un software per l’industria 4.0
 										incentrato nella gestione di macchine FANUC, tramite un’interfaccia web semplice
 										e intuitiva. Lo sviluppo invece e’ stato tutt’altro che semplice e intuitivo. :)</span
 									>
@@ -314,7 +296,7 @@
 									<a
 										href="https://github.com/softwarehorizons"
 										target="”_blank”"
-										class="px-4 py-2 bg-secondary hover:bg-secondary-hover transition uppercase rounded-3xl font-bricelight"
+										class="px-4 py-2 bg-secondary hover:bg-secondary-hover transition rounded-3xl"
 										>scopri di piu'</a
 									>
 								</div>
@@ -323,19 +305,15 @@
 
 						<div class="bg-secondarypink rounded-3xl shadow">
 							<div class="bg-primary h-64 rounded-t-3xl flex items-center justify-center">
-								<span class="uppercase font-briceregular text-white text-center"
-									>il logo dobbiamo <br />ancora farlo</span
-								>
+								<span class=" text-white text-center">il logo dobbiamo <br />ancora farlo</span>
 							</div>
 							<div class="lg:p-10 p-6">
 								<div>
-									<h1
-										class="text-justify text-primary lg:text-4xl md:text-3xl text-2xl font-briceregular uppercase"
-									>
+									<h1 class="text-justify text-primary lg:text-4xl md:text-3xl text-2xl">
 										allergizen
 									</h1>
-									<span class="font-briceextralight"
-										>Due settimane di intenso lavoro per realizzare questa applicazione mobile
+									<span class="mt-5 text-justify tracking-wide text-md font-light">
+										Due settimane di intenso lavoro per realizzare questa applicazione mobile
 										insieme ad un fantastico team. Per la prima volta in vita mia sono riuscito a
 										dividere equamente il lavoro e creare qualcosa fatto VERAMENTE in gruppo (tranne
 										il nome, che ho scelto io a caso perche’ non c’era piu’ tempo)</span
@@ -344,7 +322,7 @@
 								<div class="mt-5">
 									<a
 										href="#"
-										class="px-4 py-2 bg-secondary hover:bg-secondary-hover transition uppercase rounded-3xl font-bricelight"
+										class="px-4 py-2 bg-secondary hover:bg-secondary-hover transition rounded-3xl"
 										>scopri di piu'</a
 									>
 								</div>
@@ -355,7 +333,7 @@
 
 				<div class="mt-24">
 					<a
-						class="flex my-auto font-bricelight fill-primary text-primary hover:text-primary-hover hover:fill-primary-hover transition"
+						class="flex my-auto fill-primary text-primary hover:text-primary-hover hover:fill-primary-hover transition"
 						href="#"
 					>
 						dipiu'
@@ -372,23 +350,21 @@
 						>
 					</a>
 
-					<h1 class="text-justify text-primary md:text-5xl text-4xl font-briceregular uppercase">
-						rappresentante
-					</h1>
+					<h1 class="text-justify text-primary md:text-5xl text-4xl">rappresentante</h1>
 
 					<div class="grid lg:grid-cols-2 lg:gap-16 gap-4 mt-5">
 						<div class="m-auto">
 							<img src={rappresentante} alt="rappresentante" class=" object-cover" />
 						</div>
 						<div class="text-justify m-auto">
-							<span class="font-briceextralight text-2xl uppercase tracking-tight"
-								>DA ORMAI DUE ANNI SONO RAPPRESENTANTE D’ISTITUTO DELLA MIA SCUOLA. GESTIRE TUTTE LE
-								ATTIVITA' CHE RUOTANO INTORNO AD ESSA E’ UN COMPITO CHE RICHIEDE TEMPO E DEDIZIONE,
-								MA CHE MI HA LASCIATO OTTIME SKILL DI GESTIONE DI UN TEAM, LOGISTICA, ORGANIZZAZIONE
-								DI EVENTI E TANTE SODDISFAZIONI. <a
-									class="font-briceregular underline-offset-1 underline"
-									href="#">QUA</a
-								> TUTTO IL MIO PERCORSO IN QUESTO AMBITO RACCONTATO PER FILO E PER SEGNO.
+							<span class="text-justify tracking-wide text-xl font-light"
+								>da ormai due anni sono rappresentante d’istituto della mia scuola. gestire tutte le
+								attivita' che ruotano intorno ad essa e’ un compito che richiede tempo e dedizione,
+								ma che mi ha lasciato ottime skill di gestione di un team, logistica, organizzazione
+								di eventi e tante soddisfazioni. <a
+									class="hover:text-primary underline underline-offset-1 transition"
+									href="/rappresentante">qua</a
+								> tutto il mio percorso raccontato per filo e per segno
 							</span>
 						</div>
 					</div>
@@ -396,7 +372,7 @@
 
 				<div class="mt-24">
 					<a
-						class="flex my-auto font-bricelight fill-primary text-primary hover:text-primary-hover hover:fill-primary-hover transition"
+						class="flex my-auto fill-primary text-primary hover:text-primary-hover hover:fill-primary-hover transition"
 						href="./blog"
 					>
 						dipiu'
@@ -413,19 +389,18 @@
 						>
 					</a>
 
-					<h1 class="text-justify text-primary text-5xl font-briceregular uppercase">blog</h1>
-					<span class="text-justify font-briceextralight text-2xl uppercase tracking-tight"
-						>PRIMA HO SCRITTO CHE MI PIACE SCRIVERE, INFATTI HO ANCHE UN BLOG. OGNI TANTO SCRIVO
-						QUALCOSA, QUANDO MI VA. QUA SOTTO GLI ULTIMI TRE ARTICOLI:
+					<h1 class="text-primary text-5xl">blog</h1>
+					<span class="mt-5 text-justify tracking-wide text-xl font-light"
+						>prima ho scritto che mi piace scrivere, infatti ho anche un blog. ogni tanto scrivo
+						qualcosa, quando mi va. qua sotto gli ultimi articoli:
 					</span>
 
 					<ul class="posts mt-10">
 						{#each data.posts.slice(0, 3) as post}
 							<li class="post mt-6">
-								<a href={post.slug} class="text-4xl font-briceregular mb-5 text-primary"
-									>{post.title}</a
-								>
+								<a href={post.slug} class="text-4xl mb-5 text-primary">{post.title}</a>
 								<p class="date">{formatDate(post.date)}</p>
+								<p>{post.description}</p>
 							</li>
 						{/each}
 					</ul>

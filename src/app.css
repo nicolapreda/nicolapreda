@@ -2,33 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
-@font-face {
-    font-family: BriceBold;
-    src: url("$lib/assets/fonts/Brice-Bold.otf") format("opentype");
-}
+@layer base {
+    .font-outline {
+        -webkit-text-stroke: initial;
 
-@font-face {
-    font-family: BriceBlack;
-    src: url("$lib/assets/fonts/Brice-Black.otf") format("opentype");
-}
+      -webkit-text-stroke: 4px #0000FF;
 
-@font-face {
-    font-family: BriceRegular;
-    src: url("$lib/assets/fonts/Brice-Regular.otf") format("opentype");
-}
-
-@font-face {
-    font-family: BriceLight;
-    src: url("$lib/assets/fonts/Brice-Light.otf") format("opentype");
-}
-
-
-@font-face {
-    font-family: BriceExtraLight;
-    src: url("$lib/assets/fonts/Brice-ExtraLight.otf") format("opentype");
-}
-
-@font-face {
-    font-family: BriceSemiBold;
-    src: url("$lib/assets/fonts/Brice-SemiBold.otf") format("opentype");
-}
+    }
+  }

@@ -6,7 +6,7 @@
 	export let data;
 </script>
 
-<section class="lg:mx-32 mx-5 mt-12 h-screen">
+<section class="mx-[5%] md:mx-[20%] mt-12 h-screen">
 	<h1 class="text-8xl font-bricebold text-primary">Blog</h1>
 
 	<ul class="posts">

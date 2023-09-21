@@ -12,7 +12,7 @@
 	<meta property="og:title" content={data.meta.title} />
 </svelte:head>
 
-<article class="lg:mx-32 mx-5 mt-12 h-screen">
+<article class="mx-[5%] md:mx-[20%] h-screen">
   <!-- Title -->
 	<hgroup>
 		<h1 class="text-8xl font-bricebold text-primary">{data.meta.title}</h1>
@@ -26,7 +26,7 @@
 	</div>
 
   <!-- Post -->
-	<div class="prose mt-12">
+	<div class="prose mt-12 ">
 		<svelte:component this={data.content} />
 	</div>
 </article>
