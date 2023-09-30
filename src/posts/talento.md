@@ -1,13 +1,17 @@
 ---
 title: Talento
-description: "Ti è mai capitato di impiegare tanto tempo ed energie per realizzare un compito o un
-progetto in un determinato ambito, per poi sentirti sminuito e deluso alla scoperta che
-qualcuno è riuscito a fare un lavoro migliore del tuo, magari anche in meno tempo?..."
+description: "Articolo scritto in un periodo di un me particolarmente triste e demotivato dal punto di vista professionale, nel lontano 2022. Anche se per me sono passati secoli e mi ritengo una persona completamente diversa rispetto a quel periodo, ho deciso di inserire comunque nell'archivio del sito questo articolo, che in ogni caso fa parte della mia storia.
+"
 date: '2022-4-04'
 category: "Archivio '22"
 published: true
-readingTime: '10' 
+readingTime: '5' 
 ---
+<img src="https://i.imgur.com/L0QvWGg.jpeg" class="w-full"
+/>
+
+Articolo scritto in un periodo di un me particolarmente triste e demotivato dal punto di vista professionale, nel lontano 2022. Anche se per me sono passati secoli e mi ritengo una persona completamente diversa rispetto a quel periodo, ho deciso di inserire comunque nell'archivio del sito questo articolo, che in ogni caso fa parte della mia storia.
+
 
 Ti è mai capitato di impiegare tanto tempo ed energie per realizzare un compito o un
 progetto in un determinato ambito, per poi sentirti sminuito e deluso alla scoperta che
@@ -43,3 +47,8 @@ presente ed il divenire: il vero talento di un individuo si vede e si misura qua
 probabilmente anche fallendo innumerevoli volte, ma rialzandosi sempre e con costanza e
 positiva ostinazione continuando a lottare , studiare, lavorare e migliorare per raggiungere
 l’obiettivo ambito da tempo.
+
+> ❤️✨
+
+<img src="https://i.imgur.com/ZAmoJui.jpeg" class="w-full"
+/>
