@@ -1,5 +1,6 @@
 <script lang="ts">
 	import { formatDate } from '$lib/utils'
+	import Footer from '../footer.svelte';
 
 	export let data
 </script>
@@ -24,8 +25,11 @@
 
 
   <!-- Post -->
-	<div class="mt-10 prose w-full inline-block">
+	<div class="mt-10 mb-16  prose w-full inline-block">
 		<svelte:component this={data.content} />
 	</div>
 </article>
+
+
+<Footer />
 

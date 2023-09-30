@@ -10,7 +10,7 @@ readingTime: '5'
 <img src="https://i.imgur.com/L0QvWGg.jpeg" class="w-full"
 />
 
-Articolo scritto in un periodo di un me particolarmente triste e demotivato dal punto di vista professionale, nel lontano 2022. Anche se per me sono passati secoli e mi ritengo una persona completamente diversa rispetto a quel periodo, ho deciso di inserire comunque nell'archivio del sito questo articolo, che in ogni caso fa parte della mia storia.
+> Articolo scritto in un periodo di un me particolarmente triste, in cui ero particolarmente demotivato dal punto di vista "professionale", nel lontano 2022. Anche se per me sono passati secoli e mi ritengo una persona completamente diversa rispetto a quel periodo, ho deciso di inserire comunque nell'archivio del sito questo articolo, che in ogni caso fa parte della mia storia. 🥸
 
 
 Ti è mai capitato di impiegare tanto tempo ed energie per realizzare un compito o un
