@@ -14,6 +14,10 @@
 	import carousel3 from '$lib/assets/img/fotografia/carousel3.webp';
 	import carousel4 from '$lib/assets/img/fotografia/carousel4.webp';
 	import carousel5 from '$lib/assets/img/fotografia/carousel5.webp';
+	import carousel6 from '$lib/assets/img/fotografia/carousel6.webp';
+	import carousel7 from '$lib/assets/img/fotografia/carousel7.webp';
+	import carousel8 from '$lib/assets/img/fotografia/carousel8.webp';
+
 	import nik from '$lib/assets/img/nik.jpg';
 	import { formatDate } from '$lib/utils';
 	import * as config from '$lib/config';
@@ -158,7 +162,7 @@
 						href="https://instagram.com/nicolapreda_/"
 						target="”_blank”"
 					>
-						dipiu'
+						di più
 						<svg
 							class="my-auto ml-2"
 							width="24"
@@ -183,6 +187,7 @@
 							> trovi i miei scatti migliori (anche quelli peggiori)
 						</span>
 					</div>
+
 					<div class="mt-12 h-64 carousel carousel-center rounded-box">
 						<div class="carousel-item">
 							<img src={carousel1} alt="fotografia" />
@@ -191,13 +196,19 @@
 							<img src={carousel2} alt="fotografia" />
 						</div>
 						<div class="carousel-item">
-							<img src={carousel3} alt="fotografia" />
-						</div>
-						<div class="carousel-item">
 							<img src={carousel4} alt="fotografia" />
 						</div>
 						<div class="carousel-item">
 							<img src={carousel5} alt="fotografia" />
+						</div>
+						<div class="carousel-item">
+							<img src={carousel6} alt="fotografia" />
+						</div>
+						<div class="carousel-item">
+							<img src={carousel7} alt="fotografia" />
+						</div>
+						<div class="carousel-item">
+							<img src={carousel8} alt="fotografia" />
 						</div>
 					</div>
 				</div>
@@ -208,7 +219,7 @@
 						href="https://www.youtube.com/channel/UC1VPT4qglYpXyj1nt_sL2sA"
 						target="”_blank”"
 					>
-						dipiu'
+						di più
 						<svg
 							class="my-auto ml-2"
 							width="24"
@@ -254,7 +265,7 @@
 						href="https://github.com/nicolapreda/"
 						target="”_blank”"
 					>
-						dipiu'
+						di più
 						<svg
 							class="my-auto ml-2"
 							width="24"
@@ -360,7 +371,7 @@
 						class="flex my-auto fill-primary text-primary hover:text-primary-hover hover:fill-primary-hover transition"
 						href="#"
 					>
-						dipiu'
+						di più
 						<svg
 							class="my-auto ml-2"
 							width="24"
@@ -399,7 +410,7 @@
 						class="flex my-auto fill-primary text-primary hover:text-primary-hover hover:fill-primary-hover transition"
 						href="./blog"
 					>
-						dipiu'
+						di più
 						<svg
 							class="my-auto ml-2"
 							width="24"
@@ -422,9 +433,15 @@
 					<ul class="posts mt-10">
 						{#each data.posts.slice(0, 3) as post}
 							<li class="post mt-6">
-								<a href={post.slug} class="text-4xl mb-5 text-primary">{post.title}</a>
-								<p class="date">{formatDate(post.date)}</p>
-								<p>{post.description}</p>
+								<a href={post.slug} class="text-2xl font-poppins mb-5 text-primary hover:text-primary-hover"
+									>{post.title}</a
+								>
+								<p class="mb-3 date text-md font-semibold">{formatDate(post.date)}</p>
+								<span
+									class=" px-3 py-1 border-2 text-md border-secondary rounded-lg text-secondary-hover font-poppins font-semibold drop-shadow-sm"
+									>{post.category}</span
+								>
+								<p class=" mt-3 text-sm description font-poppins">{post.description}</p>
 							</li>
 						{/each}
 					</ul>
