@@ -50,10 +50,6 @@
 						<img src={newtab} class="mr-1 w-5" alt="youtube" />
 						INSTAGRAM</a
 					>
-					<a href="https://wa.me/message/NCECJOBKRIRDO1" target="”_blank”" class="flex">
-						<img src={newtab} class="mr-1 w-5" alt="youtube" />
-						WHATSAPP</a
-					>
 				</div>
 			</div>
 		</div>
@@ -93,12 +89,6 @@
 							href="https://t.me/nicolapreda"
 							target="”_blank”">telegram</a
 						>
-						o
-						<a
-							class=" hover:text-primary underline underline-offset-1 transition"
-							href="https://wa.me/message/NCECJOBKRIRDO1"
-							target="”_blank”">whatsapp</a
-						>.
 					</span>
 				</div>
 			</div>
