@@ -12,7 +12,7 @@
 		</li>
 		<li class="my-auto uppercase text-2xl font-poppins font-bold">
 			<a
-				class="text-primary-footer hover:text-primary-hover transition cursor-pointer hover:underline hover:underline-offset-1"
+				class="text-primary hover:text-primary-hover transition cursor-pointer hover:underline hover:underline-offset-1"
 				href="./blog">blog</a
 			>
 		</li>

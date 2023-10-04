@@ -35,7 +35,7 @@
 		<div class="md:flex justify-center items-center mt-12">
 			<img src={nik} class="h-32 rounded-full mx-auto md:mx-0" alt="nik" />
 
-			<div class="my-auto md:ml-10 md:mx-0 mx-auto text-secondary text-center md:text-left">
+			<div class="my-auto md:ml-10 md:mx-0 mx-auto text-primary text-center md:text-left">
 				<h1 class="md:text-4xl text-3xl my-auto uppercase font-semibold">Nicola Preda</h1>
 				<div class="flex items-center justify-center">
 					<a
