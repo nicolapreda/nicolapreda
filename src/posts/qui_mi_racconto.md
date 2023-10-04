@@ -19,11 +19,11 @@ Se vuoi saperne di più su di me e sul mio percorso in questo video mi presento 
 
 ## Un blog nel 2023? Seriamente?
 
-Si, seriamente. Apro questo blog che probabilmente non guarderà mai nessuno con l'obiettivo di staccare dalla frenetica vita di tutti i giorni, estraniandomi dal resto del mondo per dedicarmi a scrittura e riflessioni. 
+Si, seriamente. Apro questo blog che probabilmente non guarderà mai nessuno con l'obiettivo di staccare dalla frenetica vita di tutti i giorni, estraniandomi dal resto del mondo per dedicarmi a scrittura e riflessioni.
 
-E' ricominciata la mia solita routine scolastica, e sto tornando a vivere in modo totalmente piatto e indifferente le giornate e lo scorrere del tempo. Passo ore a scuola, di cui il 90% riguarda lezioni tutt'altro che coinvolgenti, con argomenti spiegati male e tanta tanta teoria sull'informatica, tematica che ormai non mi trasmette più nulla. Ho paura di trovarmi da un giorno all’altro a vivere per inerzia, seguire il corso degli eventi perché va fatto, e non perché voglio Vivere con la v maiuscola, un po’ come Spike in [Cowboy Bebop](https://it.wikipedia.org/wiki/Spike_Spiegel)(se non l’hai ancora fatto corri a vedere questa grande hit dell’animazione giapponese)
+E' ricominciata la mia solita routine scolastica, e sto tornando a vivere in modo totalmente piatto e indifferente le giornate e lo scorrere del tempo. Ho paura di trovarmi da un giorno all’altro a vivere per inerzia, perché va fatto, e non perché voglio Vivere con la v maiuscola, un po’ come Spike in [Cowboy Bebop](https://it.wikipedia.org/wiki/Spike_Spiegel)(se non l’hai ancora fatto corri a vedere questa grande hit dell’animazione giapponese)
 
-Ho una forte necessità di rompere l'ordinario per poter creare un mio straordinario , attraverso le parole e i fatti, per poter dare realmente un senso al tempo che scorre.
+Ho una forte necessità di rompere l'ordinario per poter creare un mio straordinario , attraverso le parole e i fatti, per poter dare realmente un senso al tempo che scorre. L'obiettivo è anche quello di riuscire a riordinare i miei pensieri in maniera efficiente durante il tempo libero,
 
 ## Sogni
 
@@ -58,6 +58,9 @@ Parte di quello che ho appena scritto l'ho narrato "a modo mio" anche qui:
 
 L'inizio di questo viaggio voglio paragonarlo all'**Odissea**: testo che sto riprendendo in questo periodo dopo l'uscita del libro di Alessandro D'Avenia, ["Resisti, cuore"](https://www.profduepuntozero.it/libri/resisti-cuore/). Ho deciso infatti di dare dei "capitoli" al blog, per dargli la sembianza di un viaggio, come quello narrato nell'opera. Mi trasformerò in **Telemaco** raccontando qui il mio percorso, che verosimilmente durerà fino al diploma. Mi impegnerò per pubblicare almeno un post al mese, anche se voglio puntare di più sulla qualità che sulla quantità(la stessa cosa é anche per youtube).
 Per oggi é tutto. Vi ringrazio per aver fatto lo sforzo di aver aperto un link probabilmente da Instagram e aver letto questo ultra-mega-iper papiro fino alla fine. Passo e chiudo🫡; **nik**
+
+> "...E non vorrai mica far credere a tua madre quelle due o tre  stronzate da artista sai..in qualche modo dobbiamo mantenerci, arrivare a fine mese..Sto scrivendo rime sai?"
+> Intro Orange County, Tedua
 
 
 
