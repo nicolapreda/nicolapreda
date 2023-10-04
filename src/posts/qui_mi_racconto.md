@@ -62,7 +62,7 @@ Parte di quello che ho appena scritto l'ho narrato "a modo mio" anche qui:
 L'inizio di questo viaggio voglio paragonarlo all'**Odissea**: testo che sto riprendendo in questo periodo dopo l'uscita del libro di Alessandro D'Avenia, ["Resisti, cuore"](https://www.profduepuntozero.it/libri/resisti-cuore/). Ho deciso infatti di dare dei "capitoli" al blog, per dargli la sembianza di un viaggio, come quello narrato nell'opera. Mi trasformerò in **Telemaco** raccontando qui il mio percorso, che verosimilmente durerà fino al diploma. Mi impegnerò per pubblicare almeno un post al mese, anche se voglio puntare di più sulla qualità che sulla quantità(la stessa cosa é anche per youtube).
 Per oggi é tutto. Vi ringrazio per aver fatto lo sforzo di aver aperto un link probabilmente da Instagram e aver letto questo ultra-mega-iper papiro fino alla fine. Passo e chiudo🫡; **nik**
 
-> "...E non vorrai mica far credere a tua madre quelle due o tre  stronzate da artista sai..in qualche modo dobbiamo mantenerci, arrivare a fine mese..."
+> ...E non vorrai mica far credere a tua madre quelle due o tre  stronzate da artista sai..in qualche modo dobbiamo mantenerci, arrivare a fine mese..."
 > Intro Orange County, Tedua
 
 
