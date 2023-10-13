@@ -35,7 +35,7 @@
 		<div class="md:flex justify-center items-center mt-12">
 			<img src={nik} class="h-32 rounded-full mx-auto md:mx-0" alt="nik" />
 
-			<div class="my-auto md:ml-10 md:mx-0 mx-auto text-secondary text-center md:text-left">
+			<div class="my-auto md:ml-10 md:mx-0 mx-auto text-primary text-center md:text-left">
 				<h1 class="md:text-4xl text-3xl my-auto uppercase font-semibold">Nicola Preda</h1>
 				<div class="flex items-center justify-center">
 					<a
@@ -49,10 +49,6 @@
 					<a href="https://instagram.com/nicolapreda_" target="”_blank”" class="mr-2 flex">
 						<img src={newtab} class="mr-1 w-5" alt="youtube" />
 						INSTAGRAM</a
-					>
-					<a href="https://wa.me/message/NCECJOBKRIRDO1" target="”_blank”" class="flex">
-						<img src={newtab} class="mr-1 w-5" alt="youtube" />
-						WHATSAPP</a
 					>
 				</div>
 			</div>
@@ -93,12 +89,6 @@
 							href="https://t.me/nicolapreda"
 							target="”_blank”">telegram</a
 						>
-						o
-						<a
-							class=" hover:text-primary underline underline-offset-1 transition"
-							href="https://wa.me/message/NCECJOBKRIRDO1"
-							target="”_blank”">whatsapp</a
-						>.
 					</span>
 				</div>
 			</div>
