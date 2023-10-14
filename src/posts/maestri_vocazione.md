@@ -9,7 +9,7 @@ readingTime: '10'
 
 
 <img src="https://media.licdn.com/dms/image/D4D12AQG_c8FFay_dvQ/article-cover_image-shrink_600_2000/0/1685974560978?e=1701302400&v=beta&t=txoNW24I2vN5l2QOuR3r4ZOqCr8BuWi47Py2jCTGJj4
-" height="100%" width="100%"
+" height="100%" width="100%" alt="Maestri di vocazione"
 />
 
 
