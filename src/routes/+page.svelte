@@ -3,7 +3,6 @@
 
 	import Footer from './footer.svelte';
 
-	import logo from '$lib/assets/img/logo.svg';
 	import design from '$lib/assets/img/design.webp';
 	import dispensa from '$lib/assets/img/dispensa.webp';
 	import rappresentante from '$lib/assets/img/rappresentante.webp';
@@ -27,39 +26,36 @@
 
 <div class="break-words">
 	<section class="mx-[5%] md:mx-[20%]">
-		<h1
-			class="mt-32 text-center break-words text-primary xl:text-7xl text-5xl m-auto font-semibold font-poppins"
-		>
-			Aspirante fotografo e graphic designer.
-		</h1>
-		<div class="md:flex justify-center items-center mt-12">
-			<img src={nik} class="h-32 rounded-full mx-auto md:mx-0" alt="nik" />
-
-			<div class="my-auto md:ml-10 md:mx-0 mx-auto text-primary text-center md:text-left">
-				<h1 class="md:text-4xl text-3xl my-auto uppercase font-semibold">Nicola Preda</h1>
-				<div class="flex items-center justify-center">
-					<a
-						target="”_blank”"
-						href="https://www.youtube.com/channel/UC1VPT4qglYpXyj1nt_sL2sA"
-						class="mr-2 flex"
-					>
-						<img src={newtab} class="mr-1 w-5" alt="youtube" />
-						YOUTUBE</a
-					>
-					<a href="https://instagram.com/nicolapreda_" target="”_blank”" class="mr-2 flex">
-						<img src={newtab} class="mr-1 w-5" alt="youtube" />
-						INSTAGRAM</a
-					>
-				</div>
+		<div class="relative isolate px-6 pt-14 lg:px-8">
+			<div
+				class="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80"
+				aria-hidden="true"
+			>
+				<div
+					class="relative left-[calc(50%-11rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 rotate-[30deg] bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-30 sm:left-[calc(50%-30rem)] sm:w-[72.1875rem]"
+					style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)"
+				/>
 			</div>
-		</div>
-
-		<a name="dipiu">
-			<div class="mt-24">
-				<h1 class="text-justify text-primary md:text-5xl text-4xl">io in breve</h1>
-
-				<div class="mt-5 text-justify tracking-wide text-xl uppercase font-light">
-					<span class="break-words"
+			
+			<div class="mx-auto max-w-2xl">
+				
+				<!--
+				<div class="hidden sm:mb-8 sm:flex sm:justify-center">
+					<div
+						class="relative rounded-full px-3 py-1 text-sm leading-6 text-gray-600 ring-1 ring-gray-900/10 hover:ring-gray-900/20"
+					>
+						Announcing our next round of funding. <a href="#" class="font-semibold text-indigo-600"
+							><span class="absolute inset-0" aria-hidden="true" />Read more
+							<span aria-hidden="true">&rarr;</span></a
+						>
+					</div>
+				</div>-->
+				<div class="text-center">
+					<h1 class="text-4xl font-bold tracking-tight text-primary sm:text-6xl">
+						Aspirante fotografo e graphic designer.
+					</h1>
+					<p class="mt-6 text-lg leading-8 ">
+						<span class="break-words"
 						>Mi chiamo <span class="">Nicola Preda </span>(per gli amici nik) e studio informatica,
 						sono rappresentante della mia scuola.mi piace il design, la pasta al pesto, scrivere,
 						leggere, la fotografia, le dunk, raccontare storie su
@@ -90,8 +86,23 @@
 							target="”_blank”">telegram</a
 						>
 					</span>
+					</p>
+					<div class="mt-10 flex items-center justify-center gap-x-6">
+						<a
+							href="#"
+							class="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+							>Portfolio</a
+						>
+						<a href="#" class="text-sm font-semibold leading-6 text-gray-900"
+							>Youtube <span aria-hidden="true">→</span></a
+						>
+					</div>
 				</div>
 			</div>
+		</div>
+
+		<a name="dipiu">
+			
 
 			<div class="mt-10 md:grid md:grid-cols-2 md:gap-16">
 				<div class="text-center">
@@ -109,7 +120,7 @@
 				<div class="text-center">
 					<h1 class="text-primary text-2xl">ultimo articolo</h1>
 
-					<div class="p-5 mt-10 rounded-xl h-64 bg-secondarypink">
+					<div class="p-5 mt-10 rounded-xl h-64 ">
 						<a href={data.posts[0].slug} class="text-4xl mb-5 text-primary font-bold"
 							>{data.posts[0].title}</a
 						>

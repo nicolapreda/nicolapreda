@@ -1,13 +1,13 @@
 ---
 title: Qui mi racconto
 description: Primo di (si spera) tanti altri post. Apro questo blog che probabilmente non guarderà mai nessuo con l'obiettivo di staccare dalla frenetica vita di tutti i giorni...
-date: '2023-8-17'
+date: '2023-10-4'
 category: "Telemachia"
 published: true
-readingTime: '10' 
+readingTime: '5' 
 ---
 
-<img src="https://i.imgur.com/hs0wPw8.png" class="w-full"
+<img src="https://i.imgur.com/hs0wPw8.png" class="w-full" alt="Qui mi racconto"
 />
 
 
