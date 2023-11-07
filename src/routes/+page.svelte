@@ -24,18 +24,9 @@
 	export let data;
 </script>
 
-<div class="break-words">
+<div class="break-words z-10">
 	<section class="mx-[5%] md:mx-[20%]">
-		<div class="relative isolate px-6 pt-14 lg:px-8">
-			<div
-				class="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80"
-				aria-hidden="true"
-			>
-				<div
-					class="relative left-[calc(50%-11rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 rotate-[30deg] bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-30 sm:left-[calc(50%-30rem)] sm:w-[72.1875rem]"
-					style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)"
-				/>
-			</div>
+		<div class=" px-6 pt-14 lg:px-8">
 			
 			<div class="mx-auto max-w-2xl">
 				
@@ -52,7 +43,7 @@
 				</div>-->
 				<div class="text-center">
 					<h1 class="text-4xl font-bold tracking-tight text-primary sm:text-6xl">
-						Aspirante fotografo e graphic designer.
+						Aspirante fotografo e designer.
 					</h1>
 					<p class="mt-6 text-lg leading-8 ">
 						<span class="break-words"
@@ -89,11 +80,11 @@
 					</p>
 					<div class="mt-10 flex items-center justify-center gap-x-6">
 						<a
-							href="#"
+							href="https://instagram.com/nicolapreda_" target="”_blank”"
 							class="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
-							>Portfolio</a
+							>Instagram</a
 						>
-						<a href="#" class="text-sm font-semibold leading-6 text-gray-900"
+						<a href="https://www.youtube.com/channel/UC1VPT4qglYpXyj1nt_sL2sA" target="”_blank”" class="text-sm font-semibold leading-6 text-gray-900"
 							>Youtube <span aria-hidden="true">→</span></a
 						>
 					</div>
@@ -103,9 +94,8 @@
 
 		<a name="dipiu">
 			
-
 			<div class="mt-10 md:grid md:grid-cols-2 md:gap-16">
-				<div class="text-center">
+				<div class="text-center ">
 					<h1 class="text-primary text-2xl">ultimo video</h1>
 					<iframe
 						class="rounded-xl mt-10 w-full h-64"
@@ -117,10 +107,10 @@
 					/>
 				</div>
 
-				<div class="text-center">
+				<div class="text-center  ">
 					<h1 class="text-primary text-2xl">ultimo articolo</h1>
 
-					<div class="p-5 mt-10 rounded-xl h-64 ">
+					<div class="p-10 mt-10 rounded-2xl h-64 bg-pink">
 						<a href={data.posts[0].slug} class="text-4xl mb-5 text-primary font-bold"
 							>{data.posts[0].title}</a
 						>
