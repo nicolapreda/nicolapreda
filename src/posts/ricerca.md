@@ -7,12 +7,7 @@ published: true
 readingTime: '2' 
 ---
 
-<script context="module">
-  import { base } from "$app/paths";
-</script>
-
-<img src="{base}/src/lib/assets/img/posts/ricerca.png"/>
-
+>Ciao Nicola, spero che tu stia bene! Scusa se ti disturbo, ma per il libretto dell' avvento sto cercando una testimonianza sulla parola ricerca. Volevo chiederti se eri disponibile a scrivermi qualcosa per sabato su cosa significhi per te, per quello che hai vissuto e stai vivendo questa parola. Grazie mille 🤪
 
 **“Ricerca”** è un termine che ci accompagna tutta la vita. Siamo sempre in viaggio per trovare un momento migliore, una situazione, un’occasione, una apparente “novità”, che pensiamo possa svoltare la nostra esistenza. Ci accontentiamo quindi di attraversare stancamente la ripetizione di giorni senza gioia, convinti che il meglio debba ancora arrivare.
 Cerchiamo di puntare a successi tramite le nostre performance lavorative o scolastiche, per tentare di misurarci e compararci agli altri: obiettivi tipici della società di oggi, proiettata verso un’ideale di bellezza che vuole solo essere **consumata**. 
