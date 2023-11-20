@@ -27,9 +27,7 @@
 <div class="break-words z-10">
 	<section class="mx-[5%] md:mx-[20%]">
 		<div class=" px-6 pt-14 lg:px-8">
-			
 			<div class="mx-auto max-w-2xl">
-				
 				<!--
 				<div class="hidden sm:mb-8 sm:flex sm:justify-center">
 					<div
@@ -45,46 +43,50 @@
 					<h1 class="text-4xl font-bold tracking-tight text-primary sm:text-6xl">
 						Aspirante fotografo e designer.
 					</h1>
-					<p class="mt-6 text-lg leading-8 ">
+					<p class="mt-6 text-lg leading-8">
 						<span class="break-words"
-						>Mi chiamo <span class="">Nicola Preda </span>(per gli amici nik) e studio informatica,
-						sono rappresentante della mia scuola.mi piace il design, la pasta al pesto, scrivere,
-						leggere, la fotografia, le dunk, raccontare storie su
-						<a
-							class=" hover:text-primary underline underline-offset-1 transition"
-							target="”_blank”"
-							href="https://www.youtube.com/channel/UC1VPT4qglYpXyj1nt_sL2sA">youtube</a
-						>. ogni tanto carico foto su
-						<a
-							class=" hover:text-primary underline underline-offset-1 transition"
-							href="https://instagram.com/nicolapreda_"
-							target="”_blank”">instagram</a
-						>.Le mie esperienze formative e professionali le trovi su
-						<a
-							class=" hover:text-primary underline underline-offset-1 transition"
-							href="https://www.linkedin.com/in/nicola-preda-5b0722233/"
-							target="”_blank”">linkedin</a
-						>. ho anche un <span>blog</span>. puoi contattarmi a questa
+							>Mi chiamo <span class="">Nicola Preda </span>(per gli amici nik) e studio
+							informatica, sono rappresentante della mia scuola.mi piace il design, la pasta al
+							pesto, scrivere, leggere, la fotografia, le dunk, raccontare storie su
+							<a
+								class=" hover:text-primary underline underline-offset-1 transition"
+								target="”_blank”"
+								href="https://www.youtube.com/channel/UC1VPT4qglYpXyj1nt_sL2sA">youtube</a
+							>. ogni tanto carico foto su
+							<a
+								class=" hover:text-primary underline underline-offset-1 transition"
+								href="https://instagram.com/nicolapreda_"
+								target="”_blank”">instagram</a
+							>.Le mie esperienze formative e professionali le trovi su
+							<a
+								class=" hover:text-primary underline underline-offset-1 transition"
+								href="https://www.linkedin.com/in/nicola-preda-5b0722233/"
+								target="”_blank”">linkedin</a
+							>. ho anche un <span>blog</span>. puoi contattarmi a questa
 
-						<a
-							class=" hover:text-primary underline underline-offset-1 transition"
-							href="mailto:nicola.preda05@gmail.com"
-							target="”_blank”">email</a
-						>, ma anche su
-						<a
-							class=" hover:text-primary underline underline-offset-1 transition"
-							href="https://t.me/nicolapreda"
-							target="”_blank”">telegram</a
-						>
-					</span>
+							<a
+								class=" hover:text-primary underline underline-offset-1 transition"
+								href="mailto:nicola.preda05@gmail.com"
+								target="”_blank”">email</a
+							>, ma anche su
+							<a
+								class=" hover:text-primary underline underline-offset-1 transition"
+								href="https://t.me/nicolapreda"
+								target="”_blank”">telegram</a
+							>
+						</span>
 					</p>
 					<div class="mt-10 flex items-center justify-center gap-x-6">
 						<a
-							href="https://instagram.com/nicolapreda_" target="”_blank”"
+							href="https://instagram.com/nicolapreda_"
+							target="”_blank”"
 							class="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
 							>Instagram</a
 						>
-						<a href="https://www.youtube.com/channel/UC1VPT4qglYpXyj1nt_sL2sA" target="”_blank”" class="text-sm font-semibold leading-6 text-gray-900"
+						<a
+							href="https://www.youtube.com/channel/UC1VPT4qglYpXyj1nt_sL2sA"
+							target="”_blank”"
+							class="text-sm font-semibold leading-6 text-gray-900"
 							>Youtube <span aria-hidden="true">→</span></a
 						>
 					</div>
@@ -93,21 +95,20 @@
 		</div>
 
 		<a name="dipiu">
-			
 			<div class="mt-10 md:grid md:grid-cols-2 md:gap-16">
-				<div class="text-center ">
+				<div class="text-center">
 					<h1 class="text-primary text-2xl">ultimo video</h1>
 					<iframe
 						class="rounded-xl mt-10 w-full h-64"
-						src="https://www.youtube.com/embed/1ruJUAvUVao"
-						title="Ascolta il tuo dolore"
+						src="https://www.youtube.com/embed/mBlEWkWqv8A"
+						title="(Stra)Ordinario"
 						frameborder="0"
 						allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
 						allowfullscreen
 					/>
 				</div>
 
-				<div class="text-center  ">
+				<div class="text-center">
 					<h1 class="text-primary text-2xl">ultimo articolo</h1>
 
 					<div class="p-10 mt-10 rounded-2xl h-64 bg-pink">
@@ -424,7 +425,9 @@
 					<ul class="posts mt-10">
 						{#each data.posts.slice(0, 3) as post}
 							<li class="post mt-6">
-								<a href={post.slug} class="text-2xl font-poppins mb-5 text-primary hover:text-primary-hover"
+								<a
+									href={post.slug}
+									class="text-2xl font-poppins mb-5 text-primary hover:text-primary-hover"
 									>{post.title}</a
 								>
 								<p class="mb-3 date text-md font-semibold">{formatDate(post.date)}</p>
