@@ -8,8 +8,8 @@
   import carousel7 from '$lib/assets/img/fotografia/carousel7.webp';
   import carousel8 from '$lib/assets/img/fotografia/carousel8.jpg';
   import carousel9 from '$lib/assets/img/fotografia/carousel9.jpg';
-  import carousel10 from '$lib/assets/img/fotografia/carousel10.jpg';
-  import carousel11 from '$lib/assets/img/fotografia/carousel11.jpg';
+  import carousel10 from '$lib/assets/img/fotografia/carousel10.webp';
+  import carousel11 from '$lib/assets/img/fotografia/carousel11.webp';
 
 	import Footer from '../footer.svelte';
 
