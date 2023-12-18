@@ -8,17 +8,12 @@
 	import rappresentante from '$lib/assets/img/rappresentante.webp';
 	import horidesk from '$lib/assets/img/horidesk.webp';
 	import newtab from '$lib/assets/img/new-tab.svg';
-	import carousel1 from '$lib/assets/img/fotografia/carousel1.webp';
 	import carousel2 from '$lib/assets/img/fotografia/carousel2.webp';
 	import carousel3 from '$lib/assets/img/fotografia/carousel3.jpg';
 	import carousel4 from '$lib/assets/img/fotografia/carousel4.jpg';
 	import carousel5 from '$lib/assets/img/fotografia/carousel5.webp';
 	import carousel6 from '$lib/assets/img/fotografia/carousel6.webp';
 	import carousel7 from '$lib/assets/img/fotografia/carousel7.webp';
-	import carousel8 from '$lib/assets/img/fotografia/carousel8.jpg';
-	import carousel9 from '$lib/assets/img/fotografia/carousel9.jpg';
-	import carousel10 from '$lib/assets/img/fotografia/carousel10.jpg';
-	import carousel11 from '$lib/assets/img/fotografia/carousel11.jpg';
 
 	import header from '$lib/assets/img/header.jpg';
 
