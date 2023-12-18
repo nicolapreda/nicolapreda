@@ -10,12 +10,15 @@
 	import newtab from '$lib/assets/img/new-tab.svg';
 	import carousel1 from '$lib/assets/img/fotografia/carousel1.webp';
 	import carousel2 from '$lib/assets/img/fotografia/carousel2.webp';
-	import carousel3 from '$lib/assets/img/fotografia/carousel3.webp';
-	import carousel4 from '$lib/assets/img/fotografia/carousel4.webp';
+	import carousel3 from '$lib/assets/img/fotografia/carousel3.jpg';
+	import carousel4 from '$lib/assets/img/fotografia/carousel4.jpg';
 	import carousel5 from '$lib/assets/img/fotografia/carousel5.webp';
 	import carousel6 from '$lib/assets/img/fotografia/carousel6.webp';
 	import carousel7 from '$lib/assets/img/fotografia/carousel7.webp';
-	import carousel8 from '$lib/assets/img/fotografia/carousel8.webp';
+	import carousel8 from '$lib/assets/img/fotografia/carousel8.jpg';
+	import carousel9 from '$lib/assets/img/fotografia/carousel9.jpg';
+	import carousel10 from '$lib/assets/img/fotografia/carousel10.jpg';
+	import carousel11 from '$lib/assets/img/fotografia/carousel11.jpg';
 
 	import header from '$lib/assets/img/header.jpg';
 
@@ -27,9 +30,8 @@
 
 <div class="break-words">
 	<section class="mx-[5%] md:mx-[20%] relative">
-
 		<div class="relative z-0 bg-black md:mt-12 mt-10">
-			<div class="px-6 py-32 lg:px-8  relative z-10">
+			<div class="px-6 py-64 lg:px-8 relative z-10">
 				<div class="mx-auto max-w-2xl">
 					<div class="text-center">
 						<h1 class="text-4xl font-bold tracking-tight text-white sm:text-6xl">
@@ -53,11 +55,9 @@
 					</div>
 				</div>
 			</div>
-			<img src={header} alt="" class="absolute inset-0 w-full h-full object-cover z-0 opacity-50" />
-
+			<img src={header} alt="" class="absolute inset-0 w-full h-full object-cover z-0 opacity-75" />
 		</div>
 
-		
 		<a name="dipiu">
 			<div class="mt-24 md:grid md:grid-cols-2 md:gap-16">
 				<div class="text-center">
@@ -82,39 +82,42 @@
 
 						<div class="post mt-2">
 							<p class="text-primary text-lg">{formatDate(data.posts[0].date)}</p>
-							<p>    {#if data.posts[0].description.length > 100}
-								{data.posts[0].description.substring(0, 100)}...
-							  {:else}
-								{data.posts[0].description}
-							  {/if}
-						  </p>
+							<p>
+								{#if data.posts[0].description.length > 100}
+									{data.posts[0].description.substring(0, 100)}...
+								{:else}
+									{data.posts[0].description}
+								{/if}
+							</p>
 						</div>
 					</div>
 				</div>
 			</div>
 
 			<div class="mt-24">
-
 				<p class="mt-6 text-lg leading-8">
 					<span class="break-words">
-						Mi chiamo <span class="">Nicola Preda </span>(per gli amici nik) e studio
-						informatica, sono rappresentante della mia scuola. Mi piace il design, la pasta al
-						pesto, scrivere, leggere, la fotografia, le dunk, raccontare storie su
+						Mi chiamo <span class="">Nicola Preda </span>(per gli amici nik) e studio informatica.
+						Mi piace il design, la pasta al pesto, scrivere, leggere, la fotografia, le dunk,
+						raccontare storie su
 						<a
 							class=" hover:text-primary underline underline-offset-1 transition"
 							target="”_blank”"
-							href="https://www.youtube.com/channel/UC1VPT4qglYpXyj1nt_sL2sA">youtube</a
+							href="https://www.youtube.com/channel/UC1VPT4qglYpXyj1nt_sL2sA">Youtube</a
 						>. Ogni tanto carico foto su
 						<a
 							class=" hover:text-primary underline underline-offset-1 transition"
 							href="https://instagram.com/nicolapreda_"
-							target="”_blank”">instagram</a
+							target="”_blank”">Instagram</a
 						>. Le mie esperienze formative e professionali le trovi su
 						<a
 							class=" hover:text-primary underline underline-offset-1 transition"
 							href="https://www.linkedin.com/in/nicola-preda-5b0722233/"
-							target="”_blank”">linkedin</a
-						>. Ho anche un <span>blog</span>. Puoi contattarmi a questa
+							target="”_blank”">Linkedin</a
+						>. Ho anche un
+						<a class=" hover:text-primary underline underline-offset-1 transition" href="./blog"
+							>blog</a
+						>. Puoi contattarmi a questa
 						<a
 							class=" hover:text-primary underline underline-offset-1 transition"
 							href="mailto:nicola.preda05@gmail.com"
@@ -123,14 +126,13 @@
 						<a
 							class=" hover:text-primary underline underline-offset-1 transition"
 							href="https://t.me/nicolapreda"
-							target="”_blank”">telegram</a
+							target="”_blank”">Telegram</a
 						>
 					</span>
 				</p>
 
-
 				<div class="mt-10">
-					<h1 class="text-justify text-primary md:text-5xl text-4xl">design</h1>
+					<h1 class="text-justify text-primary md:text-5xl text-4xl">DESIGN</h1>
 
 					<div class="grid lg:grid-cols-2 lg:gap-16 gap-4 mt-5">
 						<div>
@@ -138,8 +140,8 @@
 						</div>
 						<div class="m-auto">
 							<span class="mt-5 text-justify tracking-wide text-xl font-light"
-								>dopo 4 anni di informatica e programmazione, ho cambiato completamente interessi,
-								entrando nel mondo del design: in particolare graphic design e ux/ui. attualmente
+								>Dopo 4 anni di informatica e programmazione, ho cambiato completamente interessi,
+								entrando nel mondo del design: in particolare graphic design e ux/ui. Attualmente
 								sto imparando le nozioni di base come autodidatta. per il futuro vorrei iscrivermi a <a
 									class="hover:text-primary underline underline-offset-1 transition"
 									target="”_blank”"
@@ -158,7 +160,7 @@
 						href="./fotografia"
 						target="”_blank”"
 					>
-						di più
+						Di più
 						<svg
 							class="my-auto ml-2"
 							width="24"
@@ -171,40 +173,96 @@
 							/></svg
 						>
 					</a>
-					<h1 class="text-justify text-primary md:text-5xl text-4xl">fotografia</h1>
+					<h1 class="text-justify text-primary md:text-5xl text-4xl">FOTOGRAFIA</h1>
 
-					<div class="mt-5">
+					<div class="my-5">
 						<span class="text-justify tracking-wide text-xl font-light"
 							>Sono da poco entrato nel mondo della fotografia analogica e digitale, ho acquistato
 							una sony a6100 con cui registro e fotografo le mie avventure :) su <a
 								href="https://instagram.com/nicolapreda_"
 								target="”_blank”"
 								class="hover:text-primary underline underline-offset-1 transition">instagram</a
-							> trovi i miei scatti migliori (anche quelli peggiori)
+							> trovi i miei scatti migliori (anche quelli peggiori).
 						</span>
-					</div>
 
-					<div class="mt-12 h-64 carousel carousel-center rounded-box">
-						<div class="carousel-item">
-							<img src={carousel1} alt="fotografia" />
-						</div>
-						<div class="carousel-item">
-							<img src={carousel2} alt="fotografia" />
-						</div>
-						<div class="carousel-item">
-							<img src={carousel4} alt="fotografia" />
-						</div>
-						<div class="carousel-item">
-							<img src={carousel5} alt="fotografia" />
-						</div>
-						<div class="carousel-item">
-							<img src={carousel6} alt="fotografia" />
-						</div>
-						<div class="carousel-item">
-							<img src={carousel7} alt="fotografia" />
-						</div>
-						<div class="carousel-item">
-							<img src={carousel8} alt="fotografia" />
+					</div>
+					<a
+					href="/fotografia"
+					class="px-4 py-2 bg-secondary hover:bg-secondary-hover transition rounded-3xl"
+					>Portfolio Fotografico</a
+				>
+					<div class="hidden md:block container w-full mt-12">
+						<div class="flex flex-wrap w-full">
+							<div class="flex w-full md:w-1/2 flex-wrap">
+								<div class="w-full md:w-1/2 p-1">
+									<div class="overflow-hidden h-full w-full">
+										<a href={carousel3} data-fancybox="gallery">
+											<img
+												alt="Portfolio Fotografia"
+												class="block h-full w-full object-cover object-center animate-fade-in transition duration-500 transform scale-100 hover:scale-110"
+												src={carousel3}
+											/>
+										</a>
+									</div>
+								</div>
+								<div class="w-full md:w-1/2 p-1">
+									<div class="overflow-hidden h-full w-full">
+										<a href={carousel6} data-fancybox="gallery">
+											<img
+												alt="Portfolio Fotografia"
+												class="block h-full w-full object-cover object-center animate-fade-in transition duration-500 transform scale-100 hover:scale-110"
+												src={carousel6}
+											/>
+										</a>
+									</div>
+								</div>
+								<div class="w-full p-1">
+									<div class="overflow-hidden h-full w-full">
+										<a href={carousel5} data-fancybox="gallery">
+											<img
+												alt="Portfolio Fotografia"
+												class="block h-full w-full object-cover object-center animate-fade-in transition duration-500 transform scale-100 hover:scale-110"
+												src={carousel5}
+											/>
+										</a>
+									</div>
+								</div>
+							</div>
+							<div class="flex w-full md:w-1/2 flex-wrap">
+								<div class="w-full p-1">
+									<div class="overflow-hidden h-full w-full">
+										<a href={carousel4} data-fancybox="gallery">
+											<img
+												alt="Portfolio Fotografia"
+												class="block h-full w-full object-cover object-center animate-fade-in transition duration-500 transform scale-100 hover:scale-110"
+												src={carousel4}
+											/>
+										</a>
+									</div>
+								</div>
+								<div class="w-full md:w-1/2 p-1">
+									<div class="overflow-hidden h-full w-full">
+										<a href={carousel2} data-fancybox="gallery">
+											<img
+												alt="Portfolio Fotografia"
+												class="block h-full w-full object-cover object-center animate-fade-in transition duration-500 transform scale-100 hover:scale-110"
+												src={carousel2}
+											/>
+										</a>
+									</div>
+								</div>
+								<div class="w-full md:w-1/2 p-1">
+									<div class="overflow-hidden h-full w-full">
+										<a href={carousel7} data-fancybox="gallery">
+											<img
+												alt="Portfolio Fotografia"
+												class="block h-full w-full object-cover object-center animate-fade-in transition duration-500 transform scale-100 hover:scale-110"
+												src={carousel7}
+											/>
+										</a>
+									</div>
+								</div>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -215,7 +273,7 @@
 						href="https://www.youtube.com/channel/UC1VPT4qglYpXyj1nt_sL2sA"
 						target="”_blank”"
 					>
-						di più
+						Di più
 						<svg
 							class="my-auto ml-2"
 							width="24"
@@ -228,7 +286,7 @@
 							/></svg
 						>
 					</a>
-					<h1 class="text-justify text-primary md:text-5xl text-4xl">youtube</h1>
+					<h1 class="text-justify text-primary md:text-5xl text-4xl">YOUTUBE</h1>
 
 					<div class="grid lg:grid-cols-2 lg:gap-16 gap-4 mt-5">
 						<div>
@@ -244,8 +302,7 @@
 
 						<div class="text-justify m-auto">
 							<span class="text-justify tracking-wide text-xl font-light">
-								mi piace realizzare video e storie su youtube nel tempo libero. qua a lato puoi
-								trovare il mio ultimo video, se invece vuoi dare un’occhiata al canale clicca <a
+								Mi piace realizzare video e storie su youtube nel tempo libero. Qua a lato trovi il video che rappresenta l'inizio del mio viaggio. Se invece vuoi dare un’occhiata al canale clicca <a
 									href="https://www.youtube.com/channel/UC1VPT4qglYpXyj1nt_sL2sA"
 									target="”_blank”"
 									class="hover:text-primary underline underline-offset-1 transition">qui.</a
@@ -261,7 +318,7 @@
 						href="https://github.com/nicolapreda/"
 						target="”_blank”"
 					>
-						di più
+						Di più
 						<svg
 							class="my-auto ml-2"
 							width="24"
@@ -275,13 +332,13 @@
 						>
 					</a>
 
-					<h1 class="text-justify text-primary md:text-5xl text-4xl">programmazione</h1>
+					<h1 class="text-justify text-primary md:text-5xl text-4xl">PROGRAMMAZIONE</h1>
 					<span class="mt-10 text-justify tracking-wide text-xl font-light"
-						>ogni tanto adempio ancora al mio compito da programmatore (principalmente frontend). i
-						miei progetti li trovi su <a
+						>Ogni tanto adempio ancora al mio compito da programmatore (principalmente frontend, un
+						esempio molto pratico è questo sito web). I miei progetti li trovi su <a
 							href="https://github.com/nicolapreda/"
 							target="”_blank”"
-							class="hover:text-primary underline underline-offset-1 transition">github</a
+							class="hover:text-primary underline underline-offset-1 transition">GitHub</a
 						> . qui sotto qualche progetto recente:
 					</span>
 
@@ -292,7 +349,7 @@
 							</div>
 							<div class="p-5 content-center text-center">
 								<div>
-									<h1 class="text-primary lg:text-4xl md:text-3xl text-2xl">dispensa</h1>
+									<h1 class="text-primary lg:text-4xl md:text-3xl text-2xl">DISPENSA</h1>
 									<span class="mt-5 text-justify tracking-wide text-md font-light"
 										>Applicazione per la gestione della dispensa di casa, realizzato con Flutter e
 										Firebase per IOS e Android. Ho avuto l'onore di partecipare e arrivare secondo
@@ -303,7 +360,7 @@
 									<a
 										href="/dispensa"
 										class="px-4 py-2 bg-secondary hover:bg-secondary-hover transition rounded-3xl"
-										>scopri di piu'</a
+										>Scopri di piu'</a
 									>
 								</div>
 							</div>
@@ -315,7 +372,7 @@
 							</div>
 							<div class="p-5 content-center text-center">
 								<div>
-									<h1 class="text-primary lg:text-4xl md:text-3xl text-2xl">horidesk</h1>
+									<h1 class="text-primary lg:text-4xl md:text-3xl text-2xl">HORIDESK</h1>
 									<span class="mt-5 text-justify tracking-wide text-md font-light">
 										Ho collaborato per la realizzazione di un software per l’industria 4.0
 										incentrato nella gestione di macchine FANUC, tramite un’interfaccia web semplice
@@ -327,7 +384,7 @@
 										href="https://github.com/softwarehorizons"
 										target="”_blank”"
 										class="px-4 py-2 bg-secondary hover:bg-secondary-hover transition rounded-3xl"
-										>scopri di piu'</a
+										>Scopri di piu'</a
 									>
 								</div>
 							</div>
@@ -340,7 +397,7 @@
 							<div class="p-5 content-center text-center">
 								<div>
 									<h1 class="text-center text-primary lg:text-4xl md:text-3xl text-2xl">
-										allergizen
+										ALLERGIZEN
 									</h1>
 									<span class="mt-5 text-center tracking-wide text-md font-light">
 										Due settimane di intenso lavoro alla Tecnobody S.r.l per realizzare
@@ -354,7 +411,7 @@
 										href="https://github.com/allergizen"
 										target="”_blank”"
 										class="px-4 py-2 bg-secondary hover:bg-secondary-hover transition rounded-3xl"
-										>scopri di piu'</a
+										>Scopri di piu'</a
 									>
 								</div>
 							</div>
@@ -367,7 +424,7 @@
 						class="flex my-auto fill-primary text-primary hover:text-primary-hover hover:fill-primary-hover transition"
 						href="#"
 					>
-						di più
+						Di più
 						<svg
 							class="my-auto ml-2"
 							width="24"
@@ -381,7 +438,7 @@
 						>
 					</a>
 
-					<h1 class="text-justify text-primary md:text-5xl text-4xl">rappresentante</h1>
+					<h1 class="text-justify text-primary md:text-5xl text-4xl">RAPPRESENTANTE</h1>
 
 					<div class="grid lg:grid-cols-2 lg:gap-16 gap-4 mt-5">
 						<div class="m-auto">
@@ -389,12 +446,12 @@
 						</div>
 						<div class="text-justify m-auto">
 							<span class="text-justify tracking-wide text-xl font-light"
-								>da ormai due anni sono rappresentante d’istituto della mia scuola. gestire tutte le
+								>Da ormai due anni sono rappresentante d’istituto della mia scuola. gestire tutte le
 								attivita' che ruotano intorno ad essa e’ un compito che richiede tempo e dedizione,
 								ma che mi ha lasciato ottime skill di gestione di un team, logistica, organizzazione
 								di eventi e tante soddisfazioni. <a
 									class="hover:text-primary underline underline-offset-1 transition"
-									href="/rappresentante">qua</a
+									href="/rappresentante">Qua</a
 								> tutto il mio percorso raccontato per filo e per segno
 							</span>
 						</div>
@@ -406,7 +463,7 @@
 						class="flex my-auto fill-primary text-primary hover:text-primary-hover hover:fill-primary-hover transition"
 						href="./blog"
 					>
-						di più
+						Di più
 						<svg
 							class="my-auto ml-2"
 							width="24"
@@ -420,10 +477,10 @@
 						>
 					</a>
 
-					<h1 class="text-primary text-5xl">blog</h1>
+					<h1 class="text-primary text-5xl">BLOG</h1>
 					<span class="mt-5 text-justify tracking-wide text-xl font-light"
-						>prima ho scritto che mi piace scrivere, infatti ho anche un blog. ogni tanto scrivo
-						qualcosa, quando mi va. qua sotto gli ultimi articoli:
+						>Prima ho scritto che mi piace scrivere, infatti ho anche un blog. Ogni tanto scrivo
+						qualcosa, quando mi va. Qua sotto gli ultimi articoli:
 					</span>
 
 					<ul class="posts mt-10">
