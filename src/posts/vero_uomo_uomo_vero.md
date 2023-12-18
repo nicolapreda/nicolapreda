@@ -1,6 +1,6 @@
 ---
 title: Vero Uomo o Uomo Vero?
-description: "Filippo Turati, la notte di sabato 11 novembre, uccide a coltellate la sua ex fidanzata, Giulia Cecchettin, in seguito a una lite. E’ l’ennesimo caso di femminicidio durante questo 2023.
+description: "Filippo Turetta, la notte di sabato 11 novembre, uccide a coltellate la sua ex fidanzata, Giulia Cecchettin, in seguito a una lite. E’ l’ennesimo caso di femminicidio durante questo 2023.
 "
 date: '2023-11-27'
 category: "Archivio '23"
@@ -8,7 +8,7 @@ published: true
 readingTime: '3' 
 ---
 
->Filippo Turati, la notte di sabato 11 novembre, uccide a coltellate la sua ex fidanzata, Giulia Cecchettin, in seguito a una lite. E’ l’ennesimo caso di femminicidio durante questo 2023.
+>Filippo Turetta, la notte di sabato 11 novembre, uccide a coltellate la sua ex fidanzata, Giulia Cecchettin, in seguito a una lite. E’ l’ennesimo caso di femminicidio durante questo 2023.
 
 Dopo la notizia di quel sabato mattina, in cui Giulia è stata ritrovata senza vita, si è spezzato il cuore a tutti, e anche solo per un attimo ci siamo sentiti impotenti. In questi anni, si è cercato in ogni modo di istruire le ragazze e le donne quando una relazione amorosa rischia di trasformarsi in altro. A scuola si parla perennemente di questo tema, non c’è trasmissione televisiva che non ribadisca l’importanza di denunciare, di rivolgersi a un centro antiviolenza quando ci si sente sotto assedio, di non presentarsi mai al cosiddetto ultimo incontro. Eppure la tragica fine di Giulia ci rivela che tutto questo non basta.
 
