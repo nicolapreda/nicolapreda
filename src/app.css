@@ -10,3 +10,6 @@
 
     }
   }
+.prose{
+  max-width: max-content!important;
+}

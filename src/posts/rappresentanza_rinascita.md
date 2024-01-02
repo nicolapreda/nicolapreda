@@ -1,6 +1,6 @@
 ---
 title: Il ruolo di rappresentante d’istituto mi ha fatto ri-nascere
-description: “Ricerca” è un termine che ci accompagna tutta la vita...
+description: Ancora ora mi chiedo perché mai una persona sana di mente debba scegliere di sua spontanea volontà un ruolo del genere...
 date: '2024-01-02'
 category: "Archivio '24"
 published: true

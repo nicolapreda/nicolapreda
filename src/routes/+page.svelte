@@ -72,7 +72,11 @@
 
 					<div class="p-10 mt-5 rounded-2xl h-64 bg-pink">
 						<a href={data.posts[0].slug} class="text-4xl mb-5 text-primary font-semibold"
-							>{data.posts[0].title}</a
+							>{#if data.posts[0].title.length > 20}
+								{data.posts[0].title.substring(0, 20)}...
+							{:else}
+								{data.posts[0].title}
+							{/if}</a
 						>
 
 						<div class="post mt-2">
@@ -179,13 +183,12 @@
 								class="hover:text-primary underline underline-offset-1 transition">instagram</a
 							> trovi i miei scatti migliori (anche quelli peggiori).
 						</span>
-
 					</div>
 					<a
-					href="/fotografia"
-					class="px-4 py-2 bg-secondary hover:bg-secondary-hover transition rounded-3xl"
-					>Portfolio Fotografico</a
-				>
+						href="/fotografia"
+						class="px-4 py-2 bg-secondary hover:bg-secondary-hover transition rounded-3xl"
+						>Portfolio Fotografico</a
+					>
 					<div class="hidden md:block container w-full mt-12">
 						<div class="flex flex-wrap w-full">
 							<div class="flex w-full md:w-1/2 flex-wrap">
@@ -297,7 +300,9 @@
 
 						<div class="text-justify m-auto">
 							<span class="text-justify tracking-wide text-xl font-light">
-								Mi piace realizzare video e storie su youtube nel tempo libero. Qua a lato trovi il video che rappresenta l'inizio del mio viaggio. Se invece vuoi dare un’occhiata al canale clicca <a
+								Mi piace realizzare video e storie su youtube nel tempo libero. Qua a lato trovi il
+								video che rappresenta l'inizio del mio viaggio. Se invece vuoi dare un’occhiata al
+								canale clicca <a
 									href="https://www.youtube.com/channel/UC1VPT4qglYpXyj1nt_sL2sA"
 									target="”_blank”"
 									class="hover:text-primary underline underline-offset-1 transition">qui.</a
@@ -474,7 +479,7 @@
 
 					<h1 class="text-primary text-5xl">BLOG</h1>
 					<span class="mt-5 text-justify tracking-wide text-xl font-light"
-						>Prima ho scritto che mi piace scrivere, infatti ho anche un blog. Ogni tanto scrivo
+						>Ho anche un blog. Ogni tanto scrivo
 						qualcosa, quando mi va. Qua sotto gli ultimi articoli:
 					</span>
 

@@ -25,7 +25,7 @@
 
 
   <!-- Post -->
-	<div class="mt-10 mb-16  prose w-full inline-block">
+	<div class="mt-10 mb-16 prose w-full inline-block">
 		<svelte:component this={data.content} />
 	</div>
 </article>
