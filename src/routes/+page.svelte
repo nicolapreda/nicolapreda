@@ -57,9 +57,10 @@
 			<div class="mt-24 md:grid md:grid-cols-2 md:gap-16">
 				<div class="text-center">
 					<h1 class="text-primary text-2xl font-semibold">ULTIMO VIDEO</h1>
+
 					<iframe
 						class="rounded-xl mt-5 w-full h-64"
-						src="https://www.youtube.com/embed/mBlEWkWqv8A"
+						src="https://www.youtube.com/embed/EZpJDZn-Cy8"
 						title="(Stra)Ordinario"
 						frameborder="0"
 						allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -479,8 +480,8 @@
 
 					<h1 class="text-primary text-5xl">BLOG</h1>
 					<span class="mt-5 text-justify tracking-wide text-xl font-light"
-						>Ho anche un blog. Ogni tanto scrivo
-						qualcosa, quando mi va. Qua sotto gli ultimi articoli:
+						>Ho anche un blog. Ogni tanto scrivo qualcosa, quando mi va. Qua sotto gli ultimi
+						articoli:
 					</span>
 
 					<ul class="posts mt-10">
