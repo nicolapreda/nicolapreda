@@ -1,7 +1,7 @@
 ---
 title: Naufrago
 description: Sono le 7 di mattina del primo gennaio 2024, e proprio ora ho deciso di continuare la mia rubrica, dopo quasi tre mesi di stop.
-date: '2023-01-01'
+date: '2024-01-1'
 category: "Viaggi di Ulisse"
 published: true
 readingTime: '1' 
