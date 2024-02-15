@@ -4,17 +4,11 @@
 </script>
 
 <nav class="mx-[5%] md:mx-[20%] mt-5">
-	<ul class="flex justify-between">
+	<ul class="flex justify-center">
 		<li>
 			<a href="/">
 				<img src={logo} alt="nik" class="h-20 " />
 			</a>
-		</li>
-		<li class="my-auto uppercase text-2xl font-poppins font-bold">
-			<a
-				class="text-primary hover:text-primary-hover transition cursor-pointer hover:underline hover:underline-offset-1"
-				href="./blog">blog</a
-			>
 		</li>
 	</ul>
 </nav>

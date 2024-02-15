@@ -1,6 +1,7 @@
 <script lang="ts">
 	import { formatDate } from '$lib/utils'
 	import Footer from '../footer.svelte';
+	import Navbar from '../navbar.svelte';
 
 	export let data
 </script>
@@ -12,6 +13,8 @@
 	<meta property="og:title" content={data.meta.title} />
 </svelte:head>
 
+
+<Navbar />
 <article class="mx-[5%] md:mx-[20%] mt-12 break-words font-poppins">
   <!-- Title -->
 	<hgroup>

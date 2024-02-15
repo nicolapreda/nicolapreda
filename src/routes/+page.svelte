@@ -2,8 +2,9 @@
 	// @ts-nocheck
 
 	import Footer from './footer.svelte';
+	import Navbar from './navbar.svelte';
 
-	import design from '$lib/assets/img/design.webp';
+	import design from '$lib/assets/img/design.svg';
 	import dispensa from '$lib/assets/img/dispensa.webp';
 	import rappresentante from '$lib/assets/img/rappresentante.webp';
 	import horidesk from '$lib/assets/img/horidesk.webp';
@@ -14,15 +15,13 @@
 	import carousel5 from '$lib/assets/img/fotografia/carousel5.webp';
 	import carousel6 from '$lib/assets/img/fotografia/carousel6.webp';
 	import carousel7 from '$lib/assets/img/fotografia/carousel7.webp';
-
 	import header from '$lib/assets/img/header.jpg';
-
 	import { formatDate } from '$lib/utils';
-	import * as config from '$lib/config';
 
 	export let data;
 </script>
 
+<Navbar />
 <div class="break-words">
 	<section class="mx-[5%] md:mx-[20%] relative">
 		<div class="relative z-0 bg-black md:mt-12 mt-10">
@@ -450,10 +449,10 @@
 								>Da ormai due anni sono rappresentante d’istituto della mia scuola. gestire tutte le
 								attivita' che ruotano intorno ad essa e’ un compito che richiede tempo e dedizione,
 								ma che mi ha lasciato ottime skill di gestione di un team, logistica, organizzazione
-								di eventi e tante soddisfazioni. <a
+								di eventi e tante soddisfazioni. In  <a
 									class="hover:text-primary underline underline-offset-1 transition"
-									href="/rappresentante">Qua</a
-								> tutto il mio percorso raccontato per filo e per segno
+									href="/rappresentanza_rinascita">questo articolo del blog</a
+								> ho raccontato quello che è stato il mio percorso e cosa mi ha lasciato.
 							</span>
 						</div>
 					</div>

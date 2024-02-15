@@ -4,7 +4,7 @@
 		<span class="font-briceextralight text-white md:text-2xl text-xl"
 			>Puoi tornare <a
 				class="underline underline-offset-1 font-bricelight cursor-pointer"
-				href="/">sù</a
+				href="#top">sù</a
 			> se vuoi. :)</span
 		>
 	</div>
