@@ -1,14 +1,10 @@
 <script>
-	import { onMount } from 'svelte';
+// @ts-nocheck
+
 	import Footer from '../../footer.svelte';
 
-	/**
-	 * @type {any[]}
-	 */
 	let samucam = [];
-	/**
-	 * @type {any[]}
-	 */
+	
 	let images = [];
 
 	for (let i = 1; i <= 146; i++) {
