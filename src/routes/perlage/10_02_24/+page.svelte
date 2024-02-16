@@ -1,3 +1,9 @@
+<svelte:head>
+	<title>Perlage 10/02/24</title>
+	<meta property="og:title" content="Perlage 10/02/24" />
+</svelte:head>
+
+
 <script>
 		// @ts-nocheck
 	import Footer from '../../footer.svelte';
