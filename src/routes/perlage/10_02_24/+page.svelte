@@ -11,7 +11,7 @@
 	}
 
 	for (let i = 1; i <= 65; i++) {
-		samucam.push(`/perlage/10-02-24/samu/${i.toString().padStart(5, '0')}.jpg`);
+		samucam.push(`/perlage/10-02-24/samu/${i.toString().padStart(5, '0')}.JPG`);
 	}
 </script>
 
