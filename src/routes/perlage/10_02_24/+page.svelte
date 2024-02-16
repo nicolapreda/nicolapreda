@@ -2,7 +2,6 @@
 	<title>Perlage 10/02/24</title>
 	<meta property="og:title" content="Perlage 10/02/24" />
 	<meta property="og:description" content="Foto Perlage 10/02/24">
-	<meta property="og:image" content="../%sveltekit.assets%/perlage/10-02-24/00042.jpg">
 	<meta name=description content="Foto Perlage 10/02/24">
 
 </svelte:head>
