@@ -29,7 +29,7 @@
 				<div class="mx-auto max-w-2xl">
 					<div class="text-center">
 						<h1 class="text-4xl font-bold tracking-tight text-white sm:text-6xl">
-							nik; Cerco la bellezza nell'ordinario.
+							nik
 						</h1>
 
 						<div class="mt-10 flex items-center justify-center gap-x-6">

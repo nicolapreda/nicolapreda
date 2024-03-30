@@ -16,7 +16,7 @@
 			<li class="post mt-6">
 				<a href={post.slug} class="text-4xl font-semibold font-poppins mb-5 text-primary">{post.title}</a>
 				<p class="mb-5 date text-xl font-poppins font-semibold">{formatDate(post.date)}</p>
-				<span class=" px-4 py-2 border-2 text-xl border-secondary rounded-lg text-secondary-hover font-poppins font-semibold drop-shadow-sm">{post.category}</span>
+				<span class=" px-3 py-1 border-2 text-md border-primary rounded-lg text-primary font-poppins drop-shadow-sm">{post.category}</span>
 				<p class=" mt-5 description font-poppins">{post.description}</p>
 			</li>
 		{/each}
