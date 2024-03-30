@@ -10,7 +10,7 @@
 <Navbar />
 <section class="mx-[5%] md:mx-[20%] mt-12">
 	<h1 class="mt-22 text-primary xl:text-8xl text-6xl m-auto font-bold font-poppins">Blog</h1>
-	<h2 class="mt-5 text-xl">Qui mi racconto. I post sono divisi in categorie/rubriche specifiche, in base al contenuto. Un giorno aggiungerò anche qualche filtro e migliorerò anche questa pagina. Per oggi mi limito a pubblicare il primo articolo e a tornare a dormire. Vi ringrazio per lo sforzo da voi fatto per aprire la pagina.</h2>
+	<h2 class="mt-5 text-xl">Qui mi racconto! I post sono divisi in categorie/rubriche specifiche, in base al contenuto. Un giorno aggiungerò anche qualche filtro e migliorerò anche questa pagina. Per oggi mi limito a pubblicare il primo articolo e a tornare a dormire :)</h2>
 	<ul class="posts mt-12">
 		{#each data.posts as post}
 			<li class="post mt-6">

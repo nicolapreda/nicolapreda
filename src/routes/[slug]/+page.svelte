@@ -35,7 +35,7 @@ Blog
 
   </div>
 	<hgroup class="flex mt-5">
-	<h1 class="text-6xl font-semibold text-primary">{data.meta.title}</h1>		
+	<h1 class="lg:text-6xl text-4xl font-bold text-primary">{data.meta.title}</h1>		
 
 	</hgroup>
 
@@ -48,7 +48,7 @@ Blog
 
 
   <!-- Post -->
-	<div class="mt-10 mb-16 prose w-full inline-block">
+	<div class="mt-10 mb-16 prose w-full inline-block text-lg">
 		<svelte:component this={data.content}/>
 	</div>
 </article>

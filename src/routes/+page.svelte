@@ -56,27 +56,28 @@
 			<div class="mt-24 md:grid md:grid-cols-2 md:gap-16">
 				<div class="text-center">
 					<h1 class="text-primary text-2xl font-semibold">ULTIMO VIDEO</h1>
-
 					<iframe
 						class="rounded-xl mt-5 w-full h-64"
-						src="https://www.youtube.com/embed/EZpJDZn-Cy8"
-						title="(Stra)Ordinario"
+						src="https://www.youtube.com/embed/1VR9F1YzBI0"
+						title="Fermati"
 						frameborder="0"
 						allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
 						allowfullscreen
 					/>
 				</div>
 
-				<div class="text-center">
-					<h1 class="text-primary text-2xl font-semibold">ULTIMO ARTICOLO</h1>
 
-					<div class="p-10 mt-5 rounded-2xl h-64 bg-pink">
-						<a href={data.posts[0].slug} class="text-4xl mb-5 text-primary font-semibold"
+				<div class="text-center">
+					<h1 class="text-primary text-2xl font-semibold md:mt-0 mt-10">ULTIMO ARTICOLO</h1>
+					<a href={data.posts[0].slug}>
+					<div  class="p-10 mt-5 rounded-2xl h-64 shadow-lg hover:bg-pink transition hover:cursor-pointer">
+						
+						<h1 class="text-4xl mb-5 text-primary font-semibold"
 							>{#if data.posts[0].title.length > 20}
 								{data.posts[0].title.substring(0, 20)}...
 							{:else}
 								{data.posts[0].title}
-							{/if}</a
+							{/if}</h1
 						>
 
 						<div class="post mt-2">
@@ -90,6 +91,7 @@
 							</p>
 						</div>
 					</div>
+				</a>
 				</div>
 			</div>
 
