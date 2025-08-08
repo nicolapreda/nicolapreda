@@ -1,43 +1,22 @@
 {
-	"name": "nicolapreda",
-	"version": "0.0.1",
-	"private": true,
-	"scripts": {
-		"dev": "vite dev",
-		"build": "vite build",
-		"preview": "vite preview",
-		"check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
-		"check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
-		"lint": "prettier --plugin-search-dir . --check . && eslint .",
-		"format": "prettier --plugin-search-dir . --write ."
-	},
-	"devDependencies": {
-		"@playwright/test": "^1.40.1",
-		"@sveltejs/adapter-vercel": "^3.1.0",
-		"@sveltejs/kit": "^1.30.3",
-		"@typescript-eslint/eslint-plugin": "^5.62.0",
-		"@typescript-eslint/parser": "^5.62.0",
-		"@vercel/analytics": "^1.1.1",
-		"autoprefixer": "^10.4.16",
-		"daisyui": "^3.9.4",
-		"eslint": "^8.55.0",
-		"eslint-config-prettier": "^8.10.0",
-		"eslint-plugin-svelte": "^2.35.1",
-		"mdsvex": "^0.11.0",
-		"postcss": "^8.4.32",
-		"prettier": "^2.8.8",
-		"prettier-plugin-svelte": "^2.10.1",
-		"svelte": "^4.2.8",
-		"svelte-check": "^3.6.2",
-		"tailwindcss": "^3.3.6",
-		"tslib": "^2.6.2",
-		"typescript": "^5.3.3",
-		"vite": "^4.5.1"
-	},
-	"type": "module",
-	"dependencies": {
-		"@tailwindcss/typography": "^0.5.10",
-		"@vercel/speed-insights": "^1.0.2",
-		"i": "^0.3.7"
-	}
+  "name": "landing",
+  "version": "1.0.0",
+  "description": "",
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": "server.js",
+"scripts": {
+  "dev": "tailwindcss -i ./src/input.css -o ./public/assets/style.css --watch",
+  "build": "tailwindcss -i ./src/input.css -o ./public/assets/style.css --minify",
+  "start": "node server.js"
+},
+  "dependencies": {
+    "express": "^5.1.0"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.21",
+    "postcss": "^8.5.6",
+    "tailwindcss": "^3.4.1"
+  }
 }

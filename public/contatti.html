@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>CONTATTI - NICOLA PREDA</title>
+        <link href="./assets/style.css" rel="stylesheet" />
+
+    </head>
+    <body>
+
+        <header
+            class="fixed top-0 left-0 w-full z-50 bg-[#0400E6] px-6 sm:px-16 py-4 flex justify-between items-center">
+            <!-- Logo -->
+            <a href="./index.html">
+                <img src="./assets/Logo-2.png" alt="logo" class="h-10" />
+            </a>
+
+            <!-- Desktop menu -->
+            <nav class="hidden md:flex gap-6 text-white font-semibold text-lg">
+                <a class="hover:text-yellow-400" href="./index.html">HOME</a>
+                <a class="hover:text-yellow-400"
+                    href="./index.html#chi-sono">CHI SONO</a>
+                <a class="hover:text-yellow-400"
+                    href="./progetti.html">PROGETTI</a>
+                <a href="./contatti.html"
+                    class="px-4 py-1 bg-white text-black rounded-md">CONTATTI</a>
+            </nav>
+
+            <!-- Hamburger Button -->
+            <button id="menu-btn" class="block md:hidden text-white z-50">
+                <!-- Icona burger -->
+                <svg id="icon-open" xmlns="http://www.w3.org/2000/svg"
+                    class="h-8 w-8" fill="none" viewBox="0 0 24 24"
+                    stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                        stroke-width="1.5"
+                        d="M4 6h16M4 12h16M4 18h16" />
+                </svg>
+                <!-- Icona X -->
+                <svg id="icon-close" xmlns="http://www.w3.org/2000/svg"
+                    class="h-8 w-8 hidden" fill="none" viewBox="0 0 24 24"
+                    stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                        stroke-width="1.5"
+                        d="M6 18L18 6M6 6l12 12" />
+                </svg>
+            </button>
+
+            <!-- Mobile Menu Overlay -->
+            <!-- FULLSCREEN MENU MOBILE -->
+            <div id="menu"
+                class="fixed inset-0 bg-black text-white hidden z-40 md:hidden flex flex-col justify-center items-center space-y-8 text-3xl font-semibold text-center px-8">
+                <a class="hover:text-yellow-400" href="./index.html"
+                    onclick="toggleMenu()">HOME</a>
+                <a class="hover:text-yellow-400" href="./index.html#chi-sono"
+                    onclick="toggleMenu()">CHI SONO</a>
+                <a class="hover:text-yellow-400" href="./progetti.html"
+                    onclick="toggleMenu()">PROGETTI</a>
+                <a class="hover:text-yellow-400" href="./contatti.html"
+                    onclick="toggleMenu()">CONTATTI</a>
+            </div> </header>
+
+        <section
+            class="p-8 sm:p-16 space-y-16 bg-[#0400E6] text-white text-center font-semibold">
+            <a href="https://www.instagram.com/nicolapreda_/#"
+                class="text-[60px] sm:text-[100px] md:text-[150px] hover:text-yellow-400">INSTAGRAM</a>
+            <div
+                class="flex flex-col sm:flex-row gap-4 items-center justify-center">
+                <img src="./assets/Star-4.png" alt="star4"
+                    class="w-24 h-24 lg:display-" />
+                <a href="https://www.youtube.com/@nicolapreda"
+                    class="text-[60px] sm:text-[100px] md:text-[150px] hover:text-yellow-400">YOUTUBE</a>
+            </div>
+            <a href="https://www.linkedin.com/in/nicola-preda-5b0722233/"
+                class="text-[60px] sm:text-[100px] md:text-[150px] hover:text-yellow-400">LINKEDIN</a>
+            <div
+                class="flex flex-col sm:flex-row gap-4 items-center justify-center">
+                <img src="./assets/Star-5.png" alt="star5" class="w-24 h-24" />
+                <a href="mailto:nicola.preda05@gmail.com"
+                    class="text-[60px] sm:text-[100px] md:text-[150px] hover:text-yellow-400">EMAIL</a>
+            </div>
+        </section>
+
+        <!-- FOOTER -->
+        <footer
+            class="bg-black text-white px-8 sm:px-16 py-12 text-sm space-y-10">
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10">
+                <div class="space-y-2">
+                    <h3 class="font-semibold">ABOUT</h3>
+                    <p class="text-gray-400">Ho 20 anni e amo intrecciare i fili
+                        delle mie storie con quelle degli altri per raccontarle
+                        attraverso la mia creatività. Se vi piace etichettare le
+                        persone,Però, potreste definirmi in tanti modi:
+                        “videomaker, fotografo, social media manager…”. In
+                        realtà non mi rispecchio in nessuna di queste
+                        definizioni, mi ritengo soltanto una persona che ama
+                        riflettere il proprio modo di vedere le cose sui miei
+                        prodotti finali. Se vuoi saperne di più sul mio conto,
+                        ho un canale Youtube dove racconto il mio percorso, un
+                        profilo Instagram e Linkedin, per non farci mancare
+                        nulla. Ogni tanto scrivo anche sul mio blog.
+
+                    </p>
+                </div>
+                <div class="space-y-2">
+                    <h3 class="font-semibold">SOCIAL</h3>
+                    <div class="flex flex-col underline gap-1">
+                        <a href="#">Instagram</a>
+                        <a href="#">Youtube</a>
+                        <a href="#">LinkedIn</a>
+                        <a href="#">Email</a>
+                    </div>
+                </div>
+                <div class="space-y-2">
+                    <h3 class="font-semibold">BLOG</h3>
+                    <p class="text-gray-400">Una raccolta di pensieri, progetti
+                        e ispirazioni.</p>
+                </div>
+            </div>
+            <div
+                class="flex flex-col sm:flex-row justify-between text-gray-500 pt-8">
+                <p>2025 NICOLA PREDA. – All Rights Reserved</p>
+                <p>Partita IVA: 04768450167</p>
+            </div>
+        </footer>
+        <script src="./navbar.js"></script>
+
+    </body>
+</html>

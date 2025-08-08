@@ -1,0 +1,28 @@
+.slider-wrapper {
+  display: flex;
+  transition: transform 0.5s ease;
+  width: 100%;
+}
+
+.slider-wrapper img {
+  width: 100%;
+  flex-shrink: 0;
+}
+
+.animation-scroll {
+  display: inline-flex;
+  min-width: max-content;
+  animation: scroll-left 8s linear infinite;
+}
+
+@keyframes scroll-left {
+  0% {
+    transform: translateX(0%);
+  }
+
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+
