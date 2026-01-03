@@ -103,7 +103,8 @@ app.get('/', async (req, res) => {
     const videos = await getLatestVideos();
     res.render('index', { 
         meta: SEO.home,
-        videos: videos 
+        videos: videos,
+        page: 'home' 
     });
 });
 app.get('/index.html', (req, res) => res.redirect('/'));
