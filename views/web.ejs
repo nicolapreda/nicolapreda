@@ -1,0 +1,46 @@
+<%- include('partials/header') %>
+
+    <main class="pt-32 pb-20 px-6 sm:px-12 bg-white min-h-screen">
+        <div class="max-w-7xl mx-auto">
+            <h1 class="text-6xl sm:text-8xl font-black mb-4 tracking-tighter text-black uppercase">Web</h1>
+            <p class="text-xl sm:text-2xl text-gray-500 mb-16 max-w-3xl font-sans font-medium leading-relaxed">
+                Creo Landing Page e siti web progettati per mettere in vetrina il tuo brand e generare nuovi lead.
+            </p>
+
+            <!-- WEB PROJECTS GRID -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+
+                <!-- Project 1 (This Portfolio) -->
+                <a href="/" class="group block space-y-4">
+                    <div
+                        class="relative aspect-[16/10] bg-gray-100 rounded-sm overflow-hidden border border-gray-200 shadow-sm group-hover:shadow-xl transition-all duration-300">
+                        <img src="./assets/final_site_preview_1767115401406.webp" alt="Nicola Preda Portfolio"
+                            class="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-700">
+                        <div
+                            class="absolute inset-0 bg-primary/0 group-hover:bg-primary/20 transition-colors duration-300">
+                        </div>
+                    </div>
+                    <div class="flex justify-between items-end">
+                        <div>
+                            <h2 class="text-2xl font-bold uppercase group-hover:text-primary transition-colors">Nicola
+                                Preda Portfolio</h2>
+                            <p class="text-gray-500 text-sm">Design & Development</p>
+                        </div>
+                        <span
+                            class="w-8 h-8 rounded-full border border-black flex items-center justify-center group-hover:bg-black group-hover:text-white transition-all">
+                            &#8599;
+                        </span>
+                    </div>
+                </a>
+
+                <!-- Links to other projects can be added here -->
+                <div
+                    class="flex items-center justify-center aspect-[16/10] bg-gray-50 rounded-sm border border-dashed border-gray-300">
+                    <p class="text-gray-400 uppercase tracking-widest font-semibold">More Projects Coming Soon</p>
+                </div>
+
+            </div>
+        </div>
+    </main>
+
+    <%- include('partials/footer') %>

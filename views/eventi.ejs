@@ -1,0 +1,314 @@
+<%- include('partials/header') %>
+
+    <!-- EVENTI PAGE CONTENT (Yellow Theme) -->
+    <main class="bg-themeYellow text-black min-h-screen pt-32 pb-20 px-6 sm:px-12">
+
+        <div class="max-w-7xl mx-auto">
+
+            <!-- HEADER / INTRO -->
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start mb-32">
+                <div class="lg:sticky lg:top-32">
+                    <span
+                        class="font-bold tracking-widest uppercase border-b-2 border-black pb-1 mb-6 inline-block">Portfolio</span>
+                    <h1 class="text-7xl md:text-9xl font-serif italic mb-2">Live</h1>
+                    <h1 class="text-7xl md:text-9xl font-black uppercase leading-none mb-12 tracking-tighter">Content
+                    </h1>
+
+                    <p class="text-xl md:text-2xl font-medium leading-relaxed max-w-lg mb-12">
+                        Ogni evento ha un ritmo, un battito che va catturato.
+                        Il mio approccio alla fotografia di eventi non è solo documentare, ma restituire l'atmosfera.
+                        Luci, bassi, fumo ed emozioni: trasformo il caos della festa in immagini che suonano.
+                    </p>
+
+                    <div class="grid grid-cols-2 gap-8 text-sm font-bold uppercase tracking-widest">
+                        <ul class="space-y-4">
+                            <li class="flex items-center gap-2">
+                                <div class="w-2 h-2 bg-black rounded-full"></div>Clubs
+                            </li>
+                            <li class="flex items-center gap-2">
+                                <div class="w-2 h-2 bg-black rounded-full"></div>Concerts
+                            </li>
+                        </ul>
+                        <ul class="space-y-4">
+                            <li class="flex items-center gap-2">
+                                <div class="w-2 h-2 bg-black rounded-full"></div>Festivals
+                            </li>
+                            <li class="flex items-center gap-2">
+                                <div class="w-2 h-2 bg-black rounded-full"></div>Private
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- RIGHT COLUMN: MASONRY / MOODBOARD -->
+                <!-- RIGHT COLUMN: MASONRY / MOODBOARD -->
+                <div class="flex flex-col gap-8">
+                    <!-- Image 1 -->
+                    <div class="group relative">
+                        <img src="./assets/eventi/ARTIE-1.webp"
+                            class="w-full h-auto object-cover border-2 border-black shadow-[8px_8px_0px_0px_title-black] group-hover:shadow-none class transition-all duration-300">
+                    </div>
+
+                    <!-- TWO VERTICALS SIDE BY SIDE -->
+                    <div class="grid grid-cols-2 gap-4">
+                        <!-- VIDEO 1 (Vertical) -->
+                        <div
+                            class="group relative -rotate-1 border-2 border-black shadow-[4px_4px_0px_0px_rgba(0,0,0,1)]">
+                            <video src="./assets/eventi/merci_portfolio.mp4" autoplay loop muted playsinline controls
+                                class="w-full h-full object-cover transition-all duration-500"></video>
+                        </div>
+                        <!-- Image 2 (Vertical-ish) -->
+                        <div
+                            class="group relative rotate-1 border-2 border-black shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] mt-8">
+                            <img src="./assets/eventi/setai/DSC01265.webp"
+                                class="w-full h-full object-cover transition-all duration-500">
+                        </div>
+                    </div>
+
+                    <!-- Image 3 (Rotated Landscape) -->
+                    <div class="group relative rotate-2 max-w-sm ml-auto mr-8 -mt-8">
+                        <img src="./assets/eventi/GLUE-47.webp"
+                            class="w-full h-auto object-cover border-2 border-black shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] transition-all duration-500">
+                    </div>
+
+                    <!-- TWO ITEM GRID (Video + Vertical Image) -->
+                    <div class="grid grid-cols-2 gap-4 mt-8">
+                        <!-- VIDEO 2 -->
+                        <div
+                            class="group relative -rotate-1 border-2 border-black shadow-[8px_8px_0px_0px_rgba(0,0,0,1)]">
+                            <video src="./assets/eventi/glue_1.mov" autoplay loop muted playsinline controls
+                                class="gallery-item w-full h-full object-cover transition-all duration-500 cursor-pointer"></video>
+                        </div>
+
+                        <!-- Image 5 -->
+                        <div
+                            class="group relative rotate-1 border-2 border-black shadow-[8px_8px_0px_0px_rgba(0,0,0,1)]">
+                            <img src="./assets/eventi/GLUE-71.webp"
+                                class="gallery-item w-full h-full object-cover cursor-pointer">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- FULL WIDTH BANNER -->
+            <div class="w-full h-[50vh] overflow-hidden border-t-2 border-b-2 border-black mb-32 relative group">
+                <img src="./assets/eventi/setai/DSC01700.webp"
+                    class="w-full h-full object-cover transition-all duration-700">
+                <div class="absolute inset-0 flex items-center justify-center pointer-events-none">
+                    <span
+                        class="text-white mix-blend-difference text-[8vw] font-black uppercase tracking-tighter">UNFORGETTABLE</span>
+                </div>
+            </div>
+
+            <!-- GALLERY GRID -->
+            <h2 class="text-4xl font-black uppercase mb-12 border-b-2 border-black pb-4">Selected Shots</h2>
+            <div class="columns-2 md:columns-3 lg:columns-4 gap-4 space-y-4 mb-32">
+                <!-- Column 1 Flow -->
+                <img src="./assets/eventi/glocky/DSC00414.webp"
+                    class="gallery-item w-full h-auto object-cover border-2 border-black transition-all duration-500 break-inside-avoid cursor-pointer hover:opacity-90">
+                <video src="./assets/eventi/tedua_1.mov" autoplay loop muted playsinline
+                    class="gallery-item w-full h-auto object-cover border-2 border-black transition-all duration-500 break-inside-avoid cursor-pointer hover:opacity-90"></video>
+                <img src="./assets/eventi/glocky/DSC00272.webp"
+                    class="gallery-item w-full h-auto object-cover border-2 border-black transition-all duration-500 break-inside-avoid cursor-pointer hover:opacity-90">
+                <img src="./assets/eventi/glocky/DSC00491.webp"
+                    class="gallery-item w-full h-auto object-cover border-2 border-black transition-all duration-500 break-inside-avoid cursor-pointer hover:opacity-90">
+
+                <!-- Column 2 Flow -->
+                <img src="./assets/eventi/setai/DSC01362.webp"
+                    class="gallery-item w-full h-auto object-cover border-2 border-black transition-all duration-500 break-inside-avoid cursor-pointer hover:opacity-90">
+                <video src="./assets/eventi/spicy_portfolio.mp4" autoplay loop muted playsinline
+                    class="gallery-item w-full h-auto object-cover border-2 border-black transition-all duration-500 break-inside-avoid cursor-pointer hover:opacity-90"></video>
+                <img src="./assets/eventi/glocky/DSC00685.webp"
+                    class="gallery-item w-full h-auto object-cover border-2 border-black transition-all duration-500 break-inside-avoid cursor-pointer hover:opacity-90">
+                <img src="./assets/eventi/glocky/DSC00635.webp"
+                    class="gallery-item w-full h-auto object-cover border-2 border-black transition-all duration-500 break-inside-avoid cursor-pointer hover:opacity-90">
+
+                <!-- Column 3 Flow -->
+                <img src="./assets/eventi/glocky/DSC00893.webp"
+                    class="gallery-item w-full h-auto object-cover border-2 border-black transition-all duration-500 break-inside-avoid cursor-pointer hover:opacity-90">
+                <video src="./assets/eventi/vog_portfolio.mp4" autoplay loop muted playsinline
+                    class="gallery-item w-full h-auto object-cover border-2 border-black transition-all duration-500 break-inside-avoid cursor-pointer hover:opacity-90"></video>
+                <img src="./assets/eventi/glocky/DSC00690.webp"
+                    class="gallery-item w-full h-auto object-cover border-2 border-black transition-all duration-500 break-inside-avoid cursor-pointer hover:opacity-90">
+                <video src="./assets/eventi/tedua_2.mp4" autoplay loop muted playsinline
+                    class="gallery-item w-full h-auto object-cover border-2 border-black transition-all duration-500 break-inside-avoid cursor-pointer hover:opacity-90"></video>
+                <img src="./assets/eventi/setai/DSC01247.webp"
+                    class="gallery-item w-full h-auto object-cover border-2 border-black transition-all duration-500 break-inside-avoid cursor-pointer hover:opacity-90">
+
+                <!-- Column 4 Flow -->
+                <img src="./assets/eventi/DSC01861.webp"
+                    class="gallery-item w-full h-auto object-cover border-2 border-black transition-all duration-500 break-inside-avoid cursor-pointer hover:opacity-90">
+                <video src="./assets/eventi/glue_2.mp4" autoplay loop muted playsinline
+                    class="gallery-item w-full h-auto object-cover border-2 border-black transition-all duration-500 break-inside-avoid cursor-pointer hover:opacity-90"></video>
+                <img src="./assets/eventi/setai/DSC01675.webp"
+                    class="gallery-item w-full h-auto object-cover border-2 border-black transition-all duration-500 break-inside-avoid cursor-pointer hover:opacity-90">
+                <img src="./assets/eventi/GLUE-NO-LOGO-93.webp"
+                    class="gallery-item w-full h-auto object-cover border-2 border-black transition-all duration-500 break-inside-avoid cursor-pointer hover:opacity-90">
+            </div>
+
+            <!-- NEXT PROJECT -->
+            <div class="flex justify-between items-center border-t-2 border-black pt-8">
+                <a href="./portfolio" class="text-xl font-bold uppercase tracking-widest hover:underline">← All
+                    Projects</a>
+                <a href="./sport" class="text-xl font-bold uppercase tracking-widest hover:underline">Next:
+                    Sport →</a>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- LIGHTBOX MODAL -->
+    <div id="gallery-modal"
+        class="fixed inset-0 z-[100] bg-black bg-opacity-95 hidden opacity-0 transition-opacity duration-300">
+
+
+        <!-- Navigation Arrows -->
+        <button id="prev-slide"
+            class="absolute left-4 md:left-8 text-white hover:text-gray-400 focus:outline-none z-50 hidden md:block">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 md:h-16 md:w-16" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M15 19l-7-7 7-7" />
+            </svg>
+        </button>
+        <button id="next-slide"
+            class="absolute right-4 md:right-8 text-white hover:text-gray-400 focus:outline-none z-50 hidden md:block">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 md:h-16 md:w-16" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 5l7 7-7 7" />
+            </svg>
+        </button>
+
+        <!-- Container for Media -->
+        <!-- Container for Media (Wrapper for Flex Centering) -->
+        <div class="absolute inset-0 flex justify-center items-center pointer-events-none z-[60]">
+            <div class="relative max-w-full max-h-full p-4 md:p-12 pointer-events-auto" id="modal-content">
+                <!-- Media will be injected here via JS -->
+            </div>
+        </div>
+
+        <!-- Close Button (Moved here for Z-Index) -->
+        <button id="close-modal"
+            class="absolute top-6 right-6 text-white bg-black/60 hover:bg-black/90 rounded-full p-2 backdrop-blur-sm transition-all duration-300 focus:outline-none z-[200] shadow-lg border border-white/20">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 md:h-10 md:w-10" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+            </svg>
+        </button>
+    </div>
+
+    <script>
+        const galleryItems = document.querySelectorAll('.gallery-item');
+        const modal = document.getElementById('gallery-modal');
+        const modalContent = document.getElementById('modal-content');
+        const closeBtn = document.getElementById('close-modal');
+        const prevBtn = document.getElementById('prev-slide');
+        const nextBtn = document.getElementById('next-slide');
+
+        let currentIndex = 0;
+
+        // Open Modal
+        galleryItems.forEach((item, index) => {
+            item.addEventListener('click', () => {
+                currentIndex = index;
+                openModal();
+                updateModalContent();
+            });
+        });
+
+        function openModal() {
+            modal.classList.remove('hidden');
+            // Small timeout to allow transition to work
+            setTimeout(() => {
+                modal.classList.remove('opacity-0');
+            }, 10);
+            document.body.style.overflow = 'hidden'; // Restore scrolling
+        }
+
+        function closeModal() {
+            modal.classList.add('opacity-0');
+            setTimeout(() => {
+                modal.classList.add('hidden');
+                modalContent.innerHTML = ''; // Clear content to stop video
+            }, 300);
+            document.body.style.overflow = ''; // Restore scrolling
+        }
+
+        // Close events
+        closeBtn.addEventListener('click', closeModal);
+        modal.addEventListener('click', (e) => {
+            if (e.target === modal || e.target === modalContent) {
+                closeModal();
+            }
+        });
+
+        // Navigation
+        function showNext() {
+            currentIndex = (currentIndex + 1) % galleryItems.length;
+            updateModalContent();
+        }
+
+        function showPrev() {
+            currentIndex = (currentIndex - 1 + galleryItems.length) % galleryItems.length;
+            updateModalContent();
+        }
+
+        nextBtn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            showNext();
+        });
+        prevBtn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            showPrev();
+        });
+
+        // Keyboard Navigation
+        document.addEventListener('keydown', (e) => {
+            if (modal.classList.contains('hidden')) return;
+
+            if (e.key === 'Escape') closeModal();
+            if (e.key === 'ArrowRight') showNext();
+            if (e.key === 'ArrowLeft') showPrev();
+        });
+
+        // Render Media
+        function updateModalContent() {
+            const currentItem = galleryItems[currentIndex];
+            const tagName = currentItem.tagName.toLowerCase();
+            const src = currentItem.src; // or currentSource if video
+
+            modalContent.innerHTML = ''; // Clear current
+
+            let newNode;
+            if (tagName === 'img') {
+                newNode = document.createElement('img');
+                newNode.src = src;
+                newNode.className = 'max-w-[90vw] max-h-[90vh] object-contain shadow-2xl rounded-sm';
+                newNode.style.maxWidth = '90vw';
+                newNode.style.maxHeight = '90vh';
+            } else if (tagName === 'video') {
+                newNode = document.createElement('video');
+                newNode.src = src;
+                newNode.controls = true;
+                newNode.autoplay = true;
+                newNode.className = 'max-w-[90vw] max-h-[90vh] object-contain shadow-2xl rounded-sm';
+                newNode.style.maxWidth = '90vw';
+                newNode.style.maxHeight = '90vh';
+                // Try to play
+                newNode.onloadeddata = () => {
+                    newNode.play().catch(e => console.log("Autoplay prevented", e));
+                }
+            }
+
+            // Animate in
+            newNode.style.opacity = '0';
+            newNode.style.transition = 'opacity 0.3s ease';
+            modalContent.appendChild(newNode);
+
+            // Trigger reflow/short delay for fade in
+            setTimeout(() => {
+                newNode.style.opacity = '1';
+            }, 50);
+        }
+    </script>
+
+    <%- include('partials/footer') %>
