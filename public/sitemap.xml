@@ -1,37 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://www.nicolapreda.it/</loc>
+    <loc>https://www.predanicola.it/</loc>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://www.nicolapreda.it/portfolio</loc>
+    <loc>https://www.predanicola.it/portfolio</loc>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://www.nicolapreda.it/sport</loc>
+    <loc>https://www.predanicola.it/sport</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.nicolapreda.it/eventi</loc>
+    <loc>https://www.predanicola.it/eventi</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.nicolapreda.it/promote</loc>
+    <loc>https://www.predanicola.it/promote</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.nicolapreda.it/web</loc>
+    <loc>https://www.predanicola.it/web</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.nicolapreda.it/contatti</loc>
+    <loc>https://www.predanicola.it/contatti</loc>
     <changefreq>yearly</changefreq>
     <priority>0.5</priority>
   </url>

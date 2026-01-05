@@ -43,7 +43,7 @@ async function getLatestVideos() {
 }
 
 // SEO Configuration
-const BASE_URL = 'https://www.nicolapreda.it'; // Sostituisci con il tuo dominio reale
+const BASE_URL = 'https://www.predanicola.it'; // Sostituisci con il tuo dominio reale
 const DEFAULT_IMAGE = `${BASE_URL}/assets/preview_social.jpg`; // Assicurati di avere un'immagine di default
 
 const SEO = {

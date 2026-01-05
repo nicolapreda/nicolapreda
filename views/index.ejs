@@ -6,11 +6,11 @@
 
         <!-- Text Content -->
         <div class="relative z-10 flex flex-col items-center justify-center -mt-32 sm:-mt-40">
-            <h1 class="font-cursive text-[22vw] sm:text-[17vw] leading-none text-center text-lightblue">
+            <h1 class="font-cursive text-[30vw] sm:text-[17vw] leading-none text-center text-lightblue">
                 Nicola
             </h1>
             <h1
-                class="font-sans font-black text-[22vw] sm:text-[17vw] leading-none tracking-tighter uppercase -mt-4 sm:-mt-8 text-center text-lightblue">
+                class="font-sans font-black text-[30vw] sm:text-[17vw] leading-none tracking-tighter uppercase -mt-4 sm:-mt-8 text-center text-lightblue">
                 Preda
             </h1>
         </div>
@@ -18,17 +18,22 @@
         <!-- Silhouette Image -->
         <!-- Silhouette Image -->
         <img src="./assets/sagoma.svg" alt="Silhouette" fetchpriority="high" loading="eager"
-            class="absolute bottom-0 left-1/2 -translate-x-1/2 w-[170%] sm:w-full max-w-6xl z-20 pointer-events-none display-block" />
+            class="absolute bottom-0 left-1/2 -translate-x-1/2 w-[230%] sm:w-full max-w-6xl z-20 pointer-events-none display-block" />
 
     </section>
 
     <!-- INTRO / CHI SONO REDESIGN -->
-    <section class="bg-white text-black pt-24 pb-16 px-6 sm:px-12 min-h-screen container mx-auto max-w-7xl"
+    <section
+        class="bg-white text-black pt-24 pb-16 px-6 sm:px-12 min-h-screen container mx-auto max-w-7xl relative overflow-hidden"
         id="chi-sono">
+
+        <!-- DECORATION: 3D DETAIL -->
+        <img src="./assets/3d_detail.png" alt=""
+            class="absolute top-0 right-0 w-64 md:w-96 opacity-50 z-0 pointer-events-none mix-blend-multiply" />
 
         <!-- TOP CATEGORIES -->
         <div
-            class="border-t-2 border-primary py-4 flex flex-wrap justify-between text-[10px] sm:text-xs font-bold tracking-widest text-primary uppercase mb-16">
+            class="border-t-2 border-primary py-4 flex flex-wrap justify-between text-[10px] sm:text-xs font-bold tracking-widest text-primary uppercase mb-16 relative z-10">
             <span>Video Making</span>
             <span>Photography</span>
             <span class="hidden sm:inline">Social Media</span>
@@ -171,7 +176,7 @@
     </section>
 
     <section class="grid grid-cols-1 md:grid-cols-4">
-        <div class="col-span-3 bg-white text-black p-8 sm:p-16 flex flex-col gap-4">
+        <div class="col-span-3 bg-white text-black p-8 sm:p-16 flex flex-col gap-4 order-2 md:order-1">
             <span
                 class="bg-primary text-white px-4 py-1 rounded-full w-fit text-xs font-bold uppercase tracking-widest">LIFESTYLE</span>
             <a class="text-[40px] sm:text-[60px] md:text-[80px] font-black uppercase hover:text-primary transition-colors"
@@ -181,7 +186,7 @@
                 Video e foto che suonano a ritmo di musica. 🪩
             </p>
         </div>
-        <img src="./assets/eventi/GLUE-71.webp" alt="Eventi" class="w-full h-full object-cover" />
+        <img src="./assets/eventi/GLUE-47.webp" alt="Eventi" class="w-full h-full object-cover order-1 md:order-2" />
     </section>
 
     <section class="grid grid-cols-1 md:grid-cols-4">
@@ -211,7 +216,7 @@
                 Metto in luce il tuo valore per trasformare i visitatori in clienti e generare lead di qualità. 🎯
             </p>
         </div>
-        <img src="./assets/final_site_preview_1767115401406.webp" alt="Web" class="w-full h-full object-cover" />
+        <img src="./assets/DSC00131-scaled.webp" alt="Web" class="w-full h-full object-cover" />
     </section>
 
 
