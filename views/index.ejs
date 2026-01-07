@@ -1,322 +1,332 @@
 <%- include('partials/header') %>
 
-    <!-- HERO -->
-    <!-- HERO -->
-    <section class="relative h-screen flex flex-col justify-center items-center overflow-hidden bg-primary text-white">
+    <main>
+        <!-- HERO -->
+        <!-- HERO -->
+        <section
+            class="relative h-screen flex flex-col justify-center items-center overflow-hidden bg-primary text-white">
 
-        <!-- Text Content -->
-        <div class="relative z-10 flex flex-col items-center justify-center -mt-32 sm:-mt-40">
-            <h1 class="font-cursive text-[30vw] sm:text-[17vw] leading-none text-center text-lightblue">
-                Nicola
-            </h1>
-            <h1
-                class="font-sans font-black text-[30vw] sm:text-[17vw] leading-none tracking-tighter uppercase -mt-4 sm:-mt-8 text-center text-lightblue">
-                Preda
-            </h1>
-        </div>
-
-        <!-- Silhouette Image -->
-        <!-- Silhouette Image -->
-        <img src="./assets/sagoma.svg" alt="Silhouette" fetchpriority="high" loading="eager"
-            class="absolute bottom-0 left-1/2 -translate-x-1/2 w-[230%] sm:w-full max-w-6xl z-20 pointer-events-none display-block" />
-
-    </section>
-
-    <!-- INTRO / CHI SONO REDESIGN -->
-    <section
-        class="bg-white text-black pt-24 pb-16 px-6 sm:px-12 min-h-screen container mx-auto max-w-7xl relative overflow-hidden"
-        id="chi-sono">
-
-        <!-- DECORATION: 3D DETAIL -->
-        <img src="./assets/3d_detail.webp" alt=""
-            class="absolute top-0 right-0 w-64 md:w-96 opacity-50 z-0 pointer-events-none mix-blend-multiply" />
-
-        <!-- TOP CATEGORIES -->
-        <div
-            class="border-t-2 border-primary py-4 flex flex-wrap justify-between text-[10px] sm:text-xs font-bold tracking-widest text-primary uppercase mb-16 relative z-10">
-            <span>Video Making</span>
-            <span>Photography</span>
-            <span class="hidden sm:inline">Social Media</span>
-            <span class="hidden sm:inline">Storytelling</span>
-            <span>Creative Direction</span>
-        </div>
-
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-12 lg:gap-24">
-
-            <!-- LEFT COLUMN (Name + Photo + Contact) -->
-            <div class="flex flex-col space-y-12">
-                <!-- Name Huge -->
-                <div class="leading-[0.8]">
-                    <div class="flex items-start">
-                        <span
-                            class="font-cursive text-primary text-[5rem] sm:text-[7rem] md:text-[8rem] lg:text-[10rem] font-light">Nicola</span>
-                        <span class="text-3xl sm:text-5xl font-bold text-primary mt-4 ml-2">(20)</span>
-                    </div>
-                    <div
-                        class="font-cursive text-primary text-[5rem] sm:text-[7rem] md:text-[8rem] lg:text-[10rem] font-light ml-8 md:ml-16">
-                        Preda
-                    </div>
-                </div>
-
-                <!-- Photo with Frame -->
-                <div class="w-full max-w-md self-center md:self-start relative group">
-                    <!-- The Frame -->
-                    <div
-                        class="border-[3px] border-primary p-6 inline-block transform transition-transform duration-500 group-hover:-rotate-1">
-                        <!-- Vertically Cropped Image 3:4 -->
-                        <img src="./assets/chi-sono.webp" alt="Nicola Preda"
-                            class="w-full h-auto aspect-[3/4] object-cover transition-all duration-500" />
-                    </div>
-                </div>
-
-                <!-- Contact Info -->
-                <div class="text-sm font-medium space-y-1 text-gray-500 pl-2">
-                    <p class="uppercase tracking-wider font-bold text-primary">Location</p>
-                    <p>Milan // Italy</p>
-                    <br>
-                    <p class="uppercase tracking-wider font-bold text-primary">Contact</p>
-                    <p>nicola.preda05@gmail.com</p>
-                    <p>@nicolapreda_</p>
-                </div>
+            <!-- Text Content -->
+            <div class="relative z-10 flex flex-col items-center justify-center -mt-32 sm:-mt-40">
+                <h1 class="font-cursive text-[30vw] sm:text-[17vw] leading-none text-center text-lightblue">
+                    Nicola
+                </h1>
+                <h1
+                    class="font-sans font-black text-[30vw] sm:text-[17vw] leading-none tracking-tighter uppercase -mt-4 sm:-mt-8 text-center text-lightblue">
+                    Preda
+                </h1>
             </div>
 
-            <!-- RIGHT COLUMN (Resume Details) -->
-            <div class="flex flex-col justify-between space-y-16 pt-8 md:pt-32">
+            <!-- Silhouette Image -->
+            <!-- Silhouette Image -->
+            <img src="./assets/sagoma.svg" alt="Silhouette" fetchpriority="high" loading="eager"
+                class="absolute bottom-0 left-1/2 -translate-x-1/2 w-[230%] sm:w-full max-w-6xl z-20 pointer-events-none display-block" />
 
-                <div class="space-y-16">
-                    <!-- SECTION: ABOUT ME -->
-                    <div class="grid grid-cols-1 sm:grid-cols-3 gap-6 border-b border-gray-100 pb-8">
-                        <h3 class="text-xs font-bold tracking-widest uppercase text-gray-400 mt-1">ABOUT ME</h3>
-                        <div class="sm:col-span-2 text-lg leading-relaxed font-medium">
-                            <% const birthDate=new Date(2005, 4, 7); const today=new Date(); let age=today.getFullYear()
-                                - birthDate.getFullYear(); if (today < new Date(today.getFullYear(), 4, 7)) age--; %>
-                                <p>
-                                    Ho <%= age %> anni e amo intrecciare i fili delle mie
-                                        storie con quelle degli altri per raccontarle attraverso la
-                                        mia creatività.
-                                        Nel mio lavoro fondo fotografia, video e direzione artistica per creare
-                                        narrazioni
-                                        visive potenti.
-                                        La mia ambizione è lavorare su progetti che sfidano l'ordinario, portando
-                                        un'estetica
-                                        curata e un punto di vista personale.
-                                </p>
+        </section>
+
+        <!-- INTRO / CHI SONO REDESIGN -->
+        <section
+            class="bg-white text-black pt-24 pb-16 px-6 sm:px-12 min-h-screen container mx-auto max-w-7xl relative overflow-hidden"
+            id="chi-sono">
+
+            <!-- DECORATION: 3D DETAIL -->
+            <img src="./assets/3d_detail.webp" alt=""
+                class="absolute top-0 right-0 w-64 md:w-96 opacity-50 z-0 pointer-events-none mix-blend-multiply" />
+
+            <!-- TOP CATEGORIES -->
+            <div
+                class="border-t-2 border-primary py-4 flex flex-wrap justify-between text-[10px] sm:text-xs font-bold tracking-widest text-primary uppercase mb-16 relative z-10">
+                <span>Video Making</span>
+                <span>Photography</span>
+                <span class="hidden sm:inline">Social Media</span>
+                <span class="hidden sm:inline">Storytelling</span>
+                <span>Creative Direction</span>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 lg:gap-24">
+
+                <!-- LEFT COLUMN (Name + Photo + Contact) -->
+                <div class="flex flex-col space-y-12">
+                    <!-- Name Huge -->
+                    <div class="leading-[0.8]">
+                        <div class="flex items-start">
+                            <span
+                                class="font-cursive text-primary text-[5rem] sm:text-[7rem] md:text-[8rem] lg:text-[10rem] font-light">Nicola</span>
+                            <span class="text-3xl sm:text-5xl font-bold text-primary mt-4 ml-2">(20)</span>
+                        </div>
+                        <div
+                            class="font-cursive text-primary text-[5rem] sm:text-[7rem] md:text-[8rem] lg:text-[10rem] font-light ml-8 md:ml-16">
+                            Preda
                         </div>
                     </div>
 
-                    <!-- SECTION: EXPERIENCE -->
-                    <div class="grid grid-cols-1 sm:grid-cols-3 gap-6 border-b border-gray-100 pb-8">
-                        <h3 class="text-xs font-bold tracking-widest uppercase text-gray-400 mt-1">EXPERIENCE</h3>
-                        <div class="sm:col-span-2 space-y-8">
-                            <div>
-                                <h4 class="font-bold text-primary text-xl">Artista freelance</h4>
-                                <p class="text-sm text-gray-600">Freelance • giu 2024 - Presente</p>
-                                <p class="text-gray-500 text-sm mt-1">Bergamo, Lombardia, Italia</p>
-                            </div>
-
+                    <!-- Photo with Frame -->
+                    <div class="w-full max-w-md self-center md:self-start relative group">
+                        <!-- The Frame -->
+                        <div
+                            class="border-[3px] border-primary p-6 inline-block transform transition-transform duration-500 group-hover:-rotate-1">
+                            <!-- Vertically Cropped Image 3:4 -->
+                            <img src="./assets/chi-sono.webp" alt="Nicola Preda"
+                                class="w-full h-auto aspect-[3/4] object-cover transition-all duration-500" />
                         </div>
                     </div>
 
-                    <!-- SECTION: EDUCATION -->
-                    <div class="grid grid-cols-1 sm:grid-cols-3 gap-6 border-b border-gray-100 pb-8">
-                        <h3 class="text-xs font-bold tracking-widest uppercase text-gray-400 mt-1">EDUCATION</h3>
-                        <div class="sm:col-span-2 space-y-6">
-                            <div>
-                                <h4 class="font-bold text-primary text-xl">Politecnico di Milano</h4>
-                                <p class="text-sm text-gray-600">Laurea triennale, Design e comunicazione visiva</p>
-                                <p class="text-gray-500 text-sm mt-1">lug 2024 - lug 2027</p>
-                            </div>
-                            <div>
-                                <h4 class="font-bold text-primary text-xl">ITIS Paleocapa</h4>
-                                <p class="text-sm text-gray-600">Diploma Istituto Tecnico</p>
-                                <p class="text-gray-500 text-sm mt-1">set 2019 - giu 2024</p>
-                            </div>
-                        </div>
+                    <!-- Contact Info -->
+                    <div class="text-sm font-medium space-y-1 text-gray-500 pl-2">
+                        <p class="uppercase tracking-wider font-bold text-primary">Location</p>
+                        <p>Milan // Italy</p>
+                        <br>
+                        <p class="uppercase tracking-wider font-bold text-primary">Contact</p>
+                        <p>nicola.preda05@gmail.com</p>
+                        <p>@nicolapreda_</p>
                     </div>
-
-
                 </div>
 
-                <!-- BOTTOM TEXT -->
-                <div class="text-right pt-16">
-                    <h1
-                        class="text-[15vw] sm:text-[10rem] leading-none font-sans font-thin tracking-tighter text-blue-100 select-none">
-                        PROFILE
+                <!-- RIGHT COLUMN (Resume Details) -->
+                <div class="flex flex-col justify-between space-y-16 pt-8 md:pt-32">
+
+                    <div class="space-y-16">
+                        <!-- SECTION: ABOUT ME -->
+                        <div class="grid grid-cols-1 sm:grid-cols-3 gap-6 border-b border-gray-100 pb-8">
+                            <h2 class="text-xs font-bold tracking-widest uppercase text-gray-500 mt-1">ABOUT ME</h2>
+                            <div class="sm:col-span-2 text-lg leading-relaxed font-medium">
+                                <% const birthDate=new Date(2005, 4, 7); const today=new Date(); let
+                                    age=today.getFullYear() - birthDate.getFullYear(); if (today < new
+                                    Date(today.getFullYear(), 4, 7)) age--; %>
+                                    <p>
+                                        Ho <%= age %> anni e amo intrecciare i fili delle mie
+                                            storie con quelle degli altri per raccontarle attraverso la
+                                            mia creatività.
+                                            Nel mio lavoro fondo fotografia, video e direzione artistica per creare
+                                            narrazioni
+                                            visive potenti.
+                                            La mia ambizione è lavorare su progetti che sfidano l'ordinario, portando
+                                            un'estetica
+                                            curata e un punto di vista personale.
+                                    </p>
+                            </div>
+                        </div>
+
+                        <!-- SECTION: EXPERIENCE -->
+                        <div class="grid grid-cols-1 sm:grid-cols-3 gap-6 border-b border-gray-100 pb-8">
+                            <h2 class="text-xs font-bold tracking-widest uppercase text-gray-500 mt-1">EXPERIENCE</h2>
+                            <div class="sm:col-span-2 space-y-8">
+                                <div>
+                                    <h4 class="font-bold text-primary text-xl">Artista freelance</h4>
+                                    <p class="text-sm text-gray-600">Freelance • giu 2024 - Presente</p>
+                                    <p class="text-gray-500 text-sm mt-1">Bergamo, Lombardia, Italia</p>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <!-- SECTION: EDUCATION -->
+                        <div class="grid grid-cols-1 sm:grid-cols-3 gap-6 border-b border-gray-100 pb-8">
+                            <h2 class="text-xs font-bold tracking-widest uppercase text-gray-500 mt-1">EDUCATION</h2>
+                            <div class="sm:col-span-2 space-y-6">
+                                <div>
+                                    <h4 class="font-bold text-primary text-xl">Politecnico di Milano</h4>
+                                    <p class="text-sm text-gray-600">Laurea triennale, Design e comunicazione visiva</p>
+                                    <p class="text-gray-500 text-sm mt-1">lug 2024 - lug 2027</p>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-primary text-xl">ITIS Paleocapa</h4>
+                                    <p class="text-sm text-gray-600">Diploma Istituto Tecnico</p>
+                                    <p class="text-gray-500 text-sm mt-1">set 2019 - giu 2024</p>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+
+                    <!-- BOTTOM TEXT -->
+                    <div class="text-right pt-16">
+                        <h1
+                            class="text-[15vw] sm:text-[10rem] leading-none font-sans font-thin tracking-tighter text-blue-100 select-none">
+                            PROFILE
+                        </h1>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- SCROLLING TEXT -->
+        <!-- SCROLLING TEXT -->
+        <div class="w-full overflow-hidden whitespace-nowrap py-4 bg-primary text-white border-y border-white">
+            <div class="inline-flex animate-infinite-scroll">
+                <span class="text-2xl font-bold tracking-[0.5em] uppercase mx-8">Contents • Contents • Contents •
+                    Contents •
+                    Contents • Contents • Contents • Contents •</span>
+                <span class="text-2xl font-bold tracking-[0.5em] uppercase mx-8">Contents • Contents • Contents •
+                    Contents •
+                    Contents • Contents • Contents • Contents •</span>
+            </div>
+        </div>
+
+        <!-- CARDS ORIZZONTALI -->
+        <section class="grid grid-cols-1 md:grid-cols-4">
+            <img src="./assets/sport/galacticos4.jpg" alt="Sport" class="w-full h-full object-cover" />
+            <div class="col-span-3 bg-primary text-white p-8 sm:p-16 flex flex-col gap-4">
+                <span
+                    class="bg-white text-black px-4 py-1 rounded-full w-fit text-xs font-bold uppercase tracking-widest">FOCUS</span>
+                <a class="text-[40px] sm:text-[60px] md:text-[80px] font-black uppercase hover:underline decoration-white"
+                    href="./sport">SPORT</a>
+                <p class="text-xl max-w-2xl">
+                    Racconto lo sport da bordocampo, catturando la tensione, la gioia e la fatica.
+                    Dal progetto Galacticos alle collaborazioni professionali, trasformo l'azione in immagini iconiche.
+                    ⚽️
+                </p>
+            </div>
+        </section>
+
+        <section class="grid grid-cols-1 md:grid-cols-4">
+            <div class="col-span-3 bg-white text-black p-8 sm:p-16 flex flex-col gap-4 order-2 md:order-1">
+                <span
+                    class="bg-primary text-white px-4 py-1 rounded-full w-fit text-xs font-bold uppercase tracking-widest">LIFESTYLE</span>
+                <div class="relative w-fit">
+                    <a class="text-[40px] sm:text-[60px] md:text-[80px] font-black uppercase hover:text-primary transition-colors relative z-10"
+                        href="./eventi">EVENTI</a>
+                    <img src="./assets/sottolineatura.webp" alt=""
+                        class="absolute -bottom-2 left-0 w-full h-auto opacity-80 pointer-events-none z-0 transform -rotate-1 scale-110">
+                </div>
+                <p class="text-xl max-w-2xl">
+                    Fotografia e video per eventi, club e concerti.
+                    Seguo l’azione da dentro la serata, tra luci, pubblico e performance.
+                    Il risultato sono contenuti dinamici, ottimizzati per social e comunicazione, che restituiscono
+                    l’energia reale dell’evento.🪩
+                </p>
+            </div>
+            <img src="./assets/eventi/glocky/DSC00893.webp" alt="Eventi"
+                class="w-full h-full object-cover order-1 md:order-2" />
+        </section>
+
+        <section class="grid grid-cols-1 md:grid-cols-4">
+            <img src="./assets/promote/promote_copertina.webp" alt="Promote" class="w-full h-full object-cover" />
+            <div class="col-span-3 bg-primary text-white p-8 sm:p-16 flex flex-col gap-4">
+                <span
+                    class="bg-white text-black px-4 py-1 rounded-full w-fit text-xs font-bold uppercase tracking-widest">BUSINESS</span>
+                <h2
+                    class="text-[40px] sm:text-[60px] md:text-[80px] font-black uppercase hover:underline decoration-white">
+                    <a href="./promote">PROMOTE</a>
+                </h2>
+                <p class="text-xl max-w-2xl">
+                    Video corporate, contenuti social parlati e branding per aziende.
+                    Aiuto i brand a raccontare la loro storia con un linguaggio visivo moderno e coinvolgente. 🚀
+                </p>
+            </div>
+        </section>
+
+        <!-- WEB SECTION (New) -->
+        <section class="grid grid-cols-1 md:grid-cols-4">
+            <div class="col-span-3 bg-white text-black p-8 sm:p-16 flex flex-col gap-4">
+                <span
+                    class="bg-primary text-white px-4 py-1 rounded-full w-fit text-xs font-bold uppercase tracking-widest">DIGITAL</span>
+                <a class="text-[40px] sm:text-[60px] md:text-[80px] font-black uppercase hover:text-primary transition-colors"
+                    href="./web">WEB</a>
+                <p class="text-xl max-w-2xl">
+                    Landing Page performanti e siti vetrina.
+                    Metto in luce il tuo valore per trasformare i visitatori in clienti e generare lead di qualità. 🎯
+                </p>
+            </div>
+            <img src="./assets/web/web_copertina.webp" alt="Web" class="w-full h-full object-cover" />
+        </section>
+
+
+
+        <!-- SCROLLING TEXT SEPARATOR -->
+        <div class="w-full overflow-hidden whitespace-nowrap py-4 bg-primary text-white border-y border-white">
+            <div class="inline-flex animate-infinite-scroll">
+                <span class="text-2xl font-bold tracking-[0.5em] uppercase mx-8">Contents • Contents • Contents •
+                    Contents •
+                    Contents • Contents • Contents • Contents •</span>
+                <span class="text-2xl font-bold tracking-[0.5em] uppercase mx-8">Contents • Contents • Contents •
+                    Contents •
+                    Contents • Contents • Contents • Contents •</span>
+            </div>
+        </div>
+
+        <!-- YOUTUBE SECTION (Updated: White & Bigger) -->
+        <section class="py-32 bg-white text-black px-8 sm:px-16">
+            <div class="flex flex-col md:flex-row justify-between items-end mb-20">
+                <div>
+                    <h2 class="text-primary font-bold tracking-widest uppercase mb-4 text-xl">My Channel</h2>
+                    <h1 class="text-5xl sm:text-7xl font-black uppercase text-black tracking-tighter">Latest on YouTube
                     </h1>
                 </div>
-
+                <a href="https://www.youtube.com/@nicolapreda" target="_blank"
+                    class="hidden md:block px-10 py-4 bg-red-600 text-white rounded-full font-bold uppercase hover:bg-black hover:text-white transition-all text-lg tracking-wider shadow-xl hover:shadow-2xl hover:-translate-y-1">
+                    Visit Channel
+                </a>
             </div>
-        </div>
-    </section>
 
-    <!-- SCROLLING TEXT -->
-    <!-- SCROLLING TEXT -->
-    <div class="w-full overflow-hidden whitespace-nowrap py-4 bg-primary text-white border-y border-white">
-        <div class="inline-flex animate-infinite-scroll">
-            <span class="text-2xl font-bold tracking-[0.5em] uppercase mx-8">Contents • Contents • Contents • Contents •
-                Contents • Contents • Contents • Contents •</span>
-            <span class="text-2xl font-bold tracking-[0.5em] uppercase mx-8">Contents • Contents • Contents • Contents •
-                Contents • Contents • Contents • Contents •</span>
-        </div>
-    </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+                <% if (videos && videos.length> 0) { %>
+                    <% videos.forEach(function(video) { %>
+                        <div class="aspect-video w-full rounded-2xl overflow-hidden bg-gray-100 shadow-2xl group relative cursor-pointer transform transition-all duration-500 hover:-translate-y-2 hover:shadow-[0_20px_60px_rgba(0,0,0,0.2)]"
+                            onclick="this.innerHTML='<iframe class=\'w-full h-full\' src=\'https://www.youtube-nocookie.com/embed/<%= video.id %>?autoplay=1\' title=\'<%= video.title %>\' frameborder=\'0\' allow=\'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\' allowfullscreen></iframe>'">
 
-    <!-- CARDS ORIZZONTALI -->
-    <section class="grid grid-cols-1 md:grid-cols-4">
-        <img src="./assets/sport/galacticos4.jpg" alt="Sport" class="w-full h-full object-cover" />
-        <div class="col-span-3 bg-primary text-white p-8 sm:p-16 flex flex-col gap-4">
-            <span
-                class="bg-white text-black px-4 py-1 rounded-full w-fit text-xs font-bold uppercase tracking-widest">FOCUS</span>
-            <a class="text-[40px] sm:text-[60px] md:text-[80px] font-black uppercase hover:underline decoration-white"
-                href="./sport">SPORT</a>
-            <p class="text-xl max-w-2xl">
-                Racconto lo sport da bordocampo, catturando la tensione, la gioia e la fatica.
-                Dal progetto Galacticos alle collaborazioni professionali, trasformo l'azione in immagini iconiche. ⚽️
-            </p>
-        </div>
-    </section>
+                            <!-- High Res Thumbnail -->
+                            <img src="https://i.ytimg.com/vi/<%= video.id %>/maxresdefault.jpg" alt="<%= video.title %>"
+                                class="w-full h-full object-cover opacity-90 group-hover:opacity-100 transition-opacity duration-300"
+                                onerror="this.src='https://i.ytimg.com/vi/<%= video.id %>/hqdefault.jpg'">
 
-    <section class="grid grid-cols-1 md:grid-cols-4">
-        <div class="col-span-3 bg-white text-black p-8 sm:p-16 flex flex-col gap-4 order-2 md:order-1">
-            <span
-                class="bg-primary text-white px-4 py-1 rounded-full w-fit text-xs font-bold uppercase tracking-widest">LIFESTYLE</span>
-            <div class="relative w-fit">
-                <a class="text-[40px] sm:text-[60px] md:text-[80px] font-black uppercase hover:text-primary transition-colors relative z-10"
-                    href="./eventi">EVENTI</a>
-                <img src="./assets/sottolineatura.webp" alt=""
-                    class="absolute -bottom-2 left-0 w-full h-auto opacity-80 pointer-events-none z-0 transform -rotate-1 scale-110">
-            </div>
-            <p class="text-xl max-w-2xl">
-                Fotografia e video per eventi, club e concerti.
-                Seguo l’azione da dentro la serata, tra luci, pubblico e performance.
-                Il risultato sono contenuti dinamici, ottimizzati per social e comunicazione, che restituiscono
-                l’energia reale dell’evento.🪩
-            </p>
-        </div>
-        <img src="./assets/eventi/glocky/DSC00893.webp" alt="Eventi"
-            class="w-full h-full object-cover order-1 md:order-2" />
-    </section>
-
-    <section class="grid grid-cols-1 md:grid-cols-4">
-        <img src="./assets/promote/promote_copertina.webp" alt="Promote" class="w-full h-full object-cover" />
-        <div class="col-span-3 bg-primary text-white p-8 sm:p-16 flex flex-col gap-4">
-            <span
-                class="bg-white text-black px-4 py-1 rounded-full w-fit text-xs font-bold uppercase tracking-widest">BUSINESS</span>
-            <h2 class="text-[40px] sm:text-[60px] md:text-[80px] font-black uppercase hover:underline decoration-white">
-                <a href="./promote">PROMOTE</a>
-            </h2>
-            <p class="text-xl max-w-2xl">
-                Video corporate, contenuti social parlati e branding per aziende.
-                Aiuto i brand a raccontare la loro storia con un linguaggio visivo moderno e coinvolgente. 🚀
-            </p>
-        </div>
-    </section>
-
-    <!-- WEB SECTION (New) -->
-    <section class="grid grid-cols-1 md:grid-cols-4">
-        <div class="col-span-3 bg-white text-black p-8 sm:p-16 flex flex-col gap-4">
-            <span
-                class="bg-primary text-white px-4 py-1 rounded-full w-fit text-xs font-bold uppercase tracking-widest">DIGITAL</span>
-            <a class="text-[40px] sm:text-[60px] md:text-[80px] font-black uppercase hover:text-primary transition-colors"
-                href="./web">WEB</a>
-            <p class="text-xl max-w-2xl">
-                Landing Page performanti e siti vetrina.
-                Metto in luce il tuo valore per trasformare i visitatori in clienti e generare lead di qualità. 🎯
-            </p>
-        </div>
-        <img src="./assets/web/web_copertina.webp" alt="Web" class="w-full h-full object-cover" />
-    </section>
-
-
-
-    <!-- SCROLLING TEXT SEPARATOR -->
-    <div class="w-full overflow-hidden whitespace-nowrap py-4 bg-primary text-white border-y border-white">
-        <div class="inline-flex animate-infinite-scroll">
-            <span class="text-2xl font-bold tracking-[0.5em] uppercase mx-8">Contents • Contents • Contents • Contents •
-                Contents • Contents • Contents • Contents •</span>
-            <span class="text-2xl font-bold tracking-[0.5em] uppercase mx-8">Contents • Contents • Contents • Contents •
-                Contents • Contents • Contents • Contents •</span>
-        </div>
-    </div>
-
-    <!-- YOUTUBE SECTION (Updated: White & Bigger) -->
-    <section class="py-32 bg-white text-black px-8 sm:px-16">
-        <div class="flex flex-col md:flex-row justify-between items-end mb-20">
-            <div>
-                <h2 class="text-primary font-bold tracking-widest uppercase mb-4 text-xl">My Channel</h2>
-                <h1 class="text-5xl sm:text-7xl font-black uppercase text-black tracking-tighter">Latest on YouTube</h1>
-            </div>
-            <a href="https://www.youtube.com/@nicolapreda" target="_blank"
-                class="hidden md:block px-10 py-4 bg-red-600 text-white rounded-full font-bold uppercase hover:bg-black hover:text-white transition-all text-lg tracking-wider shadow-xl hover:shadow-2xl hover:-translate-y-1">
-                Visit Channel
-            </a>
-        </div>
-
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
-            <% if (videos && videos.length> 0) { %>
-                <% videos.forEach(function(video) { %>
-                    <div class="aspect-video w-full rounded-2xl overflow-hidden bg-gray-100 shadow-2xl group relative cursor-pointer transform transition-all duration-500 hover:-translate-y-2 hover:shadow-[0_20px_60px_rgba(0,0,0,0.2)]"
-                        onclick="this.innerHTML='<iframe class=\'w-full h-full\' src=\'https://www.youtube.com/embed/<%= video.id %>?autoplay=1\' title=\'<%= video.title %>\' frameborder=\'0\' allow=\'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\' allowfullscreen></iframe>'">
-
-                        <!-- High Res Thumbnail -->
-                        <img src="https://img.youtube.com/vi/<%= video.id %>/maxresdefault.jpg" alt="<%= video.title %>"
-                            class="w-full h-full object-cover opacity-90 group-hover:opacity-100 transition-opacity duration-300"
-                            onerror="this.src='https://img.youtube.com/vi/<%= video.id %>/hqdefault.jpg'">
-
-                        <!-- Play Button Overlay -->
-                        <div class="absolute inset-0 flex items-center justify-center pointer-events-none">
-                            <div
-                                class="w-20 h-20 bg-red-600 text-white rounded-full flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform duration-300">
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="white" viewBox="0 0 24 24"
-                                    stroke-width="1.5" stroke="currentColor" class="w-10 h-10 ml-1">
-                                    <path stroke-linecap="round" stroke-linejoin="round"
-                                        d="M5.25 5.653c0-.856.917-1.398 1.667-.986l11.54 6.348a1.125 1.125 0 010 1.971l-11.54 6.347a1.125 1.125 0 01-1.667-.985V5.653z" />
-                                </svg>
+                            <!-- Play Button Overlay -->
+                            <div class="absolute inset-0 flex items-center justify-center pointer-events-none">
+                                <div
+                                    class="w-20 h-20 bg-red-600 text-white rounded-full flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform duration-300">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="white" viewBox="0 0 24 24"
+                                        stroke-width="1.5" stroke="currentColor" class="w-10 h-10 ml-1">
+                                        <path stroke-linecap="round" stroke-linejoin="round"
+                                            d="M5.25 5.653c0-.856.917-1.398 1.667-.986l11.54 6.348a1.125 1.125 0 010 1.971l-11.54 6.347a1.125 1.125 0 01-1.667-.985V5.653z" />
+                                    </svg>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <% }); %>
-                        <% } else { %>
-                            <!-- FALLBACK / PLACEHOLDERS -->
-                            <div
-                                class="col-span-1 md:col-span-3 text-center py-20 border-2 border-dashed border-gray-300 rounded-3xl">
-                                <p class="text-gray-500 mb-6 text-xl">Video non disponibili al momento.</p>
-                                <a href="https://www.youtube.com/@nicolapreda" target="_blank"
-                                    class="text-primary hover:underline font-bold text-lg">Vai al canale YouTube
-                                    &rarr;</a>
-                            </div>
-                            <% } %>
-        </div>
+                        <% }); %>
+                            <% } else { %>
+                                <!-- FALLBACK / PLACEHOLDERS -->
+                                <div
+                                    class="col-span-1 md:col-span-3 text-center py-20 border-2 border-dashed border-gray-300 rounded-3xl">
+                                    <p class="text-gray-500 mb-6 text-xl">Video non disponibili al momento.</p>
+                                    <a href="https://www.youtube.com/@nicolapreda" target="_blank"
+                                        class="text-primary hover:underline font-bold text-lg">Vai al canale YouTube
+                                        &rarr;</a>
+                                </div>
+                                <% } %>
+            </div>
 
-        <div class="mt-16 text-center md:hidden">
-            <a href="https://www.youtube.com/@nicolapreda" target="_blank"
-                class="inline-block px-10 py-4 bg-red-600 text-white rounded-full font-bold uppercase hover:bg-black transition-all text-lg tracking-wider shadow-xl">
-                Visit Channel
-            </a>
-        </div>
-    </section>
+            <div class="mt-16 text-center md:hidden">
+                <a href="https://www.youtube.com/@nicolapreda" target="_blank"
+                    class="inline-block px-10 py-4 bg-red-600 text-white rounded-full font-bold uppercase hover:bg-black transition-all text-lg tracking-wider shadow-xl">
+                    Visit Channel
+                </a>
+            </div>
+        </section>
 
-    <section class="px-8 sm:px-16 pb-16 pt-48 space-y-16 text-center font-semibold bg-primary text-white">
+        <section class="px-8 sm:px-16 pb-16 pt-48 space-y-16 text-center font-semibold bg-primary text-white">
 
-        <!-- SECTION HEADER -->
-        <!-- SECTION HEADER REMOVED -->
-        <div class="mb-12 flex flex-col items-center justify-center">
-            <!-- Titles Removed -->
-        </div>
+            <!-- SECTION HEADER -->
+            <!-- SECTION HEADER REMOVED -->
+            <div class="mb-12 flex flex-col items-center justify-center">
+                <!-- Titles Removed -->
+            </div>
 
-        <a href="https://www.instagram.com/nicolapreda_/#" target="_blank"
-            class="block text-[13vw] sm:text-[100px] md:text-[150px] leading-none transition-colors font-black tracking-tighter mix-blend-screen">INSTAGRAM</a>
-        <div class="flex flex-col sm:flex-row gap-4 items-center justify-center">
-            <img src="./assets/Star-4.webp" alt="star4" class="w-24 h-24 animate-spin-slow" />
-            <a href="https://www.youtube.com/@nicolapreda" target="_blank"
-                class="text-[13vw] sm:text-[100px] md:text-[150px] leading-none transition-colors font-black tracking-tighter mix-blend-screen">YOUTUBE</a>
-        </div>
-        <a href="https://www.linkedin.com/in/nicola-preda-5b0722233/" target="_blank"
-            class="block text-[13vw] sm:text-[100px] md:text-[150px] leading-none transition-colors font-black tracking-tighter mix-blend-screen">LINKEDIN</a>
-        <div class="flex flex-col sm:flex-row gap-4 items-center justify-center">
-            <img src="./assets/Star-5.webp" alt="star5" class="w-24 h-24 animate-pulse" />
-            <a href="mailto:nicola.preda05@gmail.com" target="_blank"
-                class="text-[13vw] sm:text-[100px] md:text-[150px] leading-none transition-colors font-black tracking-tighter mix-blend-screen">EMAIL</a>
-        </div>
-    </section>
-
+            <a href="https://www.instagram.com/nicolapreda_/#" target="_blank"
+                class="block text-[13vw] sm:text-[100px] md:text-[150px] leading-none transition-colors font-black tracking-tighter mix-blend-screen">INSTAGRAM</a>
+            <div class="flex flex-col sm:flex-row gap-4 items-center justify-center">
+                <img src="./assets/Star-4.webp" alt="star4" class="w-24 h-24 animate-spin-slow" />
+                <a href="https://www.youtube.com/@nicolapreda" target="_blank"
+                    class="text-[13vw] sm:text-[100px] md:text-[150px] leading-none transition-colors font-black tracking-tighter mix-blend-screen">YOUTUBE</a>
+            </div>
+            <a href="https://www.linkedin.com/in/nicola-preda-5b0722233/" target="_blank"
+                class="block text-[13vw] sm:text-[100px] md:text-[150px] leading-none transition-colors font-black tracking-tighter mix-blend-screen">LINKEDIN</a>
+            <div class="flex flex-col sm:flex-row gap-4 items-center justify-center">
+                <img src="./assets/Star-5.webp" alt="star5" class="w-24 h-24 animate-pulse" />
+                <a href="mailto:nicola.preda05@gmail.com" target="_blank"
+                    class="text-[13vw] sm:text-[100px] md:text-[150px] leading-none transition-colors font-black tracking-tighter mix-blend-screen">EMAIL</a>
+            </div>
+        </section>
+    </main>
     <%- include('partials/footer') %>
