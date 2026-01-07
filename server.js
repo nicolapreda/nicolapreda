@@ -131,5 +131,11 @@ app.get('/promote', (req, res) => res.render('promote', { meta: SEO.promote }));
 app.get('/web.html', (req, res) => res.render('web', { meta: SEO.web }));
 app.get('/web', (req, res) => res.render('web', { meta: SEO.web }));
 
+app.get('/privacy-policy.html', (req, res) => res.redirect('https://www.iubenda.com/privacy-policy/88326651'));
+app.get('/privacy-policy', (req, res) => res.redirect('https://www.iubenda.com/privacy-policy/88326651'));
+
+app.get('/cookie-policy.html', (req, res) => res.redirect('https://www.iubenda.com/privacy-policy/88326651/cookie-policy'));
+app.get('/cookie-policy', (req, res) => res.redirect('https://www.iubenda.com/privacy-policy/88326651/cookie-policy'));
+
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, '0.0.0.0', () => console.log(`🚀 Server attivo su http://0.0.0.0:${PORT}`));

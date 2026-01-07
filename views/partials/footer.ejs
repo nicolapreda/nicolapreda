@@ -1,6 +1,6 @@
 <!-- FOOTER -->
 <footer class="bg-black text-white px-8 sm:px-16 py-12 text-sm space-y-10">
-    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10">
         <div class="space-y-2">
             <h3 class="font-bold uppercase tracking-widest">ABOUT</h3>
             <% const birthDate=new Date(2005, 4, 7); const today=new Date(); let age=today.getFullYear() -
@@ -39,11 +39,31 @@
 
             </div>
         </div>
+        <div class="space-y-2">
+            <h3 class="font-bold uppercase tracking-widest">LEGAL</h3>
+            <div class="flex flex-col gap-1 text-gray-400">
+                <a href="https://www.iubenda.com/privacy-policy/88326651"
+                    class="iubenda-white iubenda-noiframe iubenda-embed iubenda-noiframe hover:text-yellow-400 transition-colors"
+                    title="Privacy Policy ">Privacy Policy</a>
+                <script
+                    type="text/javascript">(function (w, d) { var loader = function () { var s = d.createElement("script"), tag = d.getElementsByTagName("script")[0]; s.src = "https://cdn.iubenda.com/iubenda.js"; tag.parentNode.insertBefore(s, tag); }; if (w.addEventListener) { w.addEventListener("load", loader, false); } else if (w.attachEvent) { w.attachEvent("onload", loader); } else { w.onload = loader; } })(window, document);</script>
+
+                <a href="https://www.iubenda.com/privacy-policy/88326651/cookie-policy"
+                    class="iubenda-white iubenda-noiframe iubenda-embed iubenda-noiframe hover:text-yellow-400 transition-colors"
+                    title="Cookie Policy ">Cookie Policy</a>
+                <script
+                    type="text/javascript">(function (w, d) { var loader = function () { var s = d.createElement("script"), tag = d.getElementsByTagName("script")[0]; s.src = "https://cdn.iubenda.com/iubenda.js"; tag.parentNode.insertBefore(s, tag); }; if (w.addEventListener) { w.addEventListener("load", loader, false); } else if (w.attachEvent) { w.attachEvent("onload", loader); } else { w.onload = loader; } })(window, document);</script>
+            </div>
+        </div>
     </div>
     <div class="flex flex-col sm:flex-row justify-between text-gray-500 pt-8 border-t border-gray-800">
         <p>&copy; <%= new Date().getFullYear() %> NICOLA PREDA. – All Rights Reserved</p>
         <p>Partita IVA: 04768450167</p>
     </div>
+
+    <!-- Iubenda Widget Script -->
+    <script type="text/javascript"
+        src="https://embeds.iubenda.com/widgets/272aedf3-8004-4513-ae52-41e72df1ffc6.js"></script>
 </footer>
 </body>
 <script src="./navbar.js"></script>
