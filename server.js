@@ -32,7 +32,7 @@ async function getLatestVideos() {
         const feed = await parser.parseURL(`https://www.youtube.com/feeds/videos.xml?channel_id=${YOUTUBE_CHANNEL_ID}`);
         // Return top 3 videos
         return feed.items.slice(0, 3).map(item => ({
-            id: item.id.split(':')[2], // yt:video:ID
+            id: (item.id.includes(':') ? item.id.split(':')[2] : item.id), // Handle yt:video:ID or just ID
             title: item.title,
             link: item.link
         }));

@@ -112,7 +112,7 @@
                             <h2 class="text-xs font-bold tracking-widest uppercase text-gray-500 mt-1">EXPERIENCE</h2>
                             <div class="sm:col-span-2 space-y-8">
                                 <div>
-                                    <h4 class="font-bold text-primary text-xl">Artista freelance</h4>
+                                    <h3 class="font-bold text-primary text-xl">Artista freelance</h3>
                                     <p class="text-sm text-gray-600">Freelance • giu 2024 - Presente</p>
                                     <p class="text-gray-500 text-sm mt-1">Bergamo, Lombardia, Italia</p>
                                 </div>
@@ -125,12 +125,12 @@
                             <h2 class="text-xs font-bold tracking-widest uppercase text-gray-500 mt-1">EDUCATION</h2>
                             <div class="sm:col-span-2 space-y-6">
                                 <div>
-                                    <h4 class="font-bold text-primary text-xl">Politecnico di Milano</h4>
+                                    <h3 class="font-bold text-primary text-xl">Politecnico di Milano</h3>
                                     <p class="text-sm text-gray-600">Laurea triennale, Design e comunicazione visiva</p>
                                     <p class="text-gray-500 text-sm mt-1">lug 2024 - lug 2027</p>
                                 </div>
                                 <div>
-                                    <h4 class="font-bold text-primary text-xl">ITIS Paleocapa</h4>
+                                    <h3 class="font-bold text-primary text-xl">ITIS Paleocapa</h3>
                                     <p class="text-sm text-gray-600">Diploma Istituto Tecnico</p>
                                     <p class="text-gray-500 text-sm mt-1">set 2019 - giu 2024</p>
                                 </div>
@@ -142,7 +142,7 @@
 
                     <!-- BOTTOM TEXT -->
                     <div class="text-right pt-16">
-                        <h1
+                        <h1 aria-hidden="true"
                             class="text-[15vw] sm:text-[10rem] leading-none font-sans font-thin tracking-tighter text-blue-100 select-none">
                             PROFILE
                         </h1>
@@ -251,9 +251,9 @@
         <section class="py-32 bg-white text-black px-8 sm:px-16">
             <div class="flex flex-col md:flex-row justify-between items-end mb-20">
                 <div>
-                    <h2 class="text-primary font-bold tracking-widest uppercase mb-4 text-xl">My Channel</h2>
-                    <h1 class="text-5xl sm:text-7xl font-black uppercase text-black tracking-tighter">Latest on YouTube
-                    </h1>
+                    <p class="text-primary font-bold tracking-widest uppercase mb-4 text-xl">My Channel</p>
+                    <h2 class="text-5xl sm:text-7xl font-black uppercase text-black tracking-tighter">Latest on YouTube
+                    </h2>
                 </div>
                 <a href="https://www.youtube.com/@nicolapreda" target="_blank"
                     class="hidden md:block px-10 py-4 bg-red-600 text-white rounded-full font-bold uppercase hover:bg-black hover:text-white transition-all text-lg tracking-wider shadow-xl hover:shadow-2xl hover:-translate-y-1">
@@ -265,12 +265,12 @@
                 <% if (videos && videos.length> 0) { %>
                     <% videos.forEach(function(video) { %>
                         <div class="aspect-video w-full rounded-2xl overflow-hidden bg-gray-100 shadow-2xl group relative cursor-pointer transform transition-all duration-500 hover:-translate-y-2 hover:shadow-[0_20px_60px_rgba(0,0,0,0.2)]"
-                            onclick="this.innerHTML='<iframe class=\'w-full h-full\' src=\'https://www.youtube-nocookie.com/embed/<%= video.id %>?autoplay=1\' title=\'<%= video.title %>\' frameborder=\'0\' allow=\'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\' allowfullscreen></iframe>'">
+                            onclick="this.removeAttribute('onclick'); this.innerHTML='<iframe class=\'w-full h-full\' src=\'https://www.youtube-nocookie.com/embed/<%= video.id %>?autoplay=1\' title=\'<%= video.title %>\' frameborder=\'0\' allow=\'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\' allowfullscreen></iframe>'">
 
                             <!-- High Res Thumbnail -->
                             <img src="https://i.ytimg.com/vi/<%= video.id %>/maxresdefault.jpg" alt="<%= video.title %>"
                                 class="w-full h-full object-cover opacity-90 group-hover:opacity-100 transition-opacity duration-300"
-                                onerror="this.src='https://i.ytimg.com/vi/<%= video.id %>/hqdefault.jpg'">
+                                onerror="this.src='https://i.ytimg.com/vi/<%= video.id %>/mqdefault.jpg'">
 
                             <!-- Play Button Overlay -->
                             <div class="absolute inset-0 flex items-center justify-center pointer-events-none">
