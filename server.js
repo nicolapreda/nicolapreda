@@ -30,12 +30,13 @@ const YOUTUBE_CHANNEL_ID = 'UC1VPT4qglYpXyj1nt_sL2sA'; // <--- INSERISCI QUI IL 
 async function getLatestVideos() {
     try {
         const feed = await parser.parseURL(`https://www.youtube.com/feeds/videos.xml?channel_id=${YOUTUBE_CHANNEL_ID}`);
-        // Return top 3 videos
-        return feed.items.slice(0, 3).map(item => ({
+        const videos = feed.items.slice(0, 3).map(item => ({
             id: (item.id.includes(':') ? item.id.split(':')[2] : item.id), // Handle yt:video:ID or just ID
             title: item.title,
             link: item.link
         }));
+        console.log('Fetched YouTube Videos:', JSON.stringify(videos, null, 2));
+        return videos;
     } catch (error) {
         console.error('Error fetching YouTube feed:', error.message);
         return []; // Return empty if error (e.g. invalid ID)

@@ -1,167 +1,303 @@
 <%- include('partials/header') %>
 
-    <!-- HERO SECTION -->
-    <main>
-        <section class="relative w-full">
-            <div class="pt-[72px]">
-                <img src="./assets/sport/galacticos4.webp" alt="Sport Hero"
-                    class="w-full h-auto object-cover mt-[-100px]" />
-            </div>
-        </section>
+    <!-- SPORT PAGE CONTENT (Blue Theme) -->
+    <main class="bg-primary text-white min-h-screen pt-32 pb-20 px-6 sm:px-12">
 
-        <!-- INTRO: SPORT PHOTOGRAPHY -->
-        <section class="px-6 sm:px-16 py-32 lg:py-48 relative flex flex-col items-center">
-            <div class="max-w-4xl text-center">
-                <h1 class="text-5xl md:text-7xl font-black uppercase mb-8 text-primary tracking-tighter">Sport
-                    Photography
-                </h1>
-                <p
-                    class="text-xl md:text-2xl leading-relaxed px-4 md:px-16 text-center font-sans font-medium text-gray-700">
-                    "Catturare l'istante in cui la passione diventa azione. La tensione, la gioia, la fatica: racconto
-                    lo
-                    sport da bordocampo."
-                </p>
-            </div>
-        </section>
+        <div class="max-w-7xl mx-auto">
 
-        <!-- PROJECT: GALACTICOS (Scrapbook Style) -->
-        <section class="relative w-full bg-themeRed text-white py-24 overflow-hidden">
-
-            <!-- DECORATIVE TAPE TOP LEFT -->
-            <img src="./assets/Tape.png" class="absolute top-10 left-[-50px] w-48 rotate-45 opacity-80 z-10" />
-
-            <div class="max-w-7xl mx-auto px-6 sm:px-12 relative z-0">
-
-                <!-- HEADER WITH TAPE -->
-                <div class="relative mb-20">
-                    <h2
-                        class="text-[12vw] sm:text-[8rem] leading-none font-black text-yellow-400 mix-blend-screen transform -rotate-2 origin-bottom-left">
-                        GALACTICOS
-                    </h2>
+            <!-- HEADER / INTRO -->
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start mb-32">
+                <div class="lg:sticky lg:top-32">
                     <span
-                        class="absolute top-0 right-0 sm:right-20 bg-yellow-400 text-black px-4 py-1 font-bold text-xl uppercase transform rotate-3 shadow-lg">
-                        Vele Blu
-                    </span>
-                    <p class="mt-4 text-xl sm:text-2xl font-bold tracking-widest uppercase ml-2 sm:ml-4">
-                        Passion Project
+                        class="font-bold tracking-widest uppercase border-b-2 border-white pb-1 mb-6 inline-block">Portfolio</span>
+                    <h1 class="text-7xl md:text-9xl font-serif italic mb-2">Sport</h1>
+                    <h1 class="text-7xl md:text-9xl font-black uppercase leading-none mb-12 tracking-tighter">Photo
+                    </h1>
+
+                    <p class="text-xl md:text-2xl font-medium leading-relaxed max-w-lg mb-12">
+                        "Catturare l'istante in cui la passione diventa azione. La tensione, la gioia, la fatica:
+                        racconto
+                        lo sport da bordocampo, principalmente a <span class="text-yellow-400">Bergamo</span> e
+                        provincia."
                     </p>
                 </div>
 
-                <!-- COLLAGE SECTION 1 -->
-                <div class="grid grid-cols-1 md:grid-cols-12 gap-12 mb-32 items-center">
-
-                    <!-- Large Image Left -->
-                    <div class="md:col-span-7 relative group">
-                        <img src="./assets/Tape.png"
-                            class="absolute -top-6 -left-6 w-24 z-20 rotate-[-15deg] drop-shadow-md opacity-70" />
-                        <div
-                            class="relative transform transition-transform duration-500 hover:scale-[1.02] hover:rotate-1">
-                            <img src="./assets/sport/galacticos4.webp"
-                                class="w-full h-auto shadow-[10px_10px_0px_rgba(0,0,0,0.5)] border-4 border-white transform rotate-1" />
-                        </div>
-                    </div>
-
-                    <!-- Text Right -->
-                    <div class="md:col-span-5 relative">
-                        <div class="bg-white text-black p-8 shadow-[10px_10px_0px_rgba(0,0,0,1)] transform -rotate-1">
-                            <p class="uppercase font-bold text-2xl mb-6 leading-tight">
-                                "L'esperienza con questa squadra è iniziata come progetto personale..."
-                            </p>
-                            <p class="text-lg leading-relaxed font-medium text-gray-800">
-                                In questi due anni ho scattato migliaia di foto ad ogni singola partita.
-                                Assieme ad Andrea abbiamo realizzato un profilo Instagram degno di una squadra di Serie
-                                A.
-                                Tutto questo semplicemente per <span
-                                    class="bg-themeRed text-white px-1">PASSIONE</span>. 🧡
-                            </p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- COLLAGE SECTION 2 (Feed Intro) -->
-                <div class="relative mb-16 text-center">
-                    <h3
-                        class="text-4xl sm:text-6xl font-black uppercase text-white transform rotate-1 inline-block border-b-4 border-yellow-400 pb-2">
-                        Il Nostro Feed
-                    </h3>
-                </div>
-
-                <!-- INSTAGRAM FEED GRID -->
-                <div
-                    class="grid grid-cols-3 gap-1 sm:gap-4 p-4 bg-white shadow-2xl transform rotate-1 max-w-5xl mx-auto">
-                    <!-- Feed Header Mockup -->
-                    <div
-                        class="col-span-3 flex items-center justify-between p-4 border-b border-gray-200 text-black mb-2">
-                        <span class="font-bold text-lg">@galacticos_veleblu</span>
-                        <button class="bg-blue-500 text-white px-4 py-1 rounded text-sm font-bold">Segui</button>
-                    </div>
-
-                    <!-- Generated Grid from Assets -->
-                    <div class="aspect-square relative overflow-hidden group cursor-pointer">
-                        <img src="./assets/sport/galacticos1.webp"
-                            class="object-cover w-full h-full transition-transform duration-500 group-hover:scale-110" />
-                    </div>
-                    <div class="aspect-square relative overflow-hidden group cursor-pointer">
-                        <img src="./assets/sport/galacticos2.webp"
-                            class="object-cover w-full h-full transition-transform duration-500 group-hover:scale-110" />
-                    </div>
-                    <div class="aspect-square relative overflow-hidden group cursor-pointer">
-                        <img src="./assets/sport/galacticos3.webp"
-                            class="object-cover w-full h-full transition-transform duration-500 group-hover:scale-110" />
-                    </div>
-                    <div class="aspect-square relative overflow-hidden group cursor-pointer">
-                        <img src="./assets/sport/galacticos5.webp"
-                            class="object-cover w-full h-full transition-transform duration-500 group-hover:scale-110" />
-                    </div>
-                    <div class="aspect-square relative overflow-hidden group cursor-pointer">
+                <!-- RIGHT COLUMN: HERO IMAGES -->
+                <div class="flex flex-col gap-8">
+                    <div class="group relative">
                         <img src="./assets/sport/galacticos4.webp"
-                            class="object-cover w-full h-full transition-transform duration-500 group-hover:scale-110" />
-                    </div>
-                    <div class="aspect-square relative overflow-hidden group cursor-pointer">
-                        <img src="./assets/sport/galacticos1.webp"
-                            class="object-cover w-full h-full transition-transform duration-500 group-hover:scale-110" />
-                    </div>
-                </div>
-
-            </div>
-
-
-
-        </section>
-
-        <!-- PROJECT: ALBINOLEFFE -->
-        <section class="px-6 sm:px-16 py-24 bg-gray-50 -mx-6 sm:-mx-16">
-            <div class="max-w-7xl mx-auto">
-                <div class="border-l-4 border-blue-800 pl-6 mb-12">
-                    <h2 class="text-4xl font-bold uppercase text-black">Albinoleffe</h2>
-                    <span class="text-gray-500 font-bold tracking-widest uppercase text-sm">Professional
-                        Collaboration</span>
-                </div>
-
-                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                    <div class="group relative overflow-hidden rounded-sm shadow-lg">
-                        <img src="./assets/sport/albinoleffe1.JPG.webp"
-                            class="w-full h-80 object-cover transition-transform duration-700 group-hover:scale-110" />
-                    </div>
-                    <div class="group relative overflow-hidden rounded-sm shadow-lg">
-                        <img src="./assets/sport/albinoleffe2.JPG.webp"
-                            class="w-full h-80 object-cover transition-transform duration-700 group-hover:scale-110" />
-                    </div>
-                    <div class="group relative overflow-hidden rounded-sm shadow-lg">
-                        <img src="./assets/sport/albinoleffe3.JPG.webp"
-                            class="w-full h-80 object-cover transition-transform duration-700 group-hover:scale-110" />
-                    </div>
-                    <div class="group relative overflow-hidden rounded-sm shadow-lg">
-                        <img src="./assets/sport/albinoleffe4.JPG.webp"
-                            class="w-full h-80 object-cover transition-transform duration-700 group-hover:scale-110" />
-                    </div>
-                    <div class="group relative overflow-hidden rounded-sm shadow-lg md:col-span-2">
-                        <img src="./assets/sport/albinoleffe5.JPG.webp"
-                            class="w-full h-80 object-cover object-top transition-transform duration-700 group-hover:scale-110" />
+                            class="w-full h-auto object-cover border-2 border-white shadow-[8px_8px_0px_0px_rgba(255,255,255,1)] group-hover:shadow-none transition-all duration-300">
                     </div>
                 </div>
             </div>
-        </section>
+
+            <!-- PROJECT: GALACTICOS -->
+            <section class="relative w-full py-24 overflow-hidden border-t-2 border-white">
+
+                <!-- DECORATIVE TAPE TOP LEFT -->
+                <img src="./assets/Tape.png"
+                    class="absolute top-10 left-[-50px] w-48 rotate-45 opacity-80 z-10 mix-blend-screen" />
+
+                <div class="relative z-0">
+                    <!-- HEADER WITH TAPE -->
+                    <div class="relative mb-20">
+                        <h2
+                            class="text-[12vw] sm:text-[8rem] leading-none font-black text-white mix-blend-overlay transform -rotate-2 origin-bottom-left">
+                            GALACTICOS
+                        </h2>
+                        <span
+                            class="absolute top-0 right-0 sm:right-20 bg-white text-primary px-4 py-1 font-bold text-xl uppercase transform rotate-3 shadow-lg">
+                            Vele Blu
+                        </span>
+                        <p class="mt-4 text-xl sm:text-2xl font-bold tracking-widest uppercase ml-2 sm:ml-4 text-white">
+                            Passion Project
+                        </p>
+                    </div>
+
+                    <!-- COLLAGE SECTION 1 (Vertical Layout) -->
+                    <div class="flex flex-col gap-16 mb-32 items-center max-w-5xl mx-auto">
+                        <!-- Large Image -->
+                        <div class="relative group w-full">
+                            <img src="./assets/Tape.png"
+                                class="absolute -top-6 -left-6 w-24 z-20 rotate-[-15deg] drop-shadow-md opacity-70" />
+                            <div
+                                class="relative transform transition-transform duration-500 hover:scale-[1.02] hover:rotate-1">
+                                <img src="./assets/sport/galacticos4.webp"
+                                    class="w-full h-auto shadow-[10px_10px_0px_rgba(255,255,255,0.5)] border-4 border-white transform rotate-1" />
+                            </div>
+                        </div>
+
+                        <!-- Text Card -->
+                        <div class="relative w-full md:w-3/4">
+                            <div
+                                class="bg-white text-primary p-8 md:p-12 shadow-[10px_10px_0px_rgba(255,255,255,1)] transform -rotate-1">
+                                <p class="uppercase font-bold text-2xl md:text-3xl mb-6 leading-tight">
+                                    "L'esperienza con questa squadra è iniziata come progetto personale..."
+                                </p>
+                                <p class="text-lg md:text-xl leading-relaxed font-medium text-gray-800">
+                                    In questi due anni ho scattato migliaia di foto ad ogni singola partita.
+                                    Assieme ad Andrea abbiamo realizzato un profilo Instagram degno di una squadra
+                                    di
+                                    Serie A.
+                                    Tutto questo semplicemente per <span
+                                        class="bg-primary text-white px-1">PASSIONE</span>. ⚽️
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- COLLAGE SECTION 2 (Feed Intro) -->
+                    <div class="relative mb-16 text-center">
+                        <h3
+                            class="text-4xl sm:text-6xl font-black uppercase text-white transform rotate-1 inline-block border-b-4 border-white pb-2">
+                            Il Nostro Feed
+                        </h3>
+                    </div>
+
+                    <!-- INSTAGRAM OFFICIAL EMBED -->
+                    <div class="relative max-w-7xl mx-auto mt-20 mb-32 px-4">
+
+                        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+
+                            <!-- Post 1 -->
+                            <div
+                                class="bg-white p-2 shadow-[8px_8px_0px_#ffffff] transform rotate-1 transition-transform hover:z-10 hover:scale-[1.02]">
+                                <blockquote class="instagram-media"
+                                    data-instgrm-permalink="https://www.instagram.com/p/DTLawTujgmx/"
+                                    data-instgrm-version="14"
+                                    style="background:#FFF; border:0; border-radius:3px; box-shadow:none; display:block; margin:0; padding:0; width:100%;">
+                                </blockquote>
+                            </div>
+                            <!-- Post 2 -->
+                            <div
+                                class="bg-white p-2 shadow-[8px_8px_0px_#ffffff] transform -rotate-1 transition-transform hover:z-10 hover:scale-[1.02]">
+                                <blockquote class="instagram-media"
+                                    data-instgrm-permalink="https://www.instagram.com/p/DO6YBmaDSi0/"
+                                    data-instgrm-version="14"
+                                    style="background:#FFF; border:0; border-radius:3px; box-shadow:none; display:block; margin:0; padding:0; width:100%;">
+                                </blockquote>
+                            </div>
+                            <!-- Post 3 -->
+                            <div
+                                class="bg-white p-2 shadow-[8px_8px_0px_#ffffff] transform rotate-1 transition-transform hover:z-10 hover:scale-[1.02]">
+                                <blockquote class="instagram-media"
+                                    data-instgrm-permalink="https://www.instagram.com/p/DS5S9M8k7Xw/"
+                                    data-instgrm-version="14"
+                                    style="background:#FFF; border:0; border-radius:3px; box-shadow:none; display:block; margin:0; padding:0; width:100%;">
+                                </blockquote>
+                            </div>
+
+                            <!-- Post 4 -->
+                            <div
+                                class="bg-white p-2 shadow-[8px_8px_0px_#ffffff] transform rotate-1 transition-transform hover:z-10 hover:scale-[1.02]">
+                                <blockquote class="instagram-media"
+                                    data-instgrm-permalink="https://www.instagram.com/p/DSrqwxvlf24/"
+                                    data-instgrm-version="14"
+                                    style="background:#FFF; border:0; border-radius:3px; box-shadow:none; display:block; margin:0; padding:0; width:100%;">
+                                </blockquote>
+                            </div>
+                            <!-- Post 5 -->
+                            <div
+                                class="bg-white p-2 shadow-[8px_8px_0px_#ffffff] transform -rotate-1 transition-transform hover:z-10 hover:scale-[1.02]">
+                                <blockquote class="instagram-media"
+                                    data-instgrm-permalink="https://www.instagram.com/p/DSQOlqWlD7l/"
+                                    data-instgrm-version="14"
+                                    style="background:#FFF; border:0; border-radius:3px; box-shadow:none; display:block; margin:0; padding:0; width:100%;">
+                                </blockquote>
+                            </div>
+                            <!-- Post 6 -->
+                            <div
+                                class="bg-white p-2 shadow-[8px_8px_0px_#ffffff] transform rotate-1 transition-transform hover:z-10 hover:scale-[1.02]">
+                                <blockquote class="instagram-media"
+                                    data-instgrm-permalink="https://www.instagram.com/p/DSQNObQgMiy/"
+                                    data-instgrm-version="14"
+                                    style="background:#FFF; border:0; border-radius:3px; box-shadow:none; display:block; margin:0; padding:0; width:100%;">
+                                </blockquote>
+                            </div>
+
+                            <!-- Post 7 -->
+                            <div
+                                class="bg-white p-2 shadow-[8px_8px_0px_#ffffff] transform rotate-1 transition-transform hover:z-10 hover:scale-[1.02]">
+                                <blockquote class="instagram-media"
+                                    data-instgrm-permalink="https://www.instagram.com/p/DSM92lCCJ7T/"
+                                    data-instgrm-version="14"
+                                    style="background:#FFF; border:0; border-radius:3px; box-shadow:none; display:block; margin:0; padding:0; width:100%;">
+                                </blockquote>
+                            </div>
+                            <!-- Post 8 -->
+                            <div
+                                class="bg-white p-2 shadow-[8px_8px_0px_#ffffff] transform -rotate-1 transition-transform hover:z-10 hover:scale-[1.02]">
+                                <blockquote class="instagram-media"
+                                    data-instgrm-permalink="https://www.instagram.com/p/DSLLVX-Fgim/"
+                                    data-instgrm-version="14"
+                                    style="background:#FFF; border:0; border-radius:3px; box-shadow:none; display:block; margin:0; padding:0; width:100%;">
+                                </blockquote>
+                            </div>
+                            <!-- Post 9 -->
+                            <div
+                                class="bg-white p-2 shadow-[8px_8px_0px_#ffffff] transform rotate-1 transition-transform hover:z-10 hover:scale-[1.02]">
+                                <blockquote class="instagram-media"
+                                    data-instgrm-permalink="https://www.instagram.com/p/DSH5kjaCPHo/"
+                                    data-instgrm-version="14"
+                                    style="background:#FFF; border:0; border-radius:3px; box-shadow:none; display:block; margin:0; padding:0; width:100%;">
+                                </blockquote>
+                            </div>
+
+                        </div>
+
+                        <div class="text-center mt-12">
+                            <a href="https://www.instagram.com/galacticos_veleblu/" target="_blank"
+                                class="inline-block bg-[#0095f6] hover:bg-[#1877f2] text-white px-8 py-3 rounded-full font-bold text-lg shadow-lg transition-colors border-2 border-white">
+                                Visualizza profilo completo su Instagram
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Instagram Embed Script (Robust) -->
+                    <script async src="https://www.instagram.com/embed.js"></script>
+                    <script>
+                        // Force processing in case of load timing issues
+                        window.onload = function () {
+                            if (window.instgrm) {
+                                window.instgrm.Embeds.process();
+                            }
+                        };
+                    </script>
+
+            </section>
+
+            <!-- PROJECT: ALBINOLEFFE (Rich Layout) -->
+            <section class="py-32 border-t-2 border-white relative overflow-hidden">
+
+                <!-- Background decoration -->
+                <div class="absolute top-0 right-0 w-full h-full opacity-10 pointer-events-none">
+                    <div class="absolute top-20 right-[-10%] w-96 h-96 bg-white rounded-full blur-[100px]"></div>
+                </div>
+
+                <!-- PROJECT HEADER -->
+                <div class="relative z-10 mb-24 text-right px-6 sm:px-12">
+                    <span
+                        class="bg-white text-blue-900 px-4 py-1 font-bold text-lg uppercase shadow-lg inline-block transform -rotate-2 mb-4">
+                        Professional Collaboration
+                    </span>
+                    <h2
+                        class="text-[12vw] sm:text-[8rem] leading-none font-black text-white mix-blend-overlay transform rotate-1 origin-bottom-right">
+                        ALBINOLEFFE
+                    </h2>
+                </div>
+
+                <!-- CONTENT GRID -->
+                <div class="max-w-7xl mx-auto px-6 sm:px-12">
+
+                    <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
+
+                        <!-- LEFT: DESCRIPTION CARD -->
+                        <div class="lg:col-span-5 relative z-20 mt-12">
+                            <div
+                                class="bg-white text-blue-900 p-8 shadow-[12px_12px_0px_rgba(255,255,255,0.2)] transform rotate-1 border-4 border-white/50 backdrop-blur-sm">
+                                <h3 class="text-3xl font-black uppercase mb-6 leading-none tracking-tight">
+                                    Serie C <br><span
+                                        class="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-cyan-500">Official
+                                        Photographer</span>
+                                </h3>
+                                <p class="text-lg leading-relaxed font-medium text-gray-700 mb-6">
+                                    Seguire una squadra professionistica richiede precisione, tempismo e occhio per
+                                    il
+                                    dettaglio.
+                                    Non è solo sport: è la storia di una società, dei suoi tifosi e della passione
+                                    che
+                                    brucia in campo.
+                                </p>
+                                <div class="flex gap-2">
+                                    <span
+                                        class="px-3 py-1 bg-gray-100 text-gray-600 text-xs font-bold uppercase rounded">Matchday</span>
+                                    <span
+                                        class="px-3 py-1 bg-gray-100 text-gray-600 text-xs font-bold uppercase rounded">Editorial</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- RIGHT: IMAGE GRID LAYOUT -->
+                        <div class="lg:col-span-7 grid grid-cols-2 gap-6 relative">
+                            <!-- Floating decorative elements -->
+                            <div
+                                class="absolute -top-10 -right-10 w-24 h-24 border-4 border-white/20 rounded-full animate-pulse">
+                            </div>
+
+                            <!-- Images -->
+                            <div class="space-y-6 mt-12">
+                                <div
+                                    class="group relative overflow-hidden shadow-[8px_8px_0px_rgba(255,255,255,1)] border-2 border-white transform hover:-translate-y-1 transition-all">
+                                    <img src="./assets/sport/albinoleffe1.JPG.webp" class="w-full h-auto object-cover">
+                                </div>
+                                <div
+                                    class="group relative overflow-hidden shadow-[8px_8px_0px_rgba(255,255,255,1)] border-2 border-white transform hover:-translate-y-1 transition-all">
+                                    <img src="./assets/sport/albinoleffe3.JPG.webp" class="w-full h-auto object-cover">
+                                </div>
+                            </div>
+
+                            <div class="space-y-6">
+                                <div
+                                    class="group relative overflow-hidden shadow-[8px_8px_0px_rgba(255,255,255,1)] border-2 border-white transform hover:-translate-y-1 transition-all">
+                                    <img src="./assets/sport/albinoleffe5.JPG.webp" class="w-full h-auto object-cover">
+                                </div>
+                                <div
+                                    class="group relative overflow-hidden shadow-[8px_8px_0px_rgba(255,255,255,1)] border-2 border-white transform hover:-translate-y-1 transition-all">
+                                    <img src="./assets/sport/albinoleffe2.JPG.webp" class="w-full h-auto object-cover">
+                                </div>
+                                <div
+                                    class="group relative overflow-hidden shadow-[8px_8px_0px_rgba(255,255,255,1)] border-2 border-white transform hover:-translate-y-1 transition-all">
+                                    <img src="./assets/sport/albinoleffe4.JPG.webp" class="w-full h-auto object-cover">
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+        </div>
     </main>
 
     <%- include('partials/footer') %>

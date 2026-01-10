@@ -1,40 +1,55 @@
 <%- include('partials/header') %>
 
-    <section class="px-8 sm:px-16 pb-16 pt-72 space-y-16 text-center font-semibold bg-primary text-white min-h-screen">
+    <section
+        class="min-h-screen bg-white text-black flex flex-col justify-center items-center px-6 relative overflow-hidden">
 
-        <!-- SECTION HEADER REMOVED -->
-        <div class="mb-20 flex flex-col items-center justify-center">
-            <!-- Titles Removed -->
-        </div>
+        <!-- Background Noise/Texture Effect (Simulated with opacity) -->
+        <div class="absolute inset-0 bg-primary opacity-5 pointer-events-none"></div>
 
-        <!-- LINKS CONTAINER -->
-        <div class="flex flex-col items-center gap-8 sm:gap-0 sm:space-y-16">
+        <div class="relative z-10 max-w-5xl mx-auto text-center space-y-12">
 
-            <!-- Mobile Top Artifact -->
-            <img src="./assets/Star-4.webp" alt="star4" class="w-20 h-20 animate-spin-slow block sm:hidden mb-8" />
-
-            <a href="https://www.instagram.com/nicolapreda_/#" target="_blank"
-                class="block text-[13vw] sm:text-[100px] md:text-[150px] leading-none transition-colors font-black tracking-tighter mix-blend-screen">INSTAGRAM</a>
-
-            <div class="flex flex-col sm:flex-row gap-4 items-center justify-center">
-                <!-- Desktop Artifact -->
-                <img src="./assets/Star-4.webp" alt="star4" class="w-24 h-24 animate-spin-slow hidden sm:block" />
-                <a href="https://www.youtube.com/@nicolapreda" target="_blank"
-                    class="text-[13vw] sm:text-[100px] md:text-[150px] leading-none transition-colors font-black tracking-tighter mix-blend-screen">YOUTUBE</a>
+            <!-- AGGRESSIVE HEADLINES -->
+            <div class="space-y-4">
+                <h1
+                    class="text-[12vw] sm:text-[8rem] leading-[0.8] font-black tracking-tighter text-primary transform -rotate-2">
+                    BASTA SCORRERE.
+                </h1>
+                <h2
+                    class="text-[8vw] sm:text-[4rem] leading-none font-black uppercase tracking-tight text-black opacity-90">
+                    SE VUOI IL RISULTATO<br>COMINCIA ORA.
+                </h2>
             </div>
 
-            <a href="https://www.linkedin.com/in/nicola-preda-5b0722233/" target="_blank"
-                class="block text-[13vw] sm:text-[100px] md:text-[150px] leading-none transition-colors font-black tracking-tighter mix-blend-screen">LINKEDIN</a>
-
-            <div class="flex flex-col sm:flex-row gap-4 items-center justify-center">
-                <!-- Desktop Artifact -->
-                <img src="./assets/Star-5.webp" alt="star5" class="w-24 h-24 animate-pulse hidden sm:block" />
-                <a href="mailto:nicola.preda05@gmail.com" target="_blank"
-                    class="text-[13vw] sm:text-[100px] md:text-[150px] leading-none transition-colors font-black tracking-tighter mix-blend-screen">EMAIL</a>
+            <!-- DIVIDER STAR -->
+            <div class="flex justify-center py-8">
+                <img src="./assets/Star-5.webp" alt="star" class="w-24 h-24 animate-spin-slow">
             </div>
 
-            <!-- Mobile Bottom Artifact -->
-            <img src="./assets/Star-5.webp" alt="star5" class="w-20 h-20 animate-pulse block sm:hidden mt-8" />
+            <!-- DIRECT MESSAGE -->
+            <p
+                class="text-xl sm:text-2xl font-bold uppercase tracking-widest max-w-2xl mx-auto border-y-4 border-black py-8">
+                Non aspettare che le cose succedano per miracolo. <br>
+                Hai un progetto? <span class="bg-primary text-white px-2">Facciamolo.</span>
+            </p>
+
+            <!-- CTA BUTTON -->
+            <div class="pt-8">
+                <a href="mailto:nicola.preda05@gmail.com" class="group relative inline-block">
+                    <div
+                        class="absolute top-2 left-2 w-full h-full bg-black rounded-none transition-transform duration-300 group-hover:translate-x-2 group-hover:translate-y-2">
+                    </div>
+                    <div
+                        class="relative px-16 py-8 bg-primary border-4 border-black text-white font-black text-3xl sm:text-5xl uppercase tracking-tighter hover:-translate-y-1 hover:-translate-x-1 transition-transform duration-300">
+                        CONTATTAMI ORA
+                    </div>
+                </a>
+            </div>
+
+            <!-- FOOTER NOTE -->
+            <p class="text-gray-500 font-bold text-sm tracking-widest mt-12 uppercase">
+                (Niente perditempo, grazie)
+            </p>
+
         </div>
     </section>
 
