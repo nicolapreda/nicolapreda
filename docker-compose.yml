@@ -1,0 +1,17 @@
+version: "3.8"
+
+services:
+  nextjs:
+    build: .
+    image: predanicola-nextjs
+    container_name: predanicola
+    restart: unless-stopped
+    ports:
+      - "3002:3002"
+    networks:
+      - nginx
+
+networks:
+  nginx:
+    name: nginx_network
+    external: true
