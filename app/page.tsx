@@ -96,7 +96,7 @@ export default async function Home() {
               <div className="border-[3px] border-primary p-6 inline-block transform transition-transform duration-500 group-hover:-rotate-1">
                 {/* Vertically Cropped Image 3:4 */}
                 <Image
-                  src="/assets/chi-sono.webp"
+                  src="/assets/chi-sono.JPG"
                   alt="Nicola Preda"
                   width={400} // Approximate width
                   height={533} // Approximate height

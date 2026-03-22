@@ -56,7 +56,7 @@ export default function Navbar() {
       <nav className="hidden md:flex gap-6 items-center text-white font-medium text-lg uppercase tracking-wider">
         <Link href="/" className="hover:text-gray-200 transition-colors duration-300">HOME</Link>
         <Link href="/portfolio" className="hover:text-gray-200 transition-colors duration-300">PORTFOLIO</Link>
-        <Link href="/contatti" className="px-4 py-1 bg-white text-black rounded-sm hover:bg-primary hover:text-white transition-all duration-300">CONTATTAMI</Link>
+        <Link href="/contatti" className="px-4 py-1 bg-white text-black font-black hover:bg-gray-200 transition-all duration-300">CONTATTAMI</Link>
       </nav>
 
       {/* Hamburger Button */}

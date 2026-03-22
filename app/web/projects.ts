@@ -56,7 +56,7 @@ export const projects: Project[] = [
         ],
         link: "https://www.sun-fai.org/",
         themeColor: "#16a34a",
-        image: "/assets/projects/sun-fai.jpg",
+        image: "/assets/projects/sun-fai.png",
     },
     {
         id: "galacticos",
@@ -77,7 +77,7 @@ export const projects: Project[] = [
     {
         id: "predanicola",
         title: "Nicola Preda Portfolio",
-        tagline: "Filmmaker & Photographer",
+        tagline: "Videomaker & Photographer",
         description:
             "Il mio portfolio personale. Un'esperienza immersiva che evidenzia la fusione tra competenze tecniche (sviluppo web) e visione artistica (foto/video). Il design è minimalista ma curato nei minimi dettagli per lasciare spazio alle immagini e ai progetti, raccontando storie visive potenti.",
         features: [
@@ -88,6 +88,6 @@ export const projects: Project[] = [
         ],
         link: "https://predanicola.it/",
         themeColor: "#000000",
-        image: "/assets/projects/predanicola.jpg",
+        image: "/assets/projects/predanicola.png",
     },
 ];

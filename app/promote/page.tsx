@@ -1,6 +1,5 @@
-import Script from "next/script";
+import Image from "next/image";
 import { metadata as layoutMetadata } from "../layout";
-import ContactList from "../../components/ContactList"; // Assuming we want footer/contacts on all pages, though promote.ejs included footer which has contacts in it. But index.ejs has a BIG contact list. promote.ejs just ends with footer.
 
 export const metadata = {
   title: "PROMOTE - NICOLA PREDA",
@@ -13,241 +12,218 @@ export const metadata = {
   },
 };
 
+const backstageVideos = [
+  "https://player.mediadelivery.net/embed/574592/10d196b2-4c8b-4601-8772-aad1d3850dee?autoplay=true&loop=true&muted=true&preload=true&responsive=true",
+  "https://player.mediadelivery.net/embed/574592/b5697a48-ca9b-49c4-b0c6-c8c527fbf3a6?autoplay=true&loop=true&muted=true&preload=true&responsive=true",
+  "https://player.mediadelivery.net/embed/574592/77c6b14f-8c2f-4601-bae9-bfd999e3c822?autoplay=true&loop=true&muted=true&preload=true&responsive=true",
+  "https://player.mediadelivery.net/embed/574592/8263b380-ab15-4f8d-b64b-0536beb29ce4?autoplay=true&loop=true&muted=true&preload=true&responsive=true",
+  "https://player.mediadelivery.net/embed/574592/529aec14-ca04-4d71-8743-6cc3e8c1dd13?autoplay=true&loop=true&muted=true&preload=true&responsive=true",
+  "https://player.mediadelivery.net/embed/574592/61917614-eb52-4bf3-8c73-5c69b0a97ead?autoplay=true&loop=true&muted=true&preload=true&responsive=true",
+];
+
+const corporateHorizontal = [
+  "https://player.mediadelivery.net/embed/574592/b6bbb482-642c-4efd-88cd-ecebbc24d7eb?autoplay=true&loop=true&muted=true&preload=true&responsive=true",
+  "https://player.mediadelivery.net/embed/574592/6a8cbc3f-c236-4342-a481-23cb91b9b0a6?autoplay=true&loop=true&muted=true&preload=true&responsive=true",
+  "https://player.mediadelivery.net/embed/574592/ba291232-5687-4a03-ac39-582b229d60f4?autoplay=true&loop=true&muted=true&preload=true&responsive=true",
+  "https://player.mediadelivery.net/embed/574592/a6177b41-ad51-4b1d-b4fc-7fa52dcaa245?autoplay=true&loop=true&muted=true&preload=true&responsive=true",
+];
+
+const corporateVertical = [
+  "https://player.mediadelivery.net/embed/574592/a83effbb-9040-4ac7-9de3-26c1ebf5322b?autoplay=true&loop=true&muted=true&preload=true&responsive=true",
+  "https://player.mediadelivery.net/embed/574592/fa7c4536-1b2a-4352-a1fc-d7d3f77120a1?autoplay=true&loop=true&muted=true&preload=true&responsive=true",
+  "https://player.mediadelivery.net/embed/574592/cd510999-03da-4363-be60-3e204875710e?autoplay=true&loop=true&muted=true&preload=true&responsive=true",
+  "https://player.mediadelivery.net/embed/574592/458f2395-220a-4a09-92a1-ca8c42183649?autoplay=true&loop=true&muted=true&preload=true&responsive=true",
+];
+
+const socialParlati = [
+  "https://player.mediadelivery.net/embed/574592/2c76d5e8-5a8b-4fa5-8e66-25a476bcb64a?autoplay=true&loop=true&muted=true&preload=true&responsive=true",
+  "https://player.mediadelivery.net/embed/574592/c23b86a1-3684-456f-b637-ff4e97db2df7?autoplay=true&loop=true&muted=true&preload=true&responsive=true",
+];
+
+function VideoH({ src }: { src: string }) {
+  return (
+    <div className="relative w-full aspect-video border-2 border-white">
+      <iframe
+        src={src}
+        loading="lazy"
+        className="absolute inset-0 w-full h-full border-0"
+        allow="accelerometer;gyroscope;autoplay;encrypted-media;picture-in-picture"
+        allowFullScreen
+      />
+    </div>
+  );
+}
+
+function VideoV({ src }: { src: string }) {
+  return (
+    <div className="relative w-full aspect-[9/16] border-2 border-white">
+      <iframe
+        src={src}
+        loading="lazy"
+        className="absolute inset-0 w-full h-full border-0"
+        allow="accelerometer;gyroscope;autoplay;encrypted-media;picture-in-picture"
+        allowFullScreen
+      />
+    </div>
+  );
+}
+
 export default function PromotePage() {
   return (
-    <main className="bg-themeRed text-white min-h-screen pt-32 pb-20 px-6 sm:px-12 selection:bg-black selection:text-white">
-      <Script src="//www.instagram.com/embed.js" strategy="lazyOnload" />
+    <main className="bg-primary text-white min-h-screen pt-32 pb-24 selection:bg-white selection:text-primary overflow-x-hidden">
+      <div className="max-w-7xl mx-auto px-6 sm:px-12">
 
-      <div className="max-w-7xl mx-auto">
-        {/* HERO SECTION */}
-        <div className="border-b-4 border-white pb-12 mb-24">
-          <span className="font-bold tracking-widest uppercase mb-4 inline-block text-white/80">
-            Services
+        {/* ── HERO ─────────────────────────────────────────────── */}
+        <div className="relative mb-40 pb-16 border-b-4 border-white">
+
+          {/* top label */}
+          <span className="font-bold tracking-[0.35em] uppercase text-white/50 text-xs">
+            Services — Nicola Preda
           </span>
-          <h1 className="text-7xl md:text-9xl font-black uppercase leading-[0.85] mb-8 tracking-tighter">
-            Promote<br />
-            <span className="text-black">
-              Your<br />Business
+
+          {/* headline */}
+          <div className="mt-6 leading-none">
+            <h1 className="font-black uppercase text-[18vw] sm:text-[13vw] md:text-[11vw] tracking-tighter text-white leading-[0.85]">
+              PROMOTE
+            </h1>
+            <h1 className="font-black uppercase text-[11vw] sm:text-[8vw] md:text-[6.5vw] tracking-tighter text-white/85 leading-[1.0] mt-1">
+              Your Business
+            </h1>
+          </div>
+
+          {/* badge + body */}
+          <div className="flex flex-wrap items-start gap-6 mt-10">
+            <span className="inline-block border-2 border-white px-4 py-1 text-xs font-black uppercase tracking-[0.25em] transform rotate-2 mt-1">
+              Bergamo &amp; dintorni
             </span>
-          </h1>
-          <p className="text-xl md:text-3xl font-sans font-medium max-w-2xl leading-relaxed opacity-90">
+          </div>
+          <p className="mt-6 text-lg sm:text-xl font-sans font-medium max-w-2xl leading-relaxed text-white/75">
             Trasformo la tua attività in un brand che parla. Video, foto e
-            strategia per connettersi davvero con il tuo pubblico locale.
+            strategia per connettersi davvero con il tuo pubblico.
           </p>
+
+          {/* deco star */}
+          <Image
+            src="/assets/Star-4.webp"
+            alt=""
+            width={88}
+            height={88}
+            className="absolute top-2 right-2 sm:right-10 opacity-70 animate-spin-slow pointer-events-none"
+          />
         </div>
 
-        {/* CLIENT: GIAPPUGLIESE */}
-        <section className="mb-32">
-          <div className="flex flex-col md:flex-row items-end justify-between mb-12 gap-8">
-            <h2 className="text-5xl md:text-7xl font-black uppercase tracking-tighter leading-none">
-              Giappugliese
-              <span className="block text-lg font-bold tracking-widest font-sans mt-2 opacity-70">
-                Food & Experience
-              </span>
-            </h2>
+        {/* ── 01 · CORPORATE ───────────────────────────────────── */}
+        <section className="mb-40">
 
-            <p className="max-w-md text-right md:text-left text-lg font-medium">
-              Raccontare il gusto attraverso immagini vibranti. Un mix tra
-              tradizione e innovazione culinaria.
+          {/* section header */}
+          <div className="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-4 mb-16">
+            <div>
+              <span className="font-bold tracking-[0.3em] uppercase text-white/40 text-xs">01 ——</span>
+              <div className="mt-1">
+                <h2 className="font-black uppercase text-7xl sm:text-9xl tracking-tighter text-white leading-none">
+                  CORPORATE
+                </h2>
+                <p className="font-bold uppercase text-sm tracking-[0.3em] text-white/50 mt-3">
+                  Brand Film
+                </p>
+              </div>
+            </div>
+          </div>
+
+          {/* Orizzontale */}
+          <div className="mb-14">
+            <div className="flex items-center gap-3 mb-6">
+              <span className="w-2 h-2 rounded-full bg-white inline-block" />
+              <span className="font-bold uppercase text-sm tracking-[0.25em] text-white/60">Orizzontale</span>
+            </div>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
+              {corporateHorizontal.map((src, i) => (
+                <VideoH key={i} src={src} />
+              ))}
+            </div>
+          </div>
+
+          {/* Verticale */}
+          <div>
+            <div className="flex items-center gap-3 mb-6">
+              <span className="w-2 h-2 rounded-full bg-white inline-block" />
+              <span className="font-bold uppercase text-sm tracking-[0.25em] text-white/60">Verticale</span>
+            </div>
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-5">
+              {corporateVertical.map((src, i) => (
+                <VideoV key={i} src={src} />
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* ── 02 · SOCIAL PARLATI ──────────────────────────────── */}
+        <section className="mb-40 relative">
+
+          <div className="mb-16">
+            <span className="font-bold tracking-[0.3em] uppercase text-white/40 text-xs">02 ——</span>
+            <h2 className="font-black uppercase text-7xl sm:text-9xl tracking-tighter text-white leading-none mt-1">
+              SOCIAL<br />PARLATI
+            </h2>
+          </div>
+
+          {/* 2 video verticali side by side */}
+          <div className="grid grid-cols-2 gap-5 max-w-2xl">
+            {socialParlati.map((src, i) => (
+              <VideoV key={i} src={src} />
+            ))}
+          </div>
+
+          {/* sottolineatura decorativa */}
+          <Image
+            src="/assets/sottolineatura.webp"
+            alt=""
+            width={320}
+            height={24}
+            className="mt-6 opacity-50"
+          />
+        </section>
+
+        {/* ── 03 · BACKSTAGE (last) ────────────────────────────── */}
+        <section className="relative">
+
+          {/* top border + tape */}
+          <div className="relative border-t-4 border-white pt-14 mb-16">
+            <Image
+              src="/assets/Tape.webp"
+              alt=""
+              width={180}
+              height={44}
+              className="absolute -top-6 right-12 opacity-75 rotate-[6deg] pointer-events-none"
+            />
+            <span className="font-bold tracking-[0.3em] uppercase text-white/40 text-xs">03 ——</span>
+            <h2 className="font-black uppercase text-7xl sm:text-9xl tracking-tighter text-white leading-none mt-1">
+              BACK<br />STAGE
+            </h2>
+            <p className="mt-4 text-white/50 font-sans text-xs uppercase tracking-[0.3em]">
+              Dietro le quinte dei nostri lavori
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {/* Post 1 */}
-            <div className="bg-white p-2 rounded-sm shadow-xl">
-              <blockquote
-                className="instagram-media"
-                data-instgrm-permalink="https://www.instagram.com/p/DTBL7aagi2M/"
-                data-instgrm-version="14"
-                style={{
-                  background: "#FFF",
-                  border: "0",
-                  borderRadius: "3px",
-                  boxShadow: "none",
-                  display: "block",
-                  margin: "0",
-                  minWidth: "326px",
-                  padding: "0",
-                  width: "100%",
-                }}
-              ></blockquote>
-            </div>
-            {/* Post 2 */}
-            <div className="bg-white p-2 rounded-sm shadow-xl md:mt-12">
-              <blockquote
-                className="instagram-media"
-                data-instgrm-permalink="https://www.instagram.com/p/DS73oaxglBV/"
-                data-instgrm-version="14"
-                style={{
-                  background: "#FFF",
-                  border: "0",
-                  borderRadius: "3px",
-                  boxShadow: "none",
-                  display: "block",
-                  margin: "0",
-                  minWidth: "326px",
-                  padding: "0",
-                  width: "100%",
-                }}
-              ></blockquote>
-            </div>
-            {/* Post 3 */}
-            <div className="bg-white p-2 rounded-sm shadow-xl">
-              <blockquote
-                className="instagram-media"
-                data-instgrm-permalink="https://www.instagram.com/p/DS2w_uvAm0t/"
-                data-instgrm-version="14"
-                style={{
-                  background: "#FFF",
-                  border: "0",
-                  borderRadius: "3px",
-                  boxShadow: "none",
-                  display: "block",
-                  margin: "0",
-                  minWidth: "326px",
-                  padding: "0",
-                  width: "100%",
-                }}
-              ></blockquote>
-            </div>
+          {/* 3 righe × 2 colonne = 6 video */}
+          <div className="grid grid-cols-2 gap-5">
+            {backstageVideos.map((src, i) => (
+              <VideoV key={i} src={src} />
+            ))}
+          </div>
+
+          {/* star deco bottom */}
+          <div className="flex justify-end mt-10">
+            <Image
+              src="/assets/Star-5.webp"
+              alt=""
+              width={64}
+              height={64}
+              className="opacity-60 animate-spin-slow"
+            />
           </div>
         </section>
 
-        {/* CLIENT: HORIZON (Dark Mode Block) */}
-        <section className="mb-32 -mx-6 sm:-mx-12 px-6 sm:px-12 py-24 bg-black text-white relative overflow-hidden group">
-          {/* Background Graphic Element */}
-          <div className="absolute top-0 right-0 w-64 h-64 bg-themeRed blur-[100px] opacity-20 group-hover:opacity-40 transition-opacity duration-700"></div>
-
-          <div className="max-w-7xl mx-auto relative z-10">
-            <div className="border-l-4 border-themeRed pl-8 mb-16">
-              <h2 className="text-5xl md:text-7xl font-black uppercase tracking-tighter mb-2">
-                Horizon
-              </h2>
-              <span className="text-xl font-bold tracking-widest text-gray-400">
-                Corporate & Tech
-              </span>
-            </div>
-
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-              <div className="grayscale hover:grayscale-0 transition-all duration-500">
-                <blockquote
-                  className="instagram-media"
-                  data-instgrm-permalink="https://www.instagram.com/p/DEOAxyXszez/"
-                  data-instgrm-version="14"
-                  style={{
-                    background: "#FFF",
-                    border: "0",
-                    borderRadius: "3px",
-                    boxShadow: "0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15)",
-                    margin: "1px",
-                    maxWidth: "540px",
-                    minWidth: "326px",
-                    padding: "0",
-                    width: "100%",
-                  }}
-                ></blockquote>
-              </div>
-              <div className="grayscale hover:grayscale-0 transition-all duration-500">
-                <blockquote
-                  className="instagram-media"
-                  data-instgrm-permalink="https://www.instagram.com/p/DG0gOJPs_oD/"
-                  data-instgrm-version="14"
-                  style={{
-                    background: "#FFF",
-                    border: "0",
-                    borderRadius: "3px",
-                    boxShadow: "0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15)",
-                    margin: "1px",
-                    maxWidth: "540px",
-                    minWidth: "326px",
-                    padding: "0",
-                    width: "100%",
-                  }}
-                ></blockquote>
-              </div>
-              <div className="grayscale hover:grayscale-0 transition-all duration-500">
-                <blockquote
-                  className="instagram-media"
-                  data-instgrm-permalink="https://www.instagram.com/p/DFDtAEvs0MC/"
-                  data-instgrm-version="14"
-                  style={{
-                    background: "#FFF",
-                    border: "0",
-                    borderRadius: "3px",
-                    boxShadow: "0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15)",
-                    margin: "1px",
-                    maxWidth: "540px",
-                    minWidth: "326px",
-                    padding: "0",
-                    width: "100%",
-                  }}
-                ></blockquote>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        {/* CLIENT: MIRIAM (Editorial Layout) */}
-        <section className="mb-20">
-          <div className="text-center mb-16">
-            <h2 className="text-6xl md:text-8xl font-serif italic text-white mb-4">
-              Miriam
-            </h2>
-            <p className="font-bold tracking-widest uppercase">
-              Fashion & Lifestyle
-            </p>
-          </div>
-
-          <div className="flex flex-col md:flex-row justify-center gap-12 items-start">
-            {/* Reel 1 */}
-            <div className="w-full max-w-sm">
-              <div className="border-2 border-white p-2">
-                <blockquote
-                  className="instagram-media"
-                  data-instgrm-permalink="https://www.instagram.com/reel/DR5Ay41DB0C/"
-                  data-instgrm-version="14"
-                  style={{
-                    background: "#FFF",
-                    border: "0",
-                    borderRadius: "3px",
-                    boxShadow: "0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15)",
-                    margin: "1px",
-                    maxWidth: "540px",
-                    minWidth: "326px",
-                    padding: "0",
-                    width: "100%",
-                  }}
-                ></blockquote>
-              </div>
-            </div>
-            {/* Decorative Ampersand or Divider */}
-            <div className="text-6xl font-serif italic opacity-50 sticky top-1/2">
-              &
-            </div>
-
-            {/* Reel 2 */}
-            <div className="w-full max-w-sm md:mt-24">
-              <div className="border-2 border-white p-2">
-                <blockquote
-                  className="instagram-media"
-                  data-instgrm-permalink="https://www.instagram.com/reel/DSA5FcWDDKH/"
-                  data-instgrm-version="14"
-                  style={{
-                    background: "#FFF",
-                    border: "0",
-                    borderRadius: "3px",
-                    boxShadow: "0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15)",
-                    margin: "1px",
-                    maxWidth: "540px",
-                    minWidth: "326px",
-                    padding: "0",
-                    width: "100%",
-                  }}
-                ></blockquote>
-              </div>
-            </div>
-          </div>
-        </section>
       </div>
     </main>
   );

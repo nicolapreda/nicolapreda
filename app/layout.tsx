@@ -4,21 +4,21 @@ import Footer from "../components/Footer";
 import Script from "next/script";
 
 export const metadata = {
-  title: "NICOLA PREDA | Filmmaker & Photographer",
-  description: "Filmmaker e Fotografo basato a Milano. Specializzato in video eventi, sport, corporate e produzione di contenuti social.",
-  keywords: "Nicola Preda, Filmmaker Milano, Fotografo Milano, Video Eventi, Galacticos, Video Corporate, Social Media Content",
+  title: "NICOLA PREDA | Videomaker & Photographer",
+  description: "Videomaker e Fotografo basato a Milano. Specializzato in video eventi, sport, corporate e produzione di contenuti social.",
+  keywords: "Nicola Preda, Videomaker Milano, Fotografo Milano, Video Eventi, Galacticos, Video Corporate, Social Media Content",
   openGraph: {
     type: "website",
     url: "https://www.predanicola.it/",
-    title: "NICOLA PREDA | Filmmaker & Photographer",
-    description: "Filmmaker e Fotografo basato a Milano. Specializzato in video eventi, sport, corporate e produzione di contenuti social.",
+    title: "NICOLA PREDA | Videomaker & Photographer",
+    description: "Videomaker e Fotografo basato a Milano. Specializzato in video eventi, sport, corporate e produzione di contenuti social.",
     images: ["https://www.predanicola.it/assets/profile.jpg"],
   },
   twitter: {
     card: "summary_large_image",
     site: "https://www.predanicola.it/",
-    title: "NICOLA PREDA | Filmmaker & Photographer",
-    description: "Filmmaker e Fotografo basato a Milano. Specializzato in video eventi, sport, corporate e produzione di contenuti social.",
+    title: "NICOLA PREDA | Videomaker & Photographer",
+    description: "Videomaker e Fotografo basato a Milano. Specializzato in video eventi, sport, corporate e produzione di contenuti social.",
     images: ["https://www.predanicola.it/assets/profile.jpg"],
   },
 };

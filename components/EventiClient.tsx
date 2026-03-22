@@ -9,40 +9,44 @@ export default function EventiClient() {
   
   const galleryItems = [
     { type: 'img', src: '/assets/eventi/glocky/DSC00414.webp' },
-    { type: 'video', src: 'https://predanicola.b-cdn.net/assets/eventi/tedua_1.mov' },
+    { type: 'iframe', src: 'https://player.mediadelivery.net/embed/574592/7c0a4026-fabd-463b-8c8d-7de740a39f6f?autoplay=true&loop=true&muted=true&preload=true&responsive=true' },
     { type: 'img', src: '/assets/eventi/glocky/DSC00272.webp' },
     { type: 'img', src: '/assets/eventi/glocky/DSC00491.webp' },
     { type: 'img', src: '/assets/eventi/setai_rondo1.webp' },
     { type: 'img', src: '/assets/eventi/setai/DSC01362.webp' },
-    { type: 'video', src: 'https://predanicola.b-cdn.net/assets/eventi/spicy_portfolio.mp4' },
+    { type: 'iframe', src: 'https://player.mediadelivery.net/embed/574592/aea7c930-da1b-46ef-a07d-696f9290f128?autoplay=true&loop=true&muted=true&preload=true&responsive=true' },
     { type: 'img', src: '/assets/eventi/glocky/DSC00685.webp' },
     { type: 'img', src: '/assets/eventi/glocky/DSC00635.webp' },
     { type: 'img', src: '/assets/eventi/setai_rondo2.webp' },
     { type: 'img', src: '/assets/eventi/glocky/DSC00893.webp' },
-    { type: 'video', src: 'https://predanicola.b-cdn.net/assets/eventi/vog_portfolio.mp4' },
+    { type: 'iframe', src: 'https://player.mediadelivery.net/embed/574592/471bdadc-1052-43e2-8321-9c1c5b944181?autoplay=true&loop=true&muted=true&preload=true&responsive=true' },
     { type: 'img', src: '/assets/eventi/glocky/DSC00690.webp' },
-    { type: 'video', src: 'https://predanicola.b-cdn.net/assets/eventi/tedua_2.mp4' },
+    { type: 'iframe', src: 'https://player.mediadelivery.net/embed/574592/653790fe-4985-4875-a65e-1c900b6bc112?autoplay=true&loop=true&muted=true&preload=true&responsive=true' },
     { type: 'img', src: '/assets/eventi/setai/DSC01247.webp' },
     { type: 'img', src: '/assets/eventi/setai_rondo3.webp' },
     { type: 'img', src: '/assets/eventi/DSC01861.webp' },
-    { type: 'video', src: 'https://predanicola.b-cdn.net/assets/eventi/glue_2.mp4' },
+    { type: 'iframe', src: 'https://player.mediadelivery.net/embed/574592/af542f53-98fb-492e-8de2-49d9c80f4e3d?autoplay=true&loop=true&muted=true&preload=true&responsive=true' },
     { type: 'img', src: '/assets/eventi/setai/DSC01675.webp' },
     { type: 'img', src: '/assets/eventi/GLUE-NO-LOGO-93.webp' },
     { type: 'img', src: '/assets/eventi/setai_rondo4.webp' },
+    { type: 'iframe', src: 'https://player.mediadelivery.net/embed/574592/15896e08-bcd9-4436-8b0f-d6201939dfef?autoplay=true&loop=true&muted=true&preload=true&responsive=true' },
     { type: 'img', src: '/assets/eventi/glocky/DSC00296.webp' },
     { type: 'img', src: '/assets/eventi/glocky/DSC00342.webp' },
     { type: 'img', src: '/assets/eventi/glocky/DSC00601.webp' },
     { type: 'img', src: '/assets/eventi/glocky/DSC00670.webp' },
     { type: 'img', src: '/assets/eventi/glocky/DSC00671.webp' },
     { type: 'img', src: '/assets/eventi/GLUE-NO-LOGO-28.webp' },
+    { type: 'iframe', src: 'https://player.mediadelivery.net/embed/574592/6e5a20e5-d672-4cca-80c2-bc36bdfb5f6c?autoplay=true&loop=true&muted=true&preload=true&responsive=true' },
     { type: 'img', src: '/assets/eventi/glocky/DSC00687.webp' },
     { type: 'img', src: '/assets/eventi/glocky/DSC00698.webp' },
     { type: 'img', src: '/assets/eventi/GLUE-NO-LOGO-29.webp' },
     { type: 'img', src: '/assets/eventi/glocky/DSC00715.webp' },
     { type: 'img', src: '/assets/eventi/glocky/DSC00956.webp' },
     { type: 'img', src: '/assets/eventi/GLUE-NO-LOGO-30.webp' },
+    { type: 'iframe', src: 'https://player.mediadelivery.net/embed/574592/d11d9c2b-f5bd-45f1-98b9-c525f94d5d8d?autoplay=true&loop=true&muted=true&preload=true&responsive=true' },
     { type: 'img', src: '/assets/eventi/setai_rondo5.webp' },
     { type: 'img', src: '/assets/eventi/setai_rondo6.webp' },
+    { type: 'iframe', src: 'https://player.mediadelivery.net/embed/574592/9201b483-f3ad-4e0d-ad4f-7274c6a4b2f4?autoplay=true&loop=true&muted=true&preload=true&responsive=true' },
   ];
 
   const openModal = (index: number) => {
@@ -191,23 +195,34 @@ export default function EventiClient() {
         </div>
 
         {/* GALLERY GRID */}
-        <h2 className="text-4xl font-black uppercase mb-12 border-b-2 border-white pb-4">
-          Selected Shots
+        <div className="overflow-hidden whitespace-nowrap py-4 bg-themeRed text-white border-y-4 border-black mb-12" style={{width: '100vw', marginLeft: 'calc(50% - 50vw)'}}>
+
+          <div className="inline-flex animate-infinite-scroll items-center">
+            {[...Array(6)].map((_, i) => (
+              <span key={i} className="text-xl font-black italic uppercase mx-6">SELECTED SHOTS ✦ GALLERY ✦</span>
+            ))}
+          </div>
+        </div>
+        <h2 className="text-5xl sm:text-7xl font-black uppercase mb-8 tracking-tighter">
+          Selected <span className="text-themeYellow">Shots</span>
         </h2>
         <div className="columns-2 md:columns-3 lg:columns-4 gap-4 space-y-4 mb-32">
           {galleryItems.map((item, index) => {
-              if (item.type === 'video') {
+              if (item.type === 'iframe') {
                   return (
-                    <video
+                    <div
                         key={index}
-                        src={item.src}
-                        autoPlay
-                        loop
-                        muted
-                        playsInline
-                        className="gallery-item w-full h-auto object-cover border-2 border-white transition-all duration-500 break-inside-avoid cursor-pointer hover:opacity-90"
+                        className="gallery-item relative aspect-[9/16] border-2 border-white break-inside-avoid cursor-pointer hover:opacity-90 transition-all duration-500"
                         onClick={() => openModal(index)}
-                    ></video>
+                    >
+                        <iframe
+                            src={item.src}
+                            loading="lazy"
+                            className="absolute inset-0 w-full h-full border-0"
+                            allow="accelerometer;gyroscope;autoplay;encrypted-media;picture-in-picture"
+                            allowFullScreen
+                        ></iframe>
+                    </div>
                   )
               } else {
                   return (
@@ -271,13 +286,15 @@ export default function EventiClient() {
             onClick={(e) => e.stopPropagation()}
           >
             {modalOpen && (
-                galleryItems[currentIndex].type === 'video' ? (
-                    <video
-                        src={galleryItems[currentIndex].src}
-                        controls
-                        autoPlay
-                        className="max-w-[90vw] max-h-[90vh] object-contain shadow-2xl rounded-sm"
-                    ></video>
+                galleryItems[currentIndex].type === 'iframe' ? (
+                    <div className="relative aspect-[9/16] w-[min(50.625vh,90vw)]">
+                        <iframe
+                            src={galleryItems[currentIndex].src}
+                            className="absolute inset-0 w-full h-full border-0"
+                            allow="accelerometer;gyroscope;autoplay;encrypted-media;picture-in-picture"
+                            allowFullScreen
+                        ></iframe>
+                    </div>
                 ) : (
                     <Image
                         src={galleryItems[currentIndex].src}

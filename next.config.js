@@ -1,8 +1,8 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  reactStrictMode: true,
+  reactStrictMode: false,
   images: {
-    domains: ['i.ytimg.com', 'yt3.ggpht.com'], // Allow YouTube thumbnails
+    domains: ['i.ytimg.com', 'yt3.ggpht.com', 'img.youtube.com'], // Allow YouTube thumbnails
   },
   async redirects() {
     return [
