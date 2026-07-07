@@ -16,33 +16,20 @@ export const metadata = {
 export default function PortfolioPage() {
   return (
     <div className="relative min-h-screen bg-primary w-full overflow-x-hidden">
-      {/* FIXED BACKGROUND TITLE */}
-      <div className="fixed bottom-0 left-0 w-full flex justify-center items-end pointer-events-none z-0">
-        <h1 className="text-[12vw] sm:text-[15vw] leading-none font-black text-white/40 tracking-tighter select-none">
-          PORTFOLIO
-        </h1>
-      </div>
-
       {/* SCROLLABLE CONTENT */}
       {/* z-10 to float above the fixed title */}
       <main className="relative z-10 pt-32 pb-40 px-6 sm:px-12 flex flex-col items-center">
-        {/* DECORATION */}
-        <Image
-          src="/assets/3d_detail.webp"
-          alt=""
-          width={384}
-          height={384}
-          className="absolute top-20 right-0 w-64 md:w-96 opacity-100 pointer-events-none mix-blend-overlay z-0"
-        />
 
         {/* TITLE SECTION (Restored) */}
         <div className="text-center mb-16 sm:mb-24 text-white">
-          <h1 className="text-[12vw] sm:text-[10vw] leading-none font-black tracking-tight uppercase">
-            PROGETTI
-          </h1>
-          <h1 className="text-[18vw] sm:text-[15vw] leading-[0.6] font-cursive font-light text-white opacity-90 -mt-2 sm:-mt-6">
-            Selezionati
-          </h1>
+          <Image
+            src="/assets/trimmed/progetti-selezionati-tag.png"
+            alt="Progetti Selezionati"
+            width={1999}
+            height={1462}
+            priority
+            className="w-[85vw] max-w-md sm:max-w-xl md:max-w-2xl h-auto mx-auto"
+          />
         </div>
 
         {/* CARDS CONTAINER */}
@@ -149,8 +136,10 @@ export default function PortfolioPage() {
           </Link>
 
           {/* CARD 4: WEB */}
-          <Link
-            href="/web"
+          <a
+            href="https://web.predanicola.it"
+            target="_blank"
+            rel="noopener noreferrer"
             className="group block relative bg-white rounded-3xl p-2 sm:p-4 shadow-2xl transition-all duration-500 hover:-translate-y-4 hover:shadow-[0_20px_50px_rgba(0,0,0,0.3)]"
           >
             <div className="flex justify-between items-center px-4 py-2 border-b border-gray-100 mb-2">
@@ -178,7 +167,7 @@ export default function PortfolioPage() {
                 </p>
               </div>
             </div>
-          </Link>
+          </a>
         </div>
 
         {/* MARQUEE DIVIDER */}

@@ -20,13 +20,24 @@ export default function ContactList() {
         />
 
         <div className="flex flex-col items-center space-y-6 sm:space-y-6 w-full max-w-7xl z-10">
+          {/* TITLE */}
+          <div className="w-full mb-4">
+            <Image
+              src="/assets/trimmed/contattami-tag.png"
+              alt="Contattami"
+              width={1900}
+              height={1524}
+              className="w-full max-w-xs sm:max-w-sm mx-auto h-auto"
+            />
+          </div>
+
           {/* INSTAGRAM */}
           <a
             href="https://www.instagram.com/nicolapreda_/#"
             target="_blank"
             className="group relative w-full text-center"
           >
-            <span className="block text-4xl sm:text-7xl md:text-[8rem] leading-[0.85] font-black text-white hover:text-transparent hover:bg-clip-text hover:bg-white transition-all duration-300 tracking-tighter mix-blend-overlay hover:mix-blend-normal whitespace-nowrap">
+            <span className="block text-6xl sm:text-7xl md:text-[8rem] leading-[0.85] font-black text-white hover:text-transparent hover:bg-clip-text hover:bg-white transition-all duration-300 tracking-tighter mix-blend-overlay hover:mix-blend-normal whitespace-nowrap">
               INSTAGRAM
             </span>
           </a>
@@ -43,7 +54,7 @@ export default function ContactList() {
             <a
               href="https://wa.me/message/NCECJOBKRIRDO1"
               target="_blank"
-              className="block text-4xl sm:text-7xl md:text-[8rem] leading-[0.85] font-black text-white hover:text-green-400 transition-colors duration-300 tracking-tighter whitespace-nowrap"
+              className="block text-6xl sm:text-7xl md:text-[8rem] leading-[0.85] font-black text-white hover:text-green-400 transition-colors duration-300 tracking-tighter whitespace-nowrap"
             >
               WHATSAPP
             </a>
@@ -54,7 +65,7 @@ export default function ContactList() {
             <a
               href="https://www.youtube.com/@nicolapreda"
               target="_blank"
-              className="block text-4xl sm:text-7xl md:text-[8rem] leading-[0.85] font-black text-white hover:text-red-600 transition-colors duration-300 tracking-tighter whitespace-nowrap"
+              className="block text-6xl sm:text-7xl md:text-[8rem] leading-[0.85] font-black text-white hover:text-red-600 transition-colors duration-300 tracking-tighter whitespace-nowrap"
             >
               YOUTUBE
             </a>
@@ -73,7 +84,7 @@ export default function ContactList() {
             target="_blank"
             className="group relative w-full text-center"
           >
-            <span className="block text-4xl sm:text-7xl md:text-[8rem] leading-[0.85] font-black text-white hover:text-blue-300 transition-colors duration-300 tracking-tighter mix-blend-overlay hover:mix-blend-normal opacity-80 hover:opacity-100 whitespace-nowrap">
+            <span className="block text-6xl sm:text-7xl md:text-[8rem] leading-[0.85] font-black text-white hover:text-blue-300 transition-colors duration-300 tracking-tighter mix-blend-overlay hover:mix-blend-normal opacity-80 hover:opacity-100 whitespace-nowrap">
               LINKEDIN
             </span>
           </a>
@@ -89,7 +100,7 @@ export default function ContactList() {
             />
             <a
               href="mailto:nicola.preda05@gmail.com"
-              className="block text-4xl sm:text-7xl md:text-[8rem] leading-[0.85] font-black text-white hover:text-yellow-400 transition-colors duration-300 tracking-tighter whitespace-nowrap"
+              className="block text-6xl sm:text-7xl md:text-[8rem] leading-[0.85] font-black text-white hover:text-yellow-400 transition-colors duration-300 tracking-tighter whitespace-nowrap"
             >
               EMAIL
             </a>

@@ -85,127 +85,33 @@ export default function EventiClient() {
     <main className="bg-primary text-white min-h-screen pt-32 pb-20 px-6 sm:px-12">
       <div className="max-w-7xl mx-auto">
         {/* HEADER / INTRO */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start mb-32">
-          <div className="lg:sticky lg:top-32">
-            <span className="font-bold tracking-widest uppercase border-b-2 border-white pb-1 mb-6 inline-block">
-              Portfolio
-            </span>
-            <h1 className="text-7xl md:text-9xl font-serif italic mb-2">
-              Live
-            </h1>
-            <h1 className="text-7xl md:text-9xl font-black uppercase leading-none mb-12 tracking-tighter">
-              Content
-            </h1>
+        <div className="relative mb-16 sm:mb-24 flex flex-col items-center text-center">
+          <Image
+            src="/assets/red_artifact.png"
+            alt=""
+            width={738}
+            height={588}
+            className="absolute -top-10 right-0 sm:-right-4 w-52 sm:w-72 md:w-96 pointer-events-none"
+          />
 
-            <p className="text-xl md:text-2xl font-medium leading-relaxed max-w-lg mb-12">
-              Fotografia e video per eventi, club e concerti. Seguo l’azione da
-              dentro la serata, tra luci, pubblico e performance. Il risultato
-              sono contenuti dinamici, ottimizzati per social e comunicazione,
-              che restituiscono l’energia reale dell’evento.
-            </p>
+          <Image
+            src="/assets/trimmed/live-content-tag.png"
+            alt="Live Content"
+            width={1982}
+            height={1695}
+            priority
+            className="w-[85vw] max-w-md sm:max-w-lg md:max-w-xl h-auto mb-10"
+          />
 
-            <div className="grid grid-cols-2 gap-8 text-sm font-bold uppercase tracking-widest">
-              <ul className="space-y-4">
-                <li className="flex items-center gap-2">
-                  <div className="w-2 h-2 bg-white rounded-full"></div>Clubs
-                </li>
-                <li className="flex items-center gap-2">
-                  <div className="w-2 h-2 bg-white rounded-full"></div>Concerts
-                </li>
-              </ul>
-              <ul className="space-y-4">
-                <li className="flex items-center gap-2">
-                  <div className="w-2 h-2 bg-white rounded-full"></div>Festivals
-                </li>
-                <li className="flex items-center gap-2">
-                  <div className="w-2 h-2 bg-white rounded-full"></div>Private
-                </li>
-              </ul>
-            </div>
-          </div>
-
-          {/* RIGHT COLUMN: MASONRY / MOODBOARD */}
-          <div className="flex flex-col gap-8">
-            <div className="group relative">
-              <Image
-                src="/assets/eventi/ARTIE-1.webp"
-                alt="Artie"
-                width={600}
-                height={400}
-                className="w-full h-auto object-cover border-2 border-white shadow-[8px_8px_0px_0px_rgba(255,255,255,1)] group-hover:shadow-none transition-all duration-300"
-              />
-            </div>
-
-            <div className="grid grid-cols-2 gap-4">
-              <div className="group relative -rotate-1 border-2 border-white shadow-[4px_4px_0px_0px_rgba(255,255,255,1)]">
-                <video
-                  src="https://predanicola.b-cdn.net/assets/eventi/merci_portfolio.mp4"
-                  autoPlay
-                  loop
-                  muted
-                  playsInline
-                  controls
-                  className="w-full h-full object-cover transition-all duration-500"
-                ></video>
-              </div>
-              <div className="group relative rotate-1 border-2 border-white shadow-[4px_4px_0px_0px_rgba(255,255,255,1)] mt-8">
-                <Image
-                  src="/assets/eventi/setai/DSC01265.webp"
-                  alt="Setai"
-                  width={300}
-                  height={400}
-                  className="w-full h-full object-cover transition-all duration-500"
-                />
-              </div>
-            </div>
-
-            <div className="group relative rotate-2 max-w-sm ml-auto mr-8 -mt-8">
-              <Image
-                src="/assets/eventi/GLUE-47.webp"
-                alt="Glue"
-                width={300}
-                height={200}
-                className="w-full h-auto object-cover border-2 border-white shadow-[8px_8px_0px_0px_rgba(255,255,255,1)] transition-all duration-500"
-              />
-            </div>
-
-            <div className="grid grid-cols-2 gap-4 mt-8">
-              <div className="group relative -rotate-1 border-2 border-white shadow-[8px_8px_0px_0px_rgba(255,255,255,1)]">
-                <video
-                  src="https://predanicola.b-cdn.net/assets/eventi/glue_1.mov"
-                  autoPlay
-                  loop
-                  muted
-                  playsInline
-                  controls
-                  className="gallery-item w-full h-full object-cover transition-all duration-500 cursor-pointer"
-                ></video>
-              </div>
-              <div className="group relative rotate-1 border-2 border-white shadow-[8px_8px_0px_0px_rgba(255,255,255,1)]">
-                <Image
-                  src="/assets/eventi/GLUE-71.webp"
-                  alt="Glue 71"
-                  width={300}
-                  height={400}
-                  className="gallery-item w-full h-full object-cover cursor-pointer"
-                />
-              </div>
-            </div>
-          </div>
+          <p className="text-lg md:text-xl font-medium leading-relaxed max-w-2xl">
+            Fotografia e video per eventi, club e concerti. Seguo l’azione da
+            dentro la serata, tra luci, pubblico e performance. Il risultato
+            sono contenuti dinamici, ottimizzati per social e comunicazione,
+            che restituiscono l’energia reale dell’evento.
+          </p>
         </div>
 
         {/* GALLERY GRID */}
-        <div className="overflow-hidden whitespace-nowrap py-4 bg-themeRed text-white border-y-4 border-black mb-12" style={{width: '100vw', marginLeft: 'calc(50% - 50vw)'}}>
-
-          <div className="inline-flex animate-infinite-scroll items-center">
-            {[...Array(6)].map((_, i) => (
-              <span key={i} className="text-xl font-black italic uppercase mx-6">SELECTED SHOTS ✦ GALLERY ✦</span>
-            ))}
-          </div>
-        </div>
-        <h2 className="text-5xl sm:text-7xl font-black uppercase mb-8 tracking-tighter">
-          Selected <span className="text-themeYellow">Shots</span>
-        </h2>
         <div className="columns-2 md:columns-3 lg:columns-4 gap-4 space-y-4 mb-32">
           {galleryItems.map((item, index) => {
               if (item.type === 'iframe') {
